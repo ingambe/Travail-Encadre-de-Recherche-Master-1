@@ -86,7 +86,8 @@ Get-Content input\joueur_commence\p3_j1.txt | .\bin\ter_icl_no_option.exe > oupu
 Get-Content input\joueur_commence\p4_j1.txt | .\bin\ter_icl_no_option.exe > ouput\intel\joueur_commence\no_option\p4_j1.txt
 Get-Content input\joueur_commence\p5_j1.txt | .\bin\ter_icl_no_option.exe > ouput\intel\joueur_commence\no_option\p5_j1.txt
 
-Get-Content input\joueur_commence\p1_j1.txt | .\bin\ter_icl_O1.exe > ouput\intel\joueur_commence\O1\p2_j1.txt
+Get-Content input\joueur_commence\p1_j1.txt | .\bin\ter_icl_O1.exe > ouput\intel\joueur_commence\O1\p1_j1.txt
+Get-Content input\joueur_commence\p2_j1.txt | .\bin\ter_icl_O1.exe > ouput\intel\joueur_commence\O1\p2_j1.txt
 Get-Content input\joueur_commence\p3_j1.txt | .\bin\ter_icl_O1.exe > ouput\intel\joueur_commence\O1\p3_j1.txt
 Get-Content input\joueur_commence\p4_j1.txt | .\bin\ter_icl_O1.exe > ouput\intel\joueur_commence\O1\p4_j1.txt
 Get-Content input\joueur_commence\p5_j1.txt | .\bin\ter_icl_O1.exe > ouput\intel\joueur_commence\O1\p5_j1.txt
