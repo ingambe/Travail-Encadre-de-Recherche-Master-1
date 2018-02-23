@@ -299,7 +299,6 @@ int decision(CaseSuivante* cs,Position* pos,int pmax){
 		if (k <= 3) pmax++;
 		if (k > 3) pmax +=2;
 	}
-	cout << "prof max: " << pmax << endl;
 	int alpha=-VALMAX-50;
 	int beta=VALMAX+50;
 	EvalCoup ec;
@@ -400,7 +399,6 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 		if (k <= 3) pmax++;
 		if (k > 3) pmax +=2;
 	}
-	cout << "prof max: " << pmax << endl;
 
 	int alpha=-VALMAX-50; // avant -1
 	int beta=VALMAX+50; // avant +1
