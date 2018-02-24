@@ -47,7 +47,7 @@ void Stopwatch::stop() { QueryPerformanceCounter((LARGE_INTEGER*)&stop_); }
 //j=1 5 4 3 2 1 0 
 // voir tableau des next
 
-#include "minimax.h"
+#include "minimax_graph.h"
 
 void init_position(Position* pos) {
 	for(int i=0;i<6;i++){
