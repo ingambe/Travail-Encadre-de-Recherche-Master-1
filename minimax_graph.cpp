@@ -4,47 +4,16 @@
 #include <iostream>
 #include <ratio>
 #include <thread>
-#include <windows.h>
+#include <chrono>
 
-using namespace std;
-
-class Stopwatch { // cette version demande C++11 pour le ratio, mais on doit pouvoir définir des ratios internes
-	int64_t freq_; // the frequency
-	int64_t start_;
-	int64_t stop_;
-public:
-	Stopwatch();
-	int64_t freq()const;
-	void start();
-	void stop();
-	template <class ratio>
-	int64_t elapsed()const { return ((stop_ - start_)*ratio::den) / (freq_*ratio::num); }
-	int64_t elapsed_ms()const { return elapsed<std::milli>(); }
-	int64_t elapsed_us()const { return elapsed<std::micro>(); }
-	int64_t elapsed_ns()const { return elapsed<std::nano>(); }
-	double mps(const int64_t numOp)const { // million per seconds
-		double et = static_cast<double>(elapsed<std::nano>());
-		//std::cout << "et: " << et << " numOp: " << numOp << " numOp/et: " << numOp/et << std::endl;
-		return (numOp / et)*1000.;
-	}
-	Stopwatch& operator+=(const Stopwatch& t) {
-		stop_ += (t.stop_ - t.start_);
-		return *this;
-	}
-};
-
-Stopwatch::Stopwatch():start_(0), stop_(0) {
-	QueryPerformanceFrequency((LARGE_INTEGER*)&freq_);
-}
-void Stopwatch::start() { QueryPerformanceCounter((LARGE_INTEGER*)&start_); }
-void Stopwatch::stop() { QueryPerformanceCounter((LARGE_INTEGER*)&stop_); }
+typedef std::chrono::high_resolution_clock Clock;
 
 #define VALMAX 48
 
 // Ordre interne
 //  aiguille d'une montre :
 // j=0 5 4 3 2 1 O
-//j=1 5 4 3 2 1 0 
+//j=1 5 4 3 2 1 0
 // voir tableau des next
 
 #include "minimax_graph.h"
@@ -94,7 +63,7 @@ void print_position_ordi_haut_inv(Position* pos){
 }
 
 // Affichage
-// 12 11 10 9 8 7 
+// 12 11 10 9 8 7
 // 1 2 3 4 5 6
 // on tourne dans le sens inverse des aiguilles d'une montre
 
@@ -159,12 +128,12 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 		const int tj=j;
 		j=cs->_Jnext[j][c];
 		c=cs->_Cnext[tj][c];
-//		cout << "[" << j << "][" << c << "] "; 
+//		cout << "[" << j << "][" << c << "] ";
 		newPos->_Cases[j][c]++;
 	}
 //	cout << endl;
 //	print_position(newPos);
-	// on regarde si la case de départ est vide ou pas.
+	// on regarde si la case de dï¿½part est vide ou pas.
 	int nbp=newPos->_Cases[joueur][coup];
 	while (nbp != 0){
 		// on distribue ces pions
@@ -180,7 +149,7 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 	if (j != joueur){// on regarde si on doit prendre des pions
 		if (j ==0){
 			for(int i=c;i<=5;i++){
-				if (newPos->_Cases[j][i] == 2 || newPos->_Cases[j][i] == 3){ 
+				if (newPos->_Cases[j][i] == 2 || newPos->_Cases[j][i] == 3){
 					newPos->_PionsPris[joueur] += newPos->_Cases[j][i];
 					newPos->_Cases[j][i]=0;
 				} else {
@@ -189,7 +158,7 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 			}
 		} else {
 			for(int i=c;i>=0;i--){
-				if (newPos->_Cases[j][i] == 2 || newPos->_Cases[j][i] == 3){ 
+				if (newPos->_Cases[j][i] == 2 || newPos->_Cases[j][i] == 3){
 					newPos->_PionsPris[joueur] += newPos->_Cases[j][i];
 					newPos->_Cases[j][i]=0;
 				} else {
@@ -232,7 +201,7 @@ int VALMM=0;
 
 void print_eval_coup(EvalCoup* ec, int nb){
 	for(int i=0;i<nb;i++){
-		cout << "coup: " << ec->_Coup[i] << " eval: " << ec->_Val[i] << endl;
+		std::cout << "coup: " << ec->_Coup[i] << " eval: " << ec->_Val[i] << std::endl;
 	}
 }
 
@@ -251,7 +220,7 @@ int calculer_eval_coup(EvalCoup* ec, CaseSuivante* cs, Position* pos,const int j
 }
 
 int valeur_minimax(CaseSuivante* cs, Position* pos,const int joueur, int alpha,int beta, const int pmax){
-	// Calcule la valeur de e pour le joueur J selon que e EstUnEtatMax ou pas et pmax la 
+	// Calcule la valeur de e pour le joueur J selon que e EstUnEtatMax ou pas et pmax la
 	NUM_MINIMAX++;
 	if (pos->_PionsPris[0] + pos->_PionsPris[1] > 24){
 		if (48-pos->_PionsPris[0]-pos->_PionsPris[1] <= 6){
@@ -323,7 +292,7 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 		for(int i=0;i<6;i++){
 			if (jouer_coup(cs,&newPos,pos,joueur,i)){
 				const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
-			//	cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl; 
+			//	cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
 				if (val > alpha) {
 					alpha=val;
 				}
@@ -334,12 +303,12 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 			}
 		}
 		return alpha;
-	} 
+	}
 	//	cout << "MIN";
 	for(int i=0;i<6;i++){
 		if (jouer_coup(cs,&newPos,pos,joueur,i)){
 			const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
-		//		cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl; 
+		//		cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
 			if (val < beta){
 				beta=val;
 			}
@@ -354,9 +323,9 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 
 /// <summary> Fonction qui calcule la valeur minimax avec coupes Alpha-Beta </summary>
 int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha,int beta, const int pmax, const bool gagne){
-	// Calcule la valeur de e pour le joueur J selon que e EstUnEtatMax ou pas et pmax la 
+	// Calcule la valeur de e pour le joueur J selon que e EstUnEtatMax ou pas et pmax la
 	NUM_MINIMAX++;
-	int ajoutProf=(gagne) ? pmax : 0; 
+	int ajoutProf=(gagne) ? pmax : 0;
 	// TODO rajouter un parametre gagne qui est vrai ou faux
 	// puis on definit un parametre ajoutProf en fn de cette variable
 	if (pos->_PionsPris[0] + pos->_PionsPris[1] > 24){
@@ -379,7 +348,7 @@ int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha
 	return calculer_coup(cs,pos,joueur,alpha,beta,pmax,gagne);
 }
 
-/// Fonction qui détermine la première décision avec utilisation d'un algo minimax et de coupes
+/// Fonction qui dï¿½termine la premiï¿½re dï¿½cision avec utilisation d'un algo minimax et de coupes
 /// Alpha-Beta.
 // Jean Charles, 19/05/2011.
 
@@ -418,14 +387,14 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 	return coup;
 }
 
-/// <summary> Position a partir de laquelle on commence à jouer </summary>
+/// <summary> Position a partir de laquelle on commence ï¿½ jouer </summary>
 void position_debut(Position* pos) {
 	for(int i=0;i<6;i++){
 		pos->_Cases[0][i]=4;
 		pos->_Cases[1][i]=4;
 	}
 	pos->_PionsPris[0]=pos->_PionsPris[1]=0;
-	
+
 	/*
 	pos->_Cases[1][5]=6;
 	pos->_Cases[1][4]=0;
@@ -489,7 +458,7 @@ int main(int argc, char* argv[]){
 	int fin=0;
 	bool gagne=false;
 
-	
+
 	while(!fin){
 		int coup;
 		if (joueur == 0){
@@ -498,7 +467,7 @@ int main(int argc, char* argv[]){
 			if (!gagne && VALMM==48){gagne=true;}
 			printf("Noeuds traites: %d valeur minimax:%d\n", NUM_MINIMAX, VALMM);
 			int cj;
-#if defined(HAUT)			
+#if defined(HAUT)
 			if (coup == 0) cj=12;
 			if (coup == 1) cj=11;
 			if (coup == 2) cj=10;
@@ -551,6 +520,7 @@ int main(int argc, char* argv[]){
 }
 */
 int main(int argc, char* argv[]){
+	auto t1 = Clock::now();
 	CaseSuivante cs;
 	cs._Cnext[0][0]=0;
 	cs._Jnext[0][0]=1;
@@ -594,16 +564,12 @@ int main(int argc, char* argv[]){
 	//printf("C'est parti!\n");
 	int fin=0;
 	bool gagne=false;
-	Stopwatch sw;
 	int numeroCoup = 1;
 	while(!fin){
 		int coup;
 		if (joueur == 0){ // l'ordi JOUE
 //			coup=decision(&cs,&pos,10); // ATTENTION C'est LA PROFONDEUR MAX
-			sw.start();
 			coup=decisionAB(&cs,&pos,17,gagne); // ATTENTION C'est LA PROFONDEUR MAX 11
-			sw.stop();
-			printf("%d:%lld\n", numeroCoup++, sw.elapsed_ms());
 			if (!gagne && VALMM==48){gagne=true;}
 //			if (!gagne && VALMM >= 48) { gagne = true; }
 			//printf("Noeuds traites: %d valeur minimax:%d\n", NUM_MINIMAX, VALMM);
@@ -652,9 +618,11 @@ int main(int argc, char* argv[]){
 		joueur = !joueur;
 	}
 	//printf("Fin de la partie!\n");
+    auto t2 = Clock::now();
+		std::cout << std::chrono::duration_cast< std::chrono::nanoseconds>(t2 - t1).count() << std::endl;
 }
 
-// REMARQUE : Une fois que l'on a trouvé un chemin gagnant a coup sur il faut le prendre et ne pas laisser le systeme en calculer un autre
+// REMARQUE : Une fois que l'on a trouvï¿½ un chemin gagnant a coup sur il faut le prendre et ne pas laisser le systeme en calculer un autre
 // car dans ce cas il peut changer d'avis et en fait faire ces cycles !!!
 // TODO : il faut implementer cela ici pour eviter ce mauvais comportement
 
