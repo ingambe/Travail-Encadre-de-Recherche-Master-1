@@ -24,164 +24,164 @@ clang++ minimax_graph.cpp -std=c++11 -O3 -o bin/clang_O3.out
 #GCC
 
 #IA COMMENCE
-echo "" > output/gcc/ia_commence/no_option/p1_j2.txt
-echo "" > output/gcc/ia_commence/O1/p1_j2.txt
-echo "" > output/gcc/ia_commence/O2/p1_j2.txt
-echo "" > output/gcc/ia_commence/O3/p1_j2.txt
+echo -n > output/gcc/ia_commence/no_option/p1_j2.txt
+echo -n > output/gcc/ia_commence/O1/p1_j2.txt
+echo -n > output/gcc/ia_commence/O2/p1_j2.txt
+echo -n > output/gcc/ia_commence/O3/p1_j2.txt
 
-echo "" > output/gcc/ia_commence/no_option/p2_j2.txt
-echo "" > output/gcc/ia_commence/O1/p2_j2.txt
-echo "" > output/gcc/ia_commence/O2/p2_j2.txt
-echo "" > output/gcc/ia_commence/O3/p2_j2.txt
+echo -n > output/gcc/ia_commence/no_option/p2_j2.txt
+echo -n > output/gcc/ia_commence/O1/p2_j2.txt
+echo -n > output/gcc/ia_commence/O2/p2_j2.txt
+echo -n > output/gcc/ia_commence/O3/p2_j2.txt
 
-echo "" > output/gcc/ia_commence/no_option/p3_j2.txt
-echo "" > output/gcc/ia_commence/O1/p3_j2.txt
-echo "" > output/gcc/ia_commence/O2/p3_j2.txt
-echo "" > output/gcc/ia_commence/O3/p3_j2.txt
+echo -n > output/gcc/ia_commence/no_option/p3_j2.txt
+echo -n > output/gcc/ia_commence/O1/p3_j2.txt
+echo -n > output/gcc/ia_commence/O2/p3_j2.txt
+echo -n > output/gcc/ia_commence/O3/p3_j2.txt
 
-echo "" > output/gcc/ia_commence/no_option/p4_j2.txt
-echo "" > output/gcc/ia_commence/O1/p4_j2.txt
-echo "" > output/gcc/ia_commence/O2/p4_j2.txt
-echo "" > output/gcc/ia_commence/O3/p4_j2.txt
+echo -n > output/gcc/ia_commence/no_option/p4_j2.txt
+echo -n > output/gcc/ia_commence/O1/p4_j2.txt
+echo -n > output/gcc/ia_commence/O2/p4_j2.txt
+echo -n > output/gcc/ia_commence/O3/p4_j2.txt
 
-echo "" > output/gcc/ia_commence/no_option/p5_j2.txt
-echo "" > output/gcc/ia_commence/O1/p5_j2.txt
-echo "" > output/gcc/ia_commence/O2/p5_j2.txt
-echo "" > output/gcc/ia_commence/O3/p5_j2.txt
+echo -n > output/gcc/ia_commence/no_option/p5_j2.txt
+echo -n > output/gcc/ia_commence/O1/p5_j2.txt
+echo -n > output/gcc/ia_commence/O2/p5_j2.txt
+echo -n > output/gcc/ia_commence/O3/p5_j2.txt
 
 #JOUEUR COMMENCE
-echo "" > output/gcc/joueur_commence/no_option/p1_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p1_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p1_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p1_j1.txt
+echo -n > output/gcc/joueur_commence/no_option/p1_j1.txt
+echo -n > output/gcc/joueur_commence/O1/p1_j1.txt
+echo -n > output/gcc/joueur_commence/O2/p1_j1.txt
+echo -n > output/gcc/joueur_commence/O3/p1_j1.txt
 
-echo "" > output/gcc/joueur_commence/no_option/p2_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p2_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p2_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p2_j1.txt
+echo -n > output/gcc/joueur_commence/no_option/p2_j1.txt
+echo -n > output/gcc/joueur_commence/O1/p2_j1.txt
+echo -n > output/gcc/joueur_commence/O2/p2_j1.txt
+echo -n > output/gcc/joueur_commence/O3/p2_j1.txt
 
-echo "" > output/gcc/joueur_commence/no_option/p3_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p3_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p3_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p3_j1.txt
+echo -n > output/gcc/joueur_commence/no_option/p3_j1.txt
+echo -n > output/gcc/joueur_commence/O1/p3_j1.txt
+echo -n > output/gcc/joueur_commence/O2/p3_j1.txt
+echo -n > output/gcc/joueur_commence/O3/p3_j1.txt
 
-echo "" > output/gcc/joueur_commence/no_option/p4_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p4_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p4_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p4_j1.txt
+echo -n > output/gcc/joueur_commence/no_option/p4_j1.txt
+echo -n > output/gcc/joueur_commence/O1/p4_j1.txt
+echo -n > output/gcc/joueur_commence/O2/p4_j1.txt
+echo -n > output/gcc/joueur_commence/O3/p4_j1.txt
 
-echo "" > output/gcc/joueur_commence/no_option/p5_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p5_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p5_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p5_j1.txt
+echo -n > output/gcc/joueur_commence/no_option/p5_j1.txt
+echo -n > output/gcc/joueur_commence/O1/p5_j1.txt
+echo -n > output/gcc/joueur_commence/O2/p5_j1.txt
+echo -n > output/gcc/joueur_commence/O3/p5_j1.txt
 
 #INTEL
 
 #IA COMMENCE
-echo "" > output/intel/ia_commence/no_option/p1_j2.txt
-echo "" > output/intel/ia_commence/O1/p1_j2.txt
-echo "" > output/intel/ia_commence/O2/p1_j2.txt
-echo "" > output/intel/ia_commence/O3/p1_j2.txt
+echo -n > output/intel/ia_commence/no_option/p1_j2.txt
+echo -n > output/intel/ia_commence/O1/p1_j2.txt
+echo -n > output/intel/ia_commence/O2/p1_j2.txt
+echo -n > output/intel/ia_commence/O3/p1_j2.txt
 
-echo "" > output/intel/ia_commence/no_option/p2_j2.txt
-echo "" > output/intel/ia_commence/O1/p2_j2.txt
-echo "" > output/intel/ia_commence/O2/p2_j2.txt
-echo "" > output/intel/ia_commence/O3/p2_j2.txt
+echo -n > output/intel/ia_commence/no_option/p2_j2.txt
+echo -n > output/intel/ia_commence/O1/p2_j2.txt
+echo -n > output/intel/ia_commence/O2/p2_j2.txt
+echo -n > output/intel/ia_commence/O3/p2_j2.txt
 
-echo "" > output/intel/ia_commence/no_option/p3_j2.txt
-echo "" > output/intel/ia_commence/O1/p3_j2.txt
-echo "" > output/intel/ia_commence/O2/p3_j2.txt
-echo "" > output/intel/ia_commence/O3/p3_j2.txt
+echo -n > output/intel/ia_commence/no_option/p3_j2.txt
+echo -n > output/intel/ia_commence/O1/p3_j2.txt
+echo -n > output/intel/ia_commence/O2/p3_j2.txt
+echo -n > output/intel/ia_commence/O3/p3_j2.txt
 
-echo "" > output/intel/ia_commence/no_option/p4_j2.txt
-echo "" > output/intel/ia_commence/O1/p4_j2.txt
-echo "" > output/intel/ia_commence/O2/p4_j2.txt
-echo "" > output/intel/ia_commence/O3/p4_j2.txt
+echo -n > output/intel/ia_commence/no_option/p4_j2.txt
+echo -n > output/intel/ia_commence/O1/p4_j2.txt
+echo -n > output/intel/ia_commence/O2/p4_j2.txt
+echo -n > output/intel/ia_commence/O3/p4_j2.txt
 
-echo "" > output/intel/ia_commence/no_option/p5_j2.txt
-echo "" > output/intel/ia_commence/O1/p5_j2.txt
-echo "" > output/intel/ia_commence/O2/p5_j2.txt
-echo "" > output/intel/ia_commence/O3/p5_j2.txt
+echo -n > output/intel/ia_commence/no_option/p5_j2.txt
+echo -n > output/intel/ia_commence/O1/p5_j2.txt
+echo -n > output/intel/ia_commence/O2/p5_j2.txt
+echo -n > output/intel/ia_commence/O3/p5_j2.txt
 
 #JOUEUR COMMENCE
-echo "" > output/intel/joueur_commence/no_option/p1_j1.txt
-echo "" > output/intel/joueur_commence/O1/p1_j1.txt
-echo "" > output/intel/joueur_commence/O2/p1_j1.txt
-echo "" > output/intel/joueur_commence/O3/p1_j1.txt
+echo -n > output/intel/joueur_commence/no_option/p1_j1.txt
+echo -n > output/intel/joueur_commence/O1/p1_j1.txt
+echo -n > output/intel/joueur_commence/O2/p1_j1.txt
+echo -n > output/intel/joueur_commence/O3/p1_j1.txt
 
-echo "" > output/intel/joueur_commence/no_option/p2_j1.txt
-echo "" > output/intel/joueur_commence/O1/p2_j1.txt
-echo "" > output/intel/joueur_commence/O2/p2_j1.txt
-echo "" > output/intel/joueur_commence/O3/p2_j1.txt
+echo -n > output/intel/joueur_commence/no_option/p2_j1.txt
+echo -n > output/intel/joueur_commence/O1/p2_j1.txt
+echo -n > output/intel/joueur_commence/O2/p2_j1.txt
+echo -n > output/intel/joueur_commence/O3/p2_j1.txt
 
-echo "" > output/intel/joueur_commence/no_option/p3_j1.txt
-echo "" > output/intel/joueur_commence/O1/p3_j1.txt
-echo "" > output/intel/joueur_commence/O2/p3_j1.txt
-echo "" > output/intel/joueur_commence/O3/p3_j1.txt
+echo -n > output/intel/joueur_commence/no_option/p3_j1.txt
+echo -n > output/intel/joueur_commence/O1/p3_j1.txt
+echo -n > output/intel/joueur_commence/O2/p3_j1.txt
+echo -n > output/intel/joueur_commence/O3/p3_j1.txt
 
-echo "" > output/intel/joueur_commence/no_option/p4_j1.txt
-echo "" > output/intel/joueur_commence/O1/p4_j1.txt
-echo "" > output/intel/joueur_commence/O2/p4_j1.txt
-echo "" > output/intel/joueur_commence/O3/p4_j1.txt
+echo -n > output/intel/joueur_commence/no_option/p4_j1.txt
+echo -n > output/intel/joueur_commence/O1/p4_j1.txt
+echo -n > output/intel/joueur_commence/O2/p4_j1.txt
+echo -n > output/intel/joueur_commence/O3/p4_j1.txt
 
-echo "" > output/intel/joueur_commence/no_option/p5_j1.txt
-echo "" > output/intel/joueur_commence/O1/p5_j1.txt
-echo "" > output/intel/joueur_commence/O2/p5_j1.txt
-echo "" > output/intel/joueur_commence/O3/p5_j1.txt
+echo -n > output/intel/joueur_commence/no_option/p5_j1.txt
+echo -n > output/intel/joueur_commence/O1/p5_j1.txt
+echo -n > output/intel/joueur_commence/O2/p5_j1.txt
+echo -n > output/intel/joueur_commence/O3/p5_j1.txt
 
 #CLANG
 
 #IA COMMENCE
-echo "" > output/clang/ia_commence/no_option/p1_j2.txt
-echo "" > output/clang/ia_commence/O1/p1_j2.txt
-echo "" > output/clang/ia_commence/O2/p1_j2.txt
-echo "" > output/clang/ia_commence/O3/p1_j2.txt
+echo -n > output/clang/ia_commence/no_option/p1_j2.txt
+echo -n > output/clang/ia_commence/O1/p1_j2.txt
+echo -n > output/clang/ia_commence/O2/p1_j2.txt
+echo -n > output/clang/ia_commence/O3/p1_j2.txt
 
-echo "" > output/clang/ia_commence/no_option/p2_j2.txt
-echo "" > output/clang/ia_commence/O1/p2_j2.txt
-echo "" > output/clang/ia_commence/O2/p2_j2.txt
-echo "" > output/clang/ia_commence/O3/p2_j2.txt
+echo -n > output/clang/ia_commence/no_option/p2_j2.txt
+echo -n > output/clang/ia_commence/O1/p2_j2.txt
+echo -n > output/clang/ia_commence/O2/p2_j2.txt
+echo -n > output/clang/ia_commence/O3/p2_j2.txt
 
-echo "" > output/clang/ia_commence/no_option/p3_j2.txt
-echo "" > output/clang/ia_commence/O1/p3_j2.txt
-echo "" > output/clang/ia_commence/O2/p3_j2.txt
-echo "" > output/clang/ia_commence/O3/p3_j2.txt
+echo -n > output/clang/ia_commence/no_option/p3_j2.txt
+echo -n > output/clang/ia_commence/O1/p3_j2.txt
+echo -n > output/clang/ia_commence/O2/p3_j2.txt
+echo -n > output/clang/ia_commence/O3/p3_j2.txt
 
-echo "" > output/clang/ia_commence/no_option/p4_j2.txt
-echo "" > output/clang/ia_commence/O1/p4_j2.txt
-echo "" > output/clang/ia_commence/O2/p4_j2.txt
-echo "" > output/clang/ia_commence/O3/p4_j2.txt
+echo -n > output/clang/ia_commence/no_option/p4_j2.txt
+echo -n > output/clang/ia_commence/O1/p4_j2.txt
+echo -n > output/clang/ia_commence/O2/p4_j2.txt
+echo -n > output/clang/ia_commence/O3/p4_j2.txt
 
-echo "" > output/clang/ia_commence/no_option/p5_j2.txt
-echo "" > output/clang/ia_commence/O1/p5_j2.txt
-echo "" > output/clang/ia_commence/O2/p5_j2.txt
-echo "" > output/clang/ia_commence/O3/p5_j2.txt
+echo -n > output/clang/ia_commence/no_option/p5_j2.txt
+echo -n > output/clang/ia_commence/O1/p5_j2.txt
+echo -n > output/clang/ia_commence/O2/p5_j2.txt
+echo -n > output/clang/ia_commence/O3/p5_j2.txt
 
 #JOUEUR COMMENCE
-echo "" > output/clang/joueur_commence/no_option/p1_j1.txt
-echo "" > output/clang/joueur_commence/O1/p1_j1.txt
-echo "" > output/clang/joueur_commence/O2/p1_j1.txt
-echo "" > output/clang/joueur_commence/O3/p1_j1.txt
+echo -n > output/clang/joueur_commence/no_option/p1_j1.txt
+echo -n > output/clang/joueur_commence/O1/p1_j1.txt
+echo -n > output/clang/joueur_commence/O2/p1_j1.txt
+echo -n > output/clang/joueur_commence/O3/p1_j1.txt
 
-echo "" > output/clang/joueur_commence/no_option/p2_j1.txt
-echo "" > output/clang/joueur_commence/O1/p2_j1.txt
-echo "" > output/clang/joueur_commence/O2/p2_j1.txt
-echo "" > output/clang/joueur_commence/O3/p2_j1.txt
+echo -n > output/clang/joueur_commence/no_option/p2_j1.txt
+echo -n > output/clang/joueur_commence/O1/p2_j1.txt
+echo -n > output/clang/joueur_commence/O2/p2_j1.txt
+echo -n > output/clang/joueur_commence/O3/p2_j1.txt
 
-echo "" > output/clang/joueur_commence/no_option/p3_j1.txt
-echo "" > output/clang/joueur_commence/O1/p3_j1.txt
-echo "" > output/clang/joueur_commence/O2/p3_j1.txt
-echo "" > output/clang/joueur_commence/O3/p3_j1.txt
+echo -n > output/clang/joueur_commence/no_option/p3_j1.txt
+echo -n > output/clang/joueur_commence/O1/p3_j1.txt
+echo -n > output/clang/joueur_commence/O2/p3_j1.txt
+echo -n > output/clang/joueur_commence/O3/p3_j1.txt
 
-echo "" > output/clang/joueur_commence/no_option/p4_j1.txt
-echo "" > output/clang/joueur_commence/O1/p4_j1.txt
-echo "" > output/clang/joueur_commence/O2/p4_j1.txt
-echo "" > output/clang/joueur_commence/O3/p4_j1.txt
+echo -n > output/clang/joueur_commence/no_option/p4_j1.txt
+echo -n > output/clang/joueur_commence/O1/p4_j1.txt
+echo -n > output/clang/joueur_commence/O2/p4_j1.txt
+echo -n > output/clang/joueur_commence/O3/p4_j1.txt
 
-echo "" > output/clang/joueur_commence/no_option/p5_j1.txt
-echo "" > output/clang/joueur_commence/O1/p5_j1.txt
-echo "" > output/clang/joueur_commence/O2/p5_j1.txt
-echo "" > output/clang/joueur_commence/O3/p5_j1.txt
+echo -n > output/clang/joueur_commence/no_option/p5_j1.txt
+echo -n > output/clang/joueur_commence/O1/p5_j1.txt
+echo -n > output/clang/joueur_commence/O2/p5_j1.txt
+echo -n > output/clang/joueur_commence/O3/p5_j1.txt
 
 
 
