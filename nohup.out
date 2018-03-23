@@ -1,0 +1,11 @@
+./script_generation_graph.sh: ligne 11: icpc : commande introuvable
+./script_generation_graph.sh: ligne 12: icpc : commande introuvable
+./script_generation_graph.sh: ligne 13: icpc : commande introuvable
+./script_generation_graph.sh: ligne 14: icpc : commande introuvable
+fin de compilation \n
+fin de creation fichier de sortie \n
+0/10 \n
+i : 1 \n
+GCC \n
+./script_generation_graph.sh : ligne 222 :   702 Fini                    more input/ia_commence/p1_j2.txt
+       703 Erreur de segmentation  (core dumped)| ./bin/gcc_no_option.out >> output/gcc/ia_commence/no_option/p1_j2.txt
