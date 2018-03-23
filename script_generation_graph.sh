@@ -33,60 +33,60 @@ mkdir -p output/gcc/ia_commence/O1
 mkdir -p output/gcc/ia_commence/O2
 mkdir -p output/gcc/ia_commence/O3
 
-echo "" > output/gcc/ia_commence/no_option/p1_j2.txt
-echo "" > output/gcc/ia_commence/O1/p1_j2.txt
-echo "" > output/gcc/ia_commence/O2/p1_j2.txt
-echo "" > output/gcc/ia_commence/O3/p1_j2.txt
+echo "# I T" > output/gcc/ia_commence/no_option/p1_j2.txt
+echo "# I T" > output/gcc/ia_commence/O1/p1_j2.txt
+echo "# I T" > output/gcc/ia_commence/O2/p1_j2.txt
+echo "# I T" > output/gcc/ia_commence/O3/p1_j2.txt
 
-echo "" > output/gcc/ia_commence/no_option/p2_j2.txt
-echo "" > output/gcc/ia_commence/O1/p2_j2.txt
-echo "" > output/gcc/ia_commence/O2/p2_j2.txt
-echo "" > output/gcc/ia_commence/O3/p2_j2.txt
+echo "# I T" > output/gcc/ia_commence/no_option/p2_j2.txt
+echo "# I T" > output/gcc/ia_commence/O1/p2_j2.txt
+echo "# I T" > output/gcc/ia_commence/O2/p2_j2.txt
+echo "# I T" > output/gcc/ia_commence/O3/p2_j2.txt
 
-echo "" > output/gcc/ia_commence/no_option/p3_j2.txt
-echo "" > output/gcc/ia_commence/O1/p3_j2.txt
-echo "" > output/gcc/ia_commence/O2/p3_j2.txt
-echo "" > output/gcc/ia_commence/O3/p3_j2.txt
+echo "# I T" > output/gcc/ia_commence/no_option/p3_j2.txt
+echo "# I T" > output/gcc/ia_commence/O1/p3_j2.txt
+echo "# I T" > output/gcc/ia_commence/O2/p3_j2.txt
+echo "# I T" > output/gcc/ia_commence/O3/p3_j2.txt
 
-echo "" > output/gcc/ia_commence/no_option/p4_j2.txt
-echo "" > output/gcc/ia_commence/O1/p4_j2.txt
-echo "" > output/gcc/ia_commence/O2/p4_j2.txt
-echo "" > output/gcc/ia_commence/O3/p4_j2.txt
+echo "# I T" > output/gcc/ia_commence/no_option/p4_j2.txt
+echo "# I T" > output/gcc/ia_commence/O1/p4_j2.txt
+echo "# I T" > output/gcc/ia_commence/O2/p4_j2.txt
+echo "# I T" > output/gcc/ia_commence/O3/p4_j2.txt
 
-echo "" > output/gcc/ia_commence/no_option/p5_j2.txt
-echo "" > output/gcc/ia_commence/O1/p5_j2.txt
-echo "" > output/gcc/ia_commence/O2/p5_j2.txt
-echo "" > output/gcc/ia_commence/O3/p5_j2.txt
+echo "# I T" > output/gcc/ia_commence/no_option/p5_j2.txt
+echo "# I T" > output/gcc/ia_commence/O1/p5_j2.txt
+echo "# I T" > output/gcc/ia_commence/O2/p5_j2.txt
+echo "# I T" > output/gcc/ia_commence/O3/p5_j2.txt
 
 #JOUEUR COMMENCE
 mkdir -p output/gcc/joueur_commence/no_option
 mkdir -p output/gcc/joueur_commence/O1
 mkdir -p output/gcc/joueur_commence/O2
 mkdir -p output/gcc/joueur_commence/O3
-echo "" > output/gcc/joueur_commence/no_option/p1_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p1_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p1_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p1_j1.txt
+echo "# I T" > output/gcc/joueur_commence/no_option/p1_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O1/p1_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O2/p1_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O3/p1_j1.txt
 
-echo "" > output/gcc/joueur_commence/no_option/p2_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p2_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p2_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p2_j1.txt
+echo "# I T" > output/gcc/joueur_commence/no_option/p2_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O1/p2_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O2/p2_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O3/p2_j1.txt
 
-echo "" > output/gcc/joueur_commence/no_option/p3_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p3_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p3_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p3_j1.txt
+echo "# I T" > output/gcc/joueur_commence/no_option/p3_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O1/p3_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O2/p3_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O3/p3_j1.txt
 
-echo "" > output/gcc/joueur_commence/no_option/p4_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p4_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p4_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p4_j1.txt
+echo "# I T" > output/gcc/joueur_commence/no_option/p4_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O1/p4_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O2/p4_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O3/p4_j1.txt
 
-echo "" > output/gcc/joueur_commence/no_option/p5_j1.txt
-echo "" > output/gcc/joueur_commence/O1/p5_j1.txt
-echo "" > output/gcc/joueur_commence/O2/p5_j1.txt
-echo "" > output/gcc/joueur_commence/O3/p5_j1.txt
+echo "# I T" > output/gcc/joueur_commence/no_option/p5_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O1/p5_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O2/p5_j1.txt
+echo "# I T" > output/gcc/joueur_commence/O3/p5_j1.txt
 
 #INTEL
 mkdir -p output/intel
@@ -96,60 +96,60 @@ mkdir -p output/intel/ia_commence/no_option
 mkdir -p output/intel/ia_commence/O1
 mkdir -p output/intel/ia_commence/O2
 mkdir -p output/intel/ia_commence/O3
-echo "" > output/intel/ia_commence/no_option/p1_j2.txt
-echo "" > output/intel/ia_commence/O1/p1_j2.txt
-echo "" > output/intel/ia_commence/O2/p1_j2.txt
-echo "" > output/intel/ia_commence/O3/p1_j2.txt
+echo "# I T" > output/intel/ia_commence/no_option/p1_j2.txt
+echo "# I T" > output/intel/ia_commence/O1/p1_j2.txt
+echo "# I T" > output/intel/ia_commence/O2/p1_j2.txt
+echo "# I T" > output/intel/ia_commence/O3/p1_j2.txt
 
-echo "" > output/intel/ia_commence/no_option/p2_j2.txt
-echo "" > output/intel/ia_commence/O1/p2_j2.txt
-echo "" > output/intel/ia_commence/O2/p2_j2.txt
-echo "" > output/intel/ia_commence/O3/p2_j2.txt
+echo "# I T" > output/intel/ia_commence/no_option/p2_j2.txt
+echo "# I T" > output/intel/ia_commence/O1/p2_j2.txt
+echo "# I T" > output/intel/ia_commence/O2/p2_j2.txt
+echo "# I T" > output/intel/ia_commence/O3/p2_j2.txt
 
-echo "" > output/intel/ia_commence/no_option/p3_j2.txt
-echo "" > output/intel/ia_commence/O1/p3_j2.txt
-echo "" > output/intel/ia_commence/O2/p3_j2.txt
-echo "" > output/intel/ia_commence/O3/p3_j2.txt
+echo "# I T" > output/intel/ia_commence/no_option/p3_j2.txt
+echo "# I T" > output/intel/ia_commence/O1/p3_j2.txt
+echo "# I T" > output/intel/ia_commence/O2/p3_j2.txt
+echo "# I T" > output/intel/ia_commence/O3/p3_j2.txt
 
-echo "" > output/intel/ia_commence/no_option/p4_j2.txt
-echo "" > output/intel/ia_commence/O1/p4_j2.txt
-echo "" > output/intel/ia_commence/O2/p4_j2.txt
-echo "" > output/intel/ia_commence/O3/p4_j2.txt
+echo "# I T" > output/intel/ia_commence/no_option/p4_j2.txt
+echo "# I T" > output/intel/ia_commence/O1/p4_j2.txt
+echo "# I T" > output/intel/ia_commence/O2/p4_j2.txt
+echo "# I T" > output/intel/ia_commence/O3/p4_j2.txt
 
-echo "" > output/intel/ia_commence/no_option/p5_j2.txt
-echo "" > output/intel/ia_commence/O1/p5_j2.txt
-echo "" > output/intel/ia_commence/O2/p5_j2.txt
-echo "" > output/intel/ia_commence/O3/p5_j2.txt
+echo "# I T" > output/intel/ia_commence/no_option/p5_j2.txt
+echo "# I T" > output/intel/ia_commence/O1/p5_j2.txt
+echo "# I T" > output/intel/ia_commence/O2/p5_j2.txt
+echo "# I T" > output/intel/ia_commence/O3/p5_j2.txt
 
 #JOUEUR COMMENCE
 mkdir -p output/intel/joueur_commence/no_option
 mkdir -p output/intel/joueur_commence/O1
 mkdir -p output/intel/joueur_commence/O2
 mkdir -p output/intel/joueur_commence/O3
-echo "" > output/intel/joueur_commence/no_option/p1_j1.txt
-echo "" > output/intel/joueur_commence/O1/p1_j1.txt
-echo "" > output/intel/joueur_commence/O2/p1_j1.txt
-echo "" > output/intel/joueur_commence/O3/p1_j1.txt
+echo "# I T" > output/intel/joueur_commence/no_option/p1_j1.txt
+echo "# I T" > output/intel/joueur_commence/O1/p1_j1.txt
+echo "# I T" > output/intel/joueur_commence/O2/p1_j1.txt
+echo "# I T" > output/intel/joueur_commence/O3/p1_j1.txt
 
-echo "" > output/intel/joueur_commence/no_option/p2_j1.txt
-echo "" > output/intel/joueur_commence/O1/p2_j1.txt
-echo "" > output/intel/joueur_commence/O2/p2_j1.txt
-echo "" > output/intel/joueur_commence/O3/p2_j1.txt
+echo "# I T" > output/intel/joueur_commence/no_option/p2_j1.txt
+echo "# I T" > output/intel/joueur_commence/O1/p2_j1.txt
+echo "# I T" > output/intel/joueur_commence/O2/p2_j1.txt
+echo "# I T" > output/intel/joueur_commence/O3/p2_j1.txt
 
-echo "" > output/intel/joueur_commence/no_option/p3_j1.txt
-echo "" > output/intel/joueur_commence/O1/p3_j1.txt
-echo "" > output/intel/joueur_commence/O2/p3_j1.txt
-echo "" > output/intel/joueur_commence/O3/p3_j1.txt
+echo "# I T" > output/intel/joueur_commence/no_option/p3_j1.txt
+echo "# I T" > output/intel/joueur_commence/O1/p3_j1.txt
+echo "# I T" > output/intel/joueur_commence/O2/p3_j1.txt
+echo "# I T" > output/intel/joueur_commence/O3/p3_j1.txt
 
-echo "" > output/intel/joueur_commence/no_option/p4_j1.txt
-echo "" > output/intel/joueur_commence/O1/p4_j1.txt
-echo "" > output/intel/joueur_commence/O2/p4_j1.txt
-echo "" > output/intel/joueur_commence/O3/p4_j1.txt
+echo "# I T" > output/intel/joueur_commence/no_option/p4_j1.txt
+echo "# I T" > output/intel/joueur_commence/O1/p4_j1.txt
+echo "# I T" > output/intel/joueur_commence/O2/p4_j1.txt
+echo "# I T" > output/intel/joueur_commence/O3/p4_j1.txt
 
-echo "" > output/intel/joueur_commence/no_option/p5_j1.txt
-echo "" > output/intel/joueur_commence/O1/p5_j1.txt
-echo "" > output/intel/joueur_commence/O2/p5_j1.txt
-echo "" > output/intel/joueur_commence/O3/p5_j1.txt
+echo "# I T" > output/intel/joueur_commence/no_option/p5_j1.txt
+echo "# I T" > output/intel/joueur_commence/O1/p5_j1.txt
+echo "# I T" > output/intel/joueur_commence/O2/p5_j1.txt
+echo "# I T" > output/intel/joueur_commence/O3/p5_j1.txt
 
 #CLANG
 mkdir -p output/clang
@@ -159,60 +159,60 @@ mkdir -p output/clang/ia_commence/no_option
 mkdir -p output/clang/ia_commence/O1
 mkdir -p output/clang/ia_commence/O2
 mkdir -p output/clang/ia_commence/O3
-echo "" > output/clang/ia_commence/no_option/p1_j2.txt
-echo "" > output/clang/ia_commence/O1/p1_j2.txt
-echo "" > output/clang/ia_commence/O2/p1_j2.txt
-echo "" > output/clang/ia_commence/O3/p1_j2.txt
+echo "# I T" > output/clang/ia_commence/no_option/p1_j2.txt
+echo "# I T" > output/clang/ia_commence/O1/p1_j2.txt
+echo "# I T" > output/clang/ia_commence/O2/p1_j2.txt
+echo "# I T" > output/clang/ia_commence/O3/p1_j2.txt
 
-echo "" > output/clang/ia_commence/no_option/p2_j2.txt
-echo "" > output/clang/ia_commence/O1/p2_j2.txt
-echo "" > output/clang/ia_commence/O2/p2_j2.txt
-echo "" > output/clang/ia_commence/O3/p2_j2.txt
+echo "# I T" > output/clang/ia_commence/no_option/p2_j2.txt
+echo "# I T" > output/clang/ia_commence/O1/p2_j2.txt
+echo "# I T" > output/clang/ia_commence/O2/p2_j2.txt
+echo "# I T" > output/clang/ia_commence/O3/p2_j2.txt
 
-echo "" > output/clang/ia_commence/no_option/p3_j2.txt
-echo "" > output/clang/ia_commence/O1/p3_j2.txt
-echo "" > output/clang/ia_commence/O2/p3_j2.txt
-echo "" > output/clang/ia_commence/O3/p3_j2.txt
+echo "# I T" > output/clang/ia_commence/no_option/p3_j2.txt
+echo "# I T" > output/clang/ia_commence/O1/p3_j2.txt
+echo "# I T" > output/clang/ia_commence/O2/p3_j2.txt
+echo "# I T" > output/clang/ia_commence/O3/p3_j2.txt
 
-echo "" > output/clang/ia_commence/no_option/p4_j2.txt
-echo "" > output/clang/ia_commence/O1/p4_j2.txt
-echo "" > output/clang/ia_commence/O2/p4_j2.txt
-echo "" > output/clang/ia_commence/O3/p4_j2.txt
+echo "# I T" > output/clang/ia_commence/no_option/p4_j2.txt
+echo "# I T" > output/clang/ia_commence/O1/p4_j2.txt
+echo "# I T" > output/clang/ia_commence/O2/p4_j2.txt
+echo "# I T" > output/clang/ia_commence/O3/p4_j2.txt
 
-echo "" > output/clang/ia_commence/no_option/p5_j2.txt
-echo "" > output/clang/ia_commence/O1/p5_j2.txt
-echo "" > output/clang/ia_commence/O2/p5_j2.txt
-echo "" > output/clang/ia_commence/O3/p5_j2.txt
+echo "# I T" > output/clang/ia_commence/no_option/p5_j2.txt
+echo "# I T" > output/clang/ia_commence/O1/p5_j2.txt
+echo "# I T" > output/clang/ia_commence/O2/p5_j2.txt
+echo "# I T" > output/clang/ia_commence/O3/p5_j2.txt
 
 #JOUEUR COMMENCE
 mkdir -p output/clang/joueur_commence/no_option
 mkdir -p output/clang/joueur_commence/O1
 mkdir -p output/clang/joueur_commence/O2
 mkdir -p output/clang/joueur_commence/O3
-echo "" > output/clang/joueur_commence/no_option/p1_j1.txt
-echo "" > output/clang/joueur_commence/O1/p1_j1.txt
-echo "" > output/clang/joueur_commence/O2/p1_j1.txt
-echo "" > output/clang/joueur_commence/O3/p1_j1.txt
+echo "# I T" > output/clang/joueur_commence/no_option/p1_j1.txt
+echo "# I T" > output/clang/joueur_commence/O1/p1_j1.txt
+echo "# I T" > output/clang/joueur_commence/O2/p1_j1.txt
+echo "# I T" > output/clang/joueur_commence/O3/p1_j1.txt
 
-echo "" > output/clang/joueur_commence/no_option/p2_j1.txt
-echo "" > output/clang/joueur_commence/O1/p2_j1.txt
-echo "" > output/clang/joueur_commence/O2/p2_j1.txt
-echo "" > output/clang/joueur_commence/O3/p2_j1.txt
+echo "# I T" > output/clang/joueur_commence/no_option/p2_j1.txt
+echo "# I T" > output/clang/joueur_commence/O1/p2_j1.txt
+echo "# I T" > output/clang/joueur_commence/O2/p2_j1.txt
+echo "# I T" > output/clang/joueur_commence/O3/p2_j1.txt
 
-echo "" > output/clang/joueur_commence/no_option/p3_j1.txt
-echo "" > output/clang/joueur_commence/O1/p3_j1.txt
-echo "" > output/clang/joueur_commence/O2/p3_j1.txt
-echo "" > output/clang/joueur_commence/O3/p3_j1.txt
+echo "# I T" > output/clang/joueur_commence/no_option/p3_j1.txt
+echo "# I T" > output/clang/joueur_commence/O1/p3_j1.txt
+echo "# I T" > output/clang/joueur_commence/O2/p3_j1.txt
+echo "# I T" > output/clang/joueur_commence/O3/p3_j1.txt
 
-echo "" > output/clang/joueur_commence/no_option/p4_j1.txt
-echo "" > output/clang/joueur_commence/O1/p4_j1.txt
-echo "" > output/clang/joueur_commence/O2/p4_j1.txt
-echo "" > output/clang/joueur_commence/O3/p4_j1.txt
+echo "# I T" > output/clang/joueur_commence/no_option/p4_j1.txt
+echo "# I T" > output/clang/joueur_commence/O1/p4_j1.txt
+echo "# I T" > output/clang/joueur_commence/O2/p4_j1.txt
+echo "# I T" > output/clang/joueur_commence/O3/p4_j1.txt
 
-echo "" > output/clang/joueur_commence/no_option/p5_j1.txt
-echo "" > output/clang/joueur_commence/O1/p5_j1.txt
-echo "" > output/clang/joueur_commence/O2/p5_j1.txt
-echo "" > output/clang/joueur_commence/O3/p5_j1.txt
+echo "# I T" > output/clang/joueur_commence/no_option/p5_j1.txt
+echo "# I T" > output/clang/joueur_commence/O1/p5_j1.txt
+echo "# I T" > output/clang/joueur_commence/O2/p5_j1.txt
+echo "# I T" > output/clang/joueur_commence/O3/p5_j1.txt
 
 echo "fin de creation fichier de sortie \n"
 
@@ -224,9 +224,13 @@ do
   echo "i : $i \n"
   echo "GCC \n"
   #GCC
+  printf "%d : " "$i" >> output/gcc/ia_commence/no_option/p1_j2.txt
   cat input/ia_commence/p1_j2.txt | ./bin/gcc_no_option.out >> output/gcc/ia_commence/no_option/p1_j2.txt
+  printf "%d : " "$i" >> output/gcc/ia_commence/O1/p1_j2.txt
   cat input/ia_commence/p1_j2.txt | ./bin/gcc_O1.out >> output/gcc/ia_commence/O1/p1_j2.txt
+  printf "%d : " "$i" >> output/gcc/ia_commence/O2/p1_j2.txt
   cat input/ia_commence/p1_j2.txt | ./bin/gcc_O2.out >> output/gcc/ia_commence/O2/p1_j2.txt
+  printf "%d : " "$i" >> output/gcc/ia_commence/O3/p1_j2.txt
   cat input/ia_commence/p1_j2.txt | ./bin/gcc_O3.out >> output/gcc/ia_commence/O3/p1_j2.txt
 
   echo "INTEL \n"
