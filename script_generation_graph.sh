@@ -199,7 +199,7 @@ echo "fin de creation fichier de sortie \n"
 echo "0/10 \n"
 
 #IA COMMENCE
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -226,7 +226,7 @@ done
 
 echo "1/10 \n"
 
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -253,7 +253,7 @@ done
 
 echo "2/10 \n"
 
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -280,7 +280,7 @@ done
 
 echo "3/10 \n"
 
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -307,7 +307,7 @@ done
 
 echo "4/10 \n"
 
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -335,7 +335,7 @@ done
 echo "5/10 \n"
 
 #JOUEUR COMMENCE
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -362,7 +362,7 @@ done
 
 echo "6/10 \n"
 
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -389,7 +389,7 @@ done
 
 echo "7/10 \n"
 
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -416,7 +416,7 @@ done
 
 echo "8/10 \n"
 
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -443,7 +443,7 @@ done
 
 echo "9/10 \n"
 
-for i in  `seq 1 35`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
