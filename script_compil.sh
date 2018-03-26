@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Permet d'avoir icpc dans son environnement
+source /opt/intel/parallel_studio_xe_2018/psxevars.sh
+
 #COMPILATION
 
 mkdir -p bin

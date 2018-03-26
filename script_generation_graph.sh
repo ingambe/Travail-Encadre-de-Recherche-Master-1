@@ -273,9 +273,9 @@ do
   echo "CLANG \n"
   #CLANG
   cat input/ia_commence/p3_j2.txt | ./bin/clang_no_option.out >> output/clang/ia_commence/no_option/p3_j2.txt
-  cat input/ia_commence/p3_j2.txt | ./bin/clang_O1.out >> output/clang/ia_commence/O1/no_option/p3_j2.txt
-  cat input/ia_commence/p3_j2.txt | ./bin/clang_O2.out >> output/clang/ia_commence/O2/no_option/p3_j2.txt
-  cat input/ia_commence/p3_j2.txt | ./bin/clang_O3.out >> output/clang/ia_commence/O3/no_option/p3_j2.txt
+  cat input/ia_commence/p3_j2.txt | ./bin/clang_O1.out >> output/clang/ia_commence/O1/p3_j2.txt
+  cat input/ia_commence/p3_j2.txt | ./bin/clang_O2.out >> output/clang/ia_commence/O2/p3_j2.txt
+  cat input/ia_commence/p3_j2.txt | ./bin/clang_O3.out >> output/clang/ia_commence/O3/p3_j2.txt
 done
 
 echo "3/10 \n"
@@ -300,9 +300,9 @@ do
   echo "CLANG \n"
   #CLANG
   cat input/ia_commence/p4_j2.txt | ./bin/clang_no_option.out >> output/clang/ia_commence/no_option/p4_j2.txt
-  cat input/ia_commence/p4_j2.txt | ./bin/clang_O1.out >> output/clang/ia_commence/O1/no_option/p4_j2.txt
-  cat input/ia_commence/p4_j2.txt | ./bin/clang_O2.out >> output/clang/ia_commence/O2/no_option/p4_j2.txt
-  cat input/ia_commence/p4_j2.txt | ./bin/clang_O3.out >> output/clang/ia_commence/O3/no_option/p4_j2.txt
+  cat input/ia_commence/p4_j2.txt | ./bin/clang_O1.out >> output/clang/ia_commence/O1/p4_j2.txt
+  cat input/ia_commence/p4_j2.txt | ./bin/clang_O2.out >> output/clang/ia_commence/O2/p4_j2.txt
+  cat input/ia_commence/p4_j2.txt | ./bin/clang_O3.out >> output/clang/ia_commence/O3/p4_j2.txt
 done
 
 echo "4/10 \n"
@@ -409,9 +409,9 @@ do
   echo "CLANG \n"
   #CLANG
   cat input/joueur_commence/p3_j1.txt | ./bin/clang_no_option.out >> output/clang/joueur_commence/no_option/p3_j1.txt
-  cat input/joueur_commence/p3_j1.txt | ./bin/clang_O1.out >> output/clang/joueur_commence/O1/no_option/p3_j1.txt
-  cat input/joueur_commence/p3_j1.txt | ./bin/clang_O2.out >> output/clang/joueur_commence/O2/no_option/p3_j1.txt
-  cat input/joueur_commence/p3_j1.txt | ./bin/clang_O3.out >> output/clang/joueur_commence/O3/no_option/p3_j1.txt
+  cat input/joueur_commence/p3_j1.txt | ./bin/clang_O1.out >> output/clang/joueur_commence/O1/p3_j1.txt
+  cat input/joueur_commence/p3_j1.txt | ./bin/clang_O2.out >> output/clang/joueur_commence/O2/p3_j1.txt
+  cat input/joueur_commence/p3_j1.txt | ./bin/clang_O3.out >> output/clang/joueur_commence/O3/p3_j1.txt
 done
 
 echo "8/10 \n"
@@ -436,9 +436,9 @@ do
   echo "CLANG \n"
   #CLANG
   cat input/joueur_commence/p4_j1.txt | ./bin/clang_no_option.out >> output/clang/joueur_commence/no_option/p4_j1.txt
-  cat input/joueur_commence/p4_j1.txt | ./bin/clang_O1.out >> output/clang/joueur_commence/O1/no_option/p4_j1.txt
-  cat input/joueur_commence/p4_j1.txt | ./bin/clang_O2.out >> output/clang/joueur_commence/O2/no_option/p4_j1.txt
-  cat input/joueur_commence/p4_j1.txt | ./bin/clang_O3.out >> output/clang/joueur_commence/O3/no_option/p4_j1.txt
+  cat input/joueur_commence/p4_j1.txt | ./bin/clang_O1.out >> output/clang/joueur_commence/O1/p4_j1.txt
+  cat input/joueur_commence/p4_j1.txt | ./bin/clang_O2.out >> output/clang/joueur_commence/O2/p4_j1.txt
+  cat input/joueur_commence/p4_j1.txt | ./bin/clang_O3.out >> output/clang/joueur_commence/O3/p4_j1.txt
 done
 
 echo "9/10 \n"
