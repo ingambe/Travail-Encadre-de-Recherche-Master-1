@@ -24,6 +24,9 @@ abline(v = 4.5, col = "gray")
 
 axis(1,cex.axis=0.8,at=1:8, labels=xLabels)
 
+mtext(side=1,text="GCC",line=2,at=2.5)
+mtext(side=1,text="INTEL",line=2,at=6.5)
+
 legend("topright", inset=.03, c("GCC","INTEL"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.4)
 
 title(main = "Compartif temps d'éxécution en fonction des options de compilation utilisé", ylab = "Temps (ms)", xlab="Options de compilation", line = NA)
