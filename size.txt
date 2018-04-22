@@ -1,0 +1,12 @@
+intel_O3 34296
+intel_O2 34296
+intel_O1 30208
+intel_no_option 25392
+gcc_O3 28328
+gcc_O2 20136
+gcc_O1 20088
+gcc_no_option 21104
+clang_O3 28104
+clang_O2 19912
+clang_O1 21232
+clang_no_option 20760

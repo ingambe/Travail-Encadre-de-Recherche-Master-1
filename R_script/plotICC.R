@@ -23,7 +23,7 @@ wvioplot(intel_0_p1_j2$V1,intel_1_p1_j2$V1,intel_2_p1_j2$V1,intel_3_p1_j2$V1, cl
 
 axis(1,cex.axis=0.8,at=1:4, labels=xLabels)
 
-legend("bottomleft", generalDetails, bty = "n", cex=1)
+legend("bottomleft", generalDetails, bty = "n", cex=0.5)
 
 legend("topright", inset=.03, c("INTEL"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.6)
 

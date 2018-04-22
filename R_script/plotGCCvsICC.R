@@ -41,7 +41,7 @@ mtext(side=1,text="INTEL",line=2,at=6.5)
 
 legend("topright", inset=.03, c("GCC","INTEL"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
 
-legend("bottomleft", generalDetails, bty = "n", cex=1)
+legend("bottomleft", generalDetails, bty = "n", cex=0.5)
 mtext(generalHardware, side=3, cex=1.5)
 
 title(main = "Compartif temps d'éxécution en fonction des options de compilation utilisé", ylab = "Temps (ms)", xlab="Options de compilation", line = NA)
