@@ -1,54 +1,13 @@
-debut creation fichiers de sortie
-
-fin de creation fichier de sortie 
-
-debug generation resultat 
-
-ia commence 
-
-i : 1 
-
-GCC 
-
-Segmentation fault (core dumped)
-debut creation fichiers de sortie
-
-fin de creation fichier de sortie 
-
-debug generation resultat 
-
-ia commence 
-
-i : 1 
-
-GCC 
-
-Segmentation fault (core dumped)
-Segmentation fault (core dumped)
-INTEL 
-
-debut creation fichiers de sortie
-
-fin de creation fichier de sortie 
-
-debug generation resultat 
-
-ia commence 
-
-i : 1 
-
-GCC 
-
-debut creation fichiers de sortie
-
-fin de creation fichier de sortie 
-
-debug generation resultat 
-
-ia commence 
-
-i : 1 
-
-GCC 
-
-Segmentation fault (core dumped)
+debut creation fichiers de sortie\n
+fin de creation fichier de sortie \n
+debug generation resultat \n
+ia commence \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+joueur commence\n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
