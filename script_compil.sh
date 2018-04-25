@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Permet d'avoir icpc dans son environnement
-source /opt/intel/parallel_studio_xe_2018/psxevars.sh
+source /opt/intel/parallel_studio_xe_2018/psxevars.sh intel64
 
 #COMPILATION
 
@@ -22,4 +22,3 @@ clang++ minimax_graph.cpp -std=c++11 -O2 -o bin/clang_O2.out
 clang++ minimax_graph.cpp -std=c++11 -O3 -o bin/clang_O3.out
 
 echo "fin de compilation \n"
-

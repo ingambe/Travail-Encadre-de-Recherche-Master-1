@@ -1,4 +1,4 @@
-library(wvioplot)
+library(easyGgplot2)
 setwd("/home/ingambe/ter/output/")
 
 xLabels<-c("O0", "O1", "O2","O3")
@@ -19,7 +19,13 @@ generalDetails<-c(expression(
 #cicada
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
-wvioplot(intel_0_p1_j2$V1,intel_1_p1_j2$V1,intel_2_p1_j2$V1,intel_3_p1_j2$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
+#plot(intel_0_p1_j2$V1,intel_1_p1_j2$V1,intel_2_p1_j2$V1,intel_3_p1_j2$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
+apply(intel_0_p1_j2, 20, function(x) x/1000)
+y <- c(median(intel_0_p1_j2$V1), median(intel_1_p1_j2$V1), median(intel_2_p1_j2$V1), median(intel_3_p1_j2$V1))
+barplot(y)
+#hist(intel_1_p1_j2)
+#hist(intel_2_p1_j2)
+#hist(intel_3_p1_j2)
 
 axis(1,cex.axis=0.8,at=1:4, labels=xLabels)
 

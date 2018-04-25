@@ -8,6 +8,8 @@
 
 typedef std::chrono::high_resolution_clock Clock;
 
+using namespace std;
+
 #define VALMAX 48
 
 // Ordre interne
@@ -16,7 +18,7 @@ typedef std::chrono::high_resolution_clock Clock;
 //j=1 5 4 3 2 1 0
 // voir tableau des next
 
-#include "minimax_graph.h"
+#include "minimax.h"
 
 void init_position(Position* pos) {
 	for(int i=0;i<6;i++){
@@ -201,7 +203,7 @@ int VALMM=0;
 
 void print_eval_coup(EvalCoup* ec, int nb){
 	for(int i=0;i<nb;i++){
-		std::cout << "coup: " << ec->_Coup[i] << " eval: " << ec->_Val[i] << std::endl;
+		cout << "coup: " << ec->_Coup[i] << " eval: " << ec->_Val[i] << endl;
 	}
 }
 
@@ -268,6 +270,7 @@ int decision(CaseSuivante* cs,Position* pos,int pmax){
 		if (k <= 3) pmax++;
 		if (k > 3) pmax +=2;
 	}
+	cout << "prof max: " << pmax << endl;
 	int alpha=-VALMAX-50;
 	int beta=VALMAX+50;
 	EvalCoup ec;
@@ -368,6 +371,7 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 		if (k <= 3) pmax++;
 		if (k > 3) pmax +=2;
 	}
+	cout << "prof max: " << pmax << endl;
 
 	int alpha=-VALMAX-50; // avant -1
 	int beta=VALMAX+50; // avant +1
@@ -395,10 +399,29 @@ void position_debut(Position* pos) {
 	}
 	pos->_PionsPris[0]=pos->_PionsPris[1]=0;
 
+	/*
+	pos->_Cases[1][5]=6;
+	pos->_Cases[1][4]=0;
+	pos->_Cases[1][3]=0;
+	pos->_Cases[1][2]=0;
+	pos->_Cases[1][1]=1;
+	pos->_Cases[1][0]=0;
+	pos->_Cases[0][5]=1;
+	pos->_Cases[0][4]=0;
+	pos->_Cases[0][3]=0;
+	pos->_Cases[0][2]=0;
+	pos->_Cases[0][1]=0;
+	pos->_Cases[0][0]=0;
+	pos->_PionsPris[1]=17;
+	pos->_PionsPris[0]=23;
+	*/
+
 }
+
+//#define HAUT
+
+/*
 int main(int argc, char* argv[]){
-	std::chrono::time_point<std::chrono::system_clock> start, end;
-	start = std::chrono::system_clock::now();
 	CaseSuivante cs;
 	cs._Cnext[0][0]=0;
 	cs._Jnext[0][0]=1;
@@ -429,20 +452,120 @@ int main(int argc, char* argv[]){
 	Position pos;
 	Position newPos;
 	position_debut(&pos);
-	/*
 	printf("DEBUT DU JEU AWALE\n");
 	printf("(0) l'ordinateur commence\n");
 	printf("(1) le joueur commence\n");
-	*/
 	int joueur;
-	if(scanf("%d",&joueur)){}
+	scanf("%d",&joueur);
+
+	printf("C'est parti!\n");
+	int fin=0;
+	bool gagne=false;
+
+
+	while(!fin){
+		int coup;
+		if (joueur == 0){
+//			coup=decision(&cs,&pos,10); // ATTENTION C'est LA PROFONDEUR MAX
+			coup=decisionAB(&cs,&pos,17,gagne); // ATTENTION C'est LA PROFONDEUR MAX 11
+			if (!gagne && VALMM==48){gagne=true;}
+			printf("Noeuds traites: %d valeur minimax:%d\n", NUM_MINIMAX, VALMM);
+			int cj;
+#if defined(HAUT)
+			if (coup == 0) cj=12;
+			if (coup == 1) cj=11;
+			if (coup == 2) cj=10;
+			if (coup == 3) cj=9;
+			if (coup == 4) cj=8;
+			if (coup == 5) cj=7;
+#endif
+#if defined(BAS)
+			if (coup == 5) cj=1;
+			if (coup == 4) cj=2;
+			if (coup == 3) cj=3;
+			if (coup == 2) cj=4;
+			if (coup == 1) cj=5;
+			if (coup == 0) cj=6;
+#endif
+			printf("COUP JOUE: %d\n",cj);
+			NUM_MINIMAX=0;
+			jouer_coup(&cs,&newPos,&pos,joueur,coup);
+			copier(&pos,&newPos);
+#if defined(HAUT)
+			print_position_ordi_haut(&pos);
+#endif
+#if defined(BAS)
+			print_position_ordi_bas(&pos);
+#endif
+		} else {
+#if defined(HAUT)
+			printf("selectionner une case 1 2 3 4 5 6\n");
+			scanf("%d",&coup);
+			coup--;
+#endif
+#if defined(BAS)
+			printf("selectionner une case 12 11 10 9 8 7\n");
+			scanf("%d",&coup);
+			coup -=7;
+#endif
+			jouer_coup(&cs,&newPos,&pos,joueur,coup);
+
+			copier(&pos,&newPos);
+#if defined(HAUT)
+			print_position_ordi_haut(&pos);
+#else
+			print_position_ordi_bas(&pos);
+#endif
+		}
+		fin=test_fin(&pos);
+		joueur = !joueur;
+	}
+	printf("Fin de la partie!\n");
+}
+*/
+int main(int argc, char* argv[]){
+	CaseSuivante cs;
+	cs._Cnext[0][0]=0;
+	cs._Jnext[0][0]=1;
+	cs._Cnext[0][1]=0;
+	cs._Jnext[0][1]=0;
+	cs._Cnext[0][2]=1;
+	cs._Jnext[0][2]=0;
+	cs._Cnext[0][3]=2;
+	cs._Jnext[0][3]=0;
+	cs._Cnext[0][4]=3;
+	cs._Jnext[0][4]=0;
+	cs._Cnext[0][5]=4;
+	cs._Jnext[0][5]=0;
+
+	cs._Cnext[1][0]=1;
+	cs._Jnext[1][0]=1;
+	cs._Cnext[1][1]=2;
+	cs._Jnext[1][1]=1;
+	cs._Cnext[1][2]=3;
+	cs._Jnext[1][2]=1;
+	cs._Cnext[1][3]=4;
+	cs._Jnext[1][3]=1;
+	cs._Cnext[1][4]=5;
+	cs._Jnext[1][4]=1;
+	cs._Cnext[1][5]=5;
+	cs._Jnext[1][5]=0;
+
+	Position pos;
+	Position newPos;
+	position_debut(&pos);
+	printf("DEBUT DU JEU AWALE\n");
+	printf("(0) l'ordinateur commence\n");
+	printf("(1) le joueur commence\n");
+	int joueur;
+	scanf("%d",&joueur);
 
 
 	int ordiCommence= (joueur==0)? 1 : 0;
-	//printf("C'est parti!\n");
+	printf("C'est parti!\n");
 	int fin=0;
 	bool gagne=false;
-	int numeroCoup = 1;
+
 	while(!fin){
 		int coup;
 		if (joueur == 0){ // l'ordi JOUE
@@ -450,32 +573,31 @@ int main(int argc, char* argv[]){
 			coup=decisionAB(&cs,&pos,17,gagne); // ATTENTION C'est LA PROFONDEUR MAX 11
 			if (!gagne && VALMM==48){gagne=true;}
 //			if (!gagne && VALMM >= 48) { gagne = true; }
-			//printf("Noeuds traites: %d valeur minimax:%d\n", NUM_MINIMAX, VALMM);
+			printf("Noeuds traites: %d valeur minimax:%d\n", NUM_MINIMAX, VALMM);
 			int cj;
 			if (ordiCommence){
 				cj=6-coup;
 			} else {
 				cj=12-coup;
 			}
-			//printf("COUP JOUE: %d\n",cj);
+			printf("COUP JOUE: %d\n",cj);
 			NUM_MINIMAX=0;
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 			copier(&pos,&newPos);
-			/*
+
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-			*/
 		} else { // le JOUEUR JOUE
 			if (ordiCommence){
-				//printf("selectionner une case 12 11 10 9 8 7\n");
-				if(scanf("%d",&coup)){}
+				printf("selectionner une case 12 11 10 9 8 7\n");
+				scanf("%d",&coup);
 				coup -=7;
 			} else {
-				//printf("selectionner une case 1 2 3 4 5 6\n");
-				if(scanf("%d",&coup)){}
+				printf("selectionner une case 1 2 3 4 5 6\n");
+				scanf("%d",&coup);
 				//coup=6-coup;
 				coup--;
 			}
@@ -484,21 +606,16 @@ int main(int argc, char* argv[]){
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 
 			copier(&pos,&newPos);
-			/*
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-			*/
 		}
 		fin=test_fin(&pos);
 		joueur = !joueur;
 	}
-		//printf("Fin de la partie!\n");
-    end = std::chrono::system_clock::now();
-		std::chrono::duration<double> elapsed_seconds = end - start;
-		std::cout << elapsed_seconds.count() << std::endl;
+	printf("Fin de la partie!\n");
 }
 
 // REMARQUE : Une fois que l'on a trouv� un chemin gagnant a coup sur il faut le prendre et ne pas laisser le systeme en calculer un autre
