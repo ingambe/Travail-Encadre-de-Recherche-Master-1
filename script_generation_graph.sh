@@ -83,7 +83,7 @@ echo "debug generation resultat \n"
 echo "ia commence \n"
 
 #IA COMMENCE
-for i in  `seq 1 1`
+for i in  `seq 1 20`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -111,7 +111,7 @@ done
 echo "joueur commence\n"
 
 #JOUEUR COMMENCE
-for i in  `seq 1 1`
+for i in  `seq 1 20`
 do
   echo "i : $i \n"
   echo "GCC \n"
