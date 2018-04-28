@@ -18,7 +18,8 @@ generalDetails<-c(expression(
 #cicada
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
-wvioplot(gcc_0_p1_j2$V1,gcc_1_p1_j2$V1,gcc_2_p1_j2$V1,gcc_3_p1_j2$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
+y <- c(median(gcc_0_p1_j2$V1), median(gcc_1_p1_j2$V1), median(gcc_2_p1_j2$V1), median(gcc_3_p1_j2$V1))
+barplot(y)
 
 axis(1,cex.axis=0.8,at=1:4, labels=xLabels)
 
@@ -26,6 +27,6 @@ legend("bottomleft", generalDetails, bty = "n", cex=0.5)
 
 legend("topright", inset=.03, c("GCC"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.6)
 
-mtext(generalHardware, side=3, cex=1.5)
+mtext(generalHardware, side=3, cex=1.0)
 
-title(main = "Compartif temps d'éxécution options compilations GCC", ylab = "Temps (ms)", xlab="Options de compilation", line = NA)
+title(ylab = "Temps (s)", xlab="Options de compilation", line = NA)

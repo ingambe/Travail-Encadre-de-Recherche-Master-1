@@ -1,4 +1,4 @@
-setwd("/home/ingambe/ter/")
+setwd("/home/ingambe/ter/output/")
 sizes<-read.table(file = "size.txt",sep=" ", header=FALSE)
 
 plot(sizes$V1, sizes$V2)

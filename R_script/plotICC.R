@@ -33,4 +33,4 @@ legend("topright", inset=.03, c("INTEL"), fill=c("dark grey","#E0EEEE"), horiz=T
 
 mtext(generalHardware, side=3, cex=1.0)
 
-title(ylab = "Temps (ms)", xlab="Options de compilation", line = NA) #main = "Compartif temps d'éxécution options compilations ICC", 
+title(ylab = "Temps (s)", xlab="Options de compilation", line = NA) #main = "Compartif temps d'éxécution options compilations ICC", 

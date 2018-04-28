@@ -3,20 +3,20 @@ setwd("/home/ingambe/ter/output/")
 
 xLabels<-c("O0", "O1", "O2","O3", "O0", "O1", "O2","O3","O0", "O1", "O2","O3")
 
-gcc_0_p5_j1<-read.table(file = "gcc/joueur_commence/no_option/p5_j1.txt",sep="\n", header=FALSE)
-gcc_1_p5_j1<-read.table(file="gcc/joueur_commence/O1/p5_j1.txt",sep="\n", header=FALSE)
-gcc_2_p5_j1<-read.table(file="gcc/joueur_commence/O2/p5_j1.txt",sep="\n", header=FALSE)
-gcc_3_p5_j1<-read.table(file="gcc/joueur_commence/O3/p5_j1.txt",sep="\n", header=FALSE)
+gcc_0_p5_j1<-read.table(file = "gcc/joueur_commence/no_option/resultat.txt",sep="\n", header=FALSE)
+gcc_1_p5_j1<-read.table(file="gcc/joueur_commence/O1/resultat.txt",sep="\n", header=FALSE)
+gcc_2_p5_j1<-read.table(file="gcc/joueur_commence/O2/resultat.txt",sep="\n", header=FALSE)
+gcc_3_p5_j1<-read.table(file="gcc/joueur_commence/O3/resultat.txt",sep="\n", header=FALSE)
 
-intel_0_p5_j1<-read.table(file = "intel/joueur_commence/no_option/p5_j1.txt",sep="\n", header=FALSE)
-intel_1_p5_j1<-read.table(file="intel/joueur_commence/O1/p5_j1.txt",sep="\n", header=FALSE)
-intel_2_p5_j1<-read.table(file="intel/joueur_commence/O2/p5_j1.txt",sep="\n", header=FALSE)
-intel_3_p5_j1<-read.table(file="intel/joueur_commence/O3/p5_j1.txt",sep="\n", header=FALSE)
+intel_0_p5_j1<-read.table(file = "intel/joueur_commence/no_option/resultat.txt",sep="\n", header=FALSE)
+intel_1_p5_j1<-read.table(file="intel/joueur_commence/O1/resultat.txt",sep="\n", header=FALSE)
+intel_2_p5_j1<-read.table(file="intel/joueur_commence/O2/resultat.txt",sep="\n", header=FALSE)
+intel_3_p5_j1<-read.table(file="intel/joueur_commence/O3/resultat.txt",sep="\n", header=FALSE)
 
-clang_0_p5_j1<-read.table(file = "clang/joueur_commence/no_option/p5_j1.txt",sep="\n", header=FALSE)
-clang_1_p5_j1<-read.table(file="clang/joueur_commence/O1/p5_j1.txt",sep="\n", header=FALSE)
-clang_2_p5_j1<-read.table(file="clang/joueur_commence/O2/p5_j1.txt",sep="\n", header=FALSE)
-clang_3_p5_j1<-read.table(file="clang/joueur_commence/O3/p5_j1.txt",sep="\n", header=FALSE)
+clang_0_p5_j1<-read.table(file = "clang/joueur_commence/no_option/resultat.txt",sep="\n", header=FALSE)
+clang_1_p5_j1<-read.table(file="clang/joueur_commence/O1/resultat.txt",sep="\n", header=FALSE)
+clang_2_p5_j1<-read.table(file="clang/joueur_commence/O2/resultat.txt",sep="\n", header=FALSE)
+clang_3_p5_j1<-read.table(file="clang/joueur_commence/O3/resultat.txt",sep="\n", header=FALSE)
 
 generalDetails<-c(expression(
   
@@ -30,19 +30,10 @@ generalDetails<-c(expression(
 #cicada
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
-wvioplot(gcc_0_p5_j1$V1,gcc_1_p5_j1$V1,gcc_2_p5_j1$V1,gcc_3_p5_j1$V1, intel_0_p5_j1$V1,intel_1_p5_j1$V1,intel_2_p5_j1$V1,intel_3_p5_j1$V1, clang_0_p5_j1$V1,clang_1_p5_j1$V1,clang_2_p5_j1$V1,clang_3_p5_j1$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
-
-wvioplot(gcc_0_p5_j1$V1,at=1,col="dark grey",add=TRUE, clip=TRUE, adjust = 1)
-wvioplot(gcc_1_p5_j1$V1,at=2,col="dark grey",add=TRUE, clip=TRUE, adjust = 1)
-wvioplot(gcc_2_p5_j1$V1,at=3,col="dark grey",add=TRUE, clip=TRUE, adjust = 1)
-wvioplot(gcc_3_p5_j1$V1,at=4,col="dark grey",add=TRUE, clip=TRUE, adjust = 1)
+y <- c(median(gcc_0_p5_j1$V1), median(gcc_1_p5_j1$V1), median(gcc_2_p5_j1$V1), median(gcc_3_p5_j1$V1),median(intel_0_p5_j1$V1), median(intel_1_p5_j1$V1), median(intel_2_p5_j1$V1), median(intel_3_p5_j1$V1),median(clang_0_p5_j1$V1), median(clang_1_p5_j1$V1), median(clang_2_p5_j1$V1), median(clang_3_p5_j1$V1))
+barplot(y)
 
 abline(v = 4.5, col = "black")
-
-wvioplot(intel_0_p5_j1$V1,at=5,col="dark grey",add=TRUE, clip=TRUE, adjust = 1)
-wvioplot(intel_1_p5_j1$V1,at=6,col="dark grey",add=TRUE, clip=TRUE, adjust = 1)
-wvioplot(intel_2_p5_j1$V1,at=7,col="dark grey",add=TRUE, clip=TRUE, adjust = 1)
-wvioplot(intel_3_p5_j1$V1,at=8,col="dark grey",add=TRUE, clip=TRUE, adjust = 1)
 
 abline(v = 8.5, col = "black")
 
@@ -55,6 +46,6 @@ mtext(side=1,text="CLANG",line=2,at=10.5)
 legend("topright", inset=.03, c("GCC","INTEL","CLANG"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
 
 legend("bottomleft", generalDetails, bty = "n", cex=0.5)
-mtext(generalHardware, side=3, cex=1.5)
+mtext(generalHardware, side=3, cex=1.0)
 
-title(main = "Compartif temps d'éxécution en fonction des options de compilation utilisé", ylab = "Temps (ms)", xlab="Options de compilation", line = NA)
+title(ylab = "Temps (s)", xlab="Options de compilation", line = NA)
