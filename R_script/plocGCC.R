@@ -3,10 +3,10 @@ setwd("/home/ingambe/ter/output/")
 
 xLabels<-c("O0", "O1", "O2","O3")
 
-gcc_0_p1_j2<-read.table(file = "gcc/ia_commence/no_option/p5_j2.txt",sep="\n", header=FALSE)
-gcc_1_p1_j2<-read.table(file="gcc/ia_commence/O1/p5_j2.txt",sep="\n", header=FALSE)
-gcc_2_p1_j2<-read.table(file="gcc/ia_commence/O2/p5_j2.txt",sep="\n", header=FALSE)
-gcc_3_p1_j2<-read.table(file="gcc/ia_commence/O3/p5_j2.txt",sep="\n", header=FALSE)
+gcc_0_p1_j2<-read.table(file = "gcc/ia_commence/no_option/resultat.txt",sep="\n", header=FALSE)
+gcc_1_p1_j2<-read.table(file="gcc/ia_commence/O1/resultat.txt",sep="\n", header=FALSE)
+gcc_2_p1_j2<-read.table(file="gcc/ia_commence/O2/resultat.txt",sep="\n", header=FALSE)
+gcc_3_p1_j2<-read.table(file="gcc/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
 
 generalDetails<-c(expression(
   
