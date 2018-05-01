@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/home/ingambe/ter/scripts/../sources/minimax.cpp"
+           line_no="162"
+           routine="jouer_coup"
+           is_vectorized="0"
+           self_time="2.083967E+00"
+           total_time="2.083967E+00"
+           trip_counts=""
+           func_instance="23"
+           priority="0"/>
+  <hotspot filename="/home/ingambe/ter/scripts/../sources/minimax.cpp"
+           line_no="311"
+           routine="calculer_coup"
+           is_vectorized="0"
+           self_time="4.728122E+00"
+           total_time="1.178480E+02"
+           trip_counts=""
+           func_instance="8"
+           priority="0"/>
+  <hotspot filename="/home/ingambe/ter/scripts/../sources/minimax.cpp"
+           line_no="295"
+           routine="calculer_coup"
+           is_vectorized="0"
+           self_time="3.376086E+00"
+           total_time="1.178480E+02"
+           trip_counts=""
+           func_instance="11"
+           priority="0"/>
+  <hotspot filename="/home/ingambe/ter/scripts/../sources/minimax.cpp"
+           line_no="153"
+           routine="jouer_coup"
+           is_vectorized="0"
+           self_time="3.280021E+00"
+           total_time="3.280021E+00"
+           trip_counts=""
+           func_instance="20"
+           priority="0"/>
+  <hotspot filename="/home/ingambe/ter/scripts/../sources/minimax.cpp"
+           line_no="129"
+           routine="jouer_coup"
+           is_vectorized="0"
+           self_time="2.153396E+01"
+           total_time="2.153396E+01"
+           trip_counts=""
+           func_instance="17"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

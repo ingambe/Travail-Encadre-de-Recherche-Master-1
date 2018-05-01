@@ -1,0 +1,2 @@
+Commande pour advisor
+advixe-cl -collect suitability -project-dir ~/ter/advisor/ cat ~/ter/input/j1.txt | bin/intel_O2.out
