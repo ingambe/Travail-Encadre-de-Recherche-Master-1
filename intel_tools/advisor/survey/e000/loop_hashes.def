@@ -1,12 +1,11 @@
 # hash file version: 1
-11	3	/home/ingambe/ter/bin/advisor.out	4996	5218	/home/ingambe/ter/scripts/../sources/minimax.cpp	380	222	42803a46b2443c526ef7b5de273c0c36	0	1	0
-12	5	/home/ingambe/ter/bin/advisor.out	3824	4630	/home/ingambe/ter/scripts/../sources/minimax.cpp	594	2102	42803a46b2443c526ef7b5de273c0c36	0	1	0
-13	8	/home/ingambe/ter/bin/advisor.out	6058	6276	/home/ingambe/ter/scripts/../sources/minimax.cpp	311	218	42803a46b2443c526ef7b5de273c0c36	0	1	0
-14	11	/home/ingambe/ter/bin/advisor.out	6321	6519	/home/ingambe/ter/scripts/../sources/minimax.cpp	295	198	42803a46b2443c526ef7b5de273c0c36	0	1	0
-15	17	/home/ingambe/ter/bin/advisor.out	6736	6820	/home/ingambe/ter/scripts/../sources/minimax.cpp	129	84	42803a46b2443c526ef7b5de273c0c36	0	2	0
-16	21	/home/ingambe/ter/bin/advisor.out	6885	7092	/home/ingambe/ter/scripts/../sources/minimax.cpp	140	207	42803a46b2443c526ef7b5de273c0c36	0	1	0
-17	12	/home/ingambe/ter/bin/advisor.out	0		/home/ingambe/ter/scripts/../sources/minimax.cpp	109	1	42803a46b2443c526ef7b5de273c0c36	0	6	0
-17	18	/home/ingambe/ter/bin/advisor.out	0		/home/ingambe/ter/scripts/../sources/minimax.cpp	173	1	42803a46b2443c526ef7b5de273c0c36	0	6	0
-18	23	/home/ingambe/ter/bin/advisor.out	7161	7192	/home/ingambe/ter/scripts/../sources/minimax.cpp	162	31	42803a46b2443c526ef7b5de273c0c36	0	1	0
-20	20	/home/ingambe/ter/bin/advisor.out	7108	7192,7141	/home/ingambe/ter/scripts/../sources/minimax.cpp	153	33	42803a46b2443c526ef7b5de273c0c36	0	1	0
-21	26	/home/ingambe/ter/bin/advisor.out	3824	4630,4772	/home/ingambe/ter/scripts/../sources/minimax.cpp	594	885	42803a46b2443c526ef7b5de273c0c36	1	1	0
+22	3	/home/ingambe/ter/bin/advisor.out	4996	5218	/home/ingambe/ter/scripts/../sources/minimax.cpp	380	222	a2d099a5d748532d02c1b4600d26a2c4	0	1	0
+23	5	/home/ingambe/ter/bin/advisor.out	3824	4630	/home/ingambe/ter/scripts/../sources/minimax.cpp	594	2102	a2d099a5d748532d02c1b4600d26a2c4	0	1	0
+24	8	/home/ingambe/ter/bin/advisor.out	6058	6276	/home/ingambe/ter/scripts/../sources/minimax.cpp	311	218	a2d099a5d748532d02c1b4600d26a2c4	0	1	0
+25	11	/home/ingambe/ter/bin/advisor.out	6321	6519	/home/ingambe/ter/scripts/../sources/minimax.cpp	295	198	a2d099a5d748532d02c1b4600d26a2c4	0	1	0
+26	12	/home/ingambe/ter/bin/advisor.out	6736	6820	/home/ingambe/ter/scripts/../sources/minimax.cpp	129	84	a2d099a5d748532d02c1b4600d26a2c4	0	2	0
+27	14	/home/ingambe/ter/bin/advisor.out	0		/home/ingambe/ter/scripts/../sources/minimax.cpp	109	1	a2d099a5d748532d02c1b4600d26a2c4	0	6	0
+27	18	/home/ingambe/ter/bin/advisor.out	0		/home/ingambe/ter/scripts/../sources/minimax.cpp	173	1	a2d099a5d748532d02c1b4600d26a2c4	0	6	0
+29	20	/home/ingambe/ter/bin/advisor.out	7161	7192	/home/ingambe/ter/scripts/../sources/minimax.cpp	162	31	a2d099a5d748532d02c1b4600d26a2c4	0	1	0
+30	21	/home/ingambe/ter/bin/advisor.out	7108	7192,7141	/home/ingambe/ter/scripts/../sources/minimax.cpp	153	33	a2d099a5d748532d02c1b4600d26a2c4	0	1	0
+31	22	/home/ingambe/ter/bin/advisor.out	6885	7092	/home/ingambe/ter/scripts/../sources/minimax.cpp	140	207	a2d099a5d748532d02c1b4600d26a2c4	0	1	0

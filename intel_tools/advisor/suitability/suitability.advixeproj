@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+ <connectionOption type="string">localhost</connectionOption>
  <rdmgr>
   <timestamp type="u64_t">1525122598</timestamp>
   <hostname type="string">pierre-PC</hostname>
@@ -14,4 +15,5 @@
   <CPUBrandName type="string">Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz</CPUBrandName>
   <isa type="string">avx2</isa>
  </rdmgr>
+ <contextValues type="bag"/>
 </root>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<bag xmlns:boolean="http://www.w3.org/2001/XMLSchema#boolean" xmlns:int="http://www.w3.org/2001/XMLSchema#int" int:version="1">
+ <SurveyView>
+  <BottomUpGrid>
+   <ColumnStructure>
+    <Visibility>
+     <boolean:fdFunctionName>true</boolean:fdFunctionName>
+     <boolean:fdLoopAnnotation>true</boolean:fdLoopAnnotation>
+     <boolean:fdRecommendationPresence>true</boolean:fdRecommendationPresence>
+     <boolean:fdSelfTime>true</boolean:fdSelfTime>
+     <boolean:fdTotalTime>true</boolean:fdTotalTime>
+     <boolean:fdCompilerOptInfoVectLoopTypeSplitting>true</boolean:fdCompilerOptInfoVectLoopTypeSplitting>
+     <boolean:fdCompilerOptInfoVectMsg>true</boolean:fdCompilerOptInfoVectMsg>
+     <boolean:fdVectInfo>true</boolean:fdVectInfo>
+     <boolean:fdVectInfoInstSetAnalysis>true</boolean:fdVectInfoInstSetAnalysis>
+     <boolean:fdCompilerOptDetails>true</boolean:fdCompilerOptDetails>
+     <boolean:fdLocation>true</boolean:fdLocation>
+    </Visibility>
+   </ColumnStructure>
+   <ColumnWidth int:fdFunctionName="360" int:fdLoopAnnotation="45" int:fdRecommendationPresence="128" int:fdSelfTime="76" int:fdTotalTime="82" int:fdCompilerOptInfoVectLoopTypeSplitting="128" int:fdCompilerOptInfoVectMsg="257" int:fdVectInfoInstSets="56" int:fdVectorGain="56" int:fdVectorLength="56" int:fdVectInfoInstClasses="176" int:fdVectInfoVectDataTypes="72" int:fdUsedRegistersNumber="56" int:fdCompilerOptDetails="128" int:fdLocation="102"/>
+  </BottomUpGrid>
+  <TopDownGrid>
+   <ColumnStructure>
+    <Visibility>
+     <boolean:fdFunctionName>true</boolean:fdFunctionName>
+     <boolean:fdTotalTimePercent>true</boolean:fdTotalTimePercent>
+     <boolean:fdTotalTime>true</boolean:fdTotalTime>
+     <boolean:fdSelfTime>true</boolean:fdSelfTime>
+     <boolean:fdCompilerOptInfoVectLoopTypeSplitting>true</boolean:fdCompilerOptInfoVectLoopTypeSplitting>
+     <boolean:fdCompilerOptInfoVectMsg>true</boolean:fdCompilerOptInfoVectMsg>
+     <boolean:fdVectInfo>true</boolean:fdVectInfo>
+     <boolean:fdVectInfoInstSetAnalysis>true</boolean:fdVectInfoInstSetAnalysis>
+     <boolean:fdCompilerOptDetails>true</boolean:fdCompilerOptDetails>
+     <boolean:fdLocation>true</boolean:fdLocation>
+    </Visibility>
+   </ColumnStructure>
+  </TopDownGrid>
+ </SurveyView>
+ <FilterView boolean:VectorizedButtonChecked="true" boolean:NotVectorizedButtonChecked="true" boolean:FakeLoopButtonChecked="false" boolean:LibrariesButtonChecked="false" ModuleFilterValue="All Modules" SourceFilterValue="All Sources" LoopModeFilterValue="Loops And Functions" ThreadFilterValue="All Threads"/>
+</bag>
