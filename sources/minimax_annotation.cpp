@@ -128,13 +128,16 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 	newPos->_Cases[joueur][coup]=0;
 	int j=joueur;
 	int c=coup;
+	ANNOTATE_SITE_BEGIN(jouer_coup);
 	for(int i=0;i<nbpions;i++){
+		ANNOTATE_ITERATION_TASK(jouer_coup);
 		const int tj=j;
 		j=cs->_Jnext[j][c];
 		c=cs->_Cnext[tj][c];
 //		cout << "[" << j << "][" << c << "] ";
 		newPos->_Cases[j][c]++;
 	}
+	ANNOTATE_SITE_END();
 //	cout << endl;
 //	print_position(newPos);
 	// on regarde si la case de d�part est vide ou pas.
