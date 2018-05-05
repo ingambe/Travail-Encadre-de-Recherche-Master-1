@@ -104,15 +104,12 @@ int est_affame(Position* pos, const int joueur){
 }
 
 void copier(Position* newPos, Position* pos){
-	ANNOTATE_SITE_BEGIN(copie);
 	for(int i=0;i<6;i++){
-		ANNOTATE_ITERATION_TASK(copie);
 		newPos->_Cases[0][i]=pos->_Cases[0][i];
 		newPos->_Cases[1][i]=pos->_Cases[1][i];
 	}
 	newPos->_PionsPris[0]=pos->_PionsPris[0];
 	newPos->_PionsPris[1]=pos->_PionsPris[1];
-	ANNOTATE_SITE_END();
 }
 
 int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joueur, const int coup){
@@ -128,16 +125,13 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 	newPos->_Cases[joueur][coup]=0;
 	int j=joueur;
 	int c=coup;
-	ANNOTATE_SITE_BEGIN(jouer_coup);
 	for(int i=0;i<nbpions;i++){
-		ANNOTATE_ITERATION_TASK(jouer_coup);
 		const int tj=j;
 		j=cs->_Jnext[j][c];
 		c=cs->_Cnext[tj][c];
 //		cout << "[" << j << "][" << c << "] ";
 		newPos->_Cases[j][c]++;
 	}
-	ANNOTATE_SITE_END();
 //	cout << endl;
 //	print_position(newPos);
 	// on regarde si la case de d�part est vide ou pas.
@@ -155,9 +149,7 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 	}
 	if (j != joueur){// on regarde si on doit prendre des pions
 		if (j ==0){
-			ANNOTATE_SITE_BEGIN(jouer_coup_1);
 			for(int i=c;i<=5;i++){
-				ANNOTATE_ITERATION_TASK(jouer_coup_1);
 				if (newPos->_Cases[j][i] == 2 || newPos->_Cases[j][i] == 3){
 					newPos->_PionsPris[joueur] += newPos->_Cases[j][i];
 					newPos->_Cases[j][i]=0;
@@ -165,11 +157,8 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 					break;
 				}
 			}
-			ANNOTATE_SITE_END();
 		} else {
-			ANNOTATE_SITE_BEGIN(jouer_coup_2);
 			for(int i=c;i>=0;i--){
-				ANNOTATE_ITERATION_TASK(jouer_coup_2);
 				if (newPos->_Cases[j][i] == 2 || newPos->_Cases[j][i] == 3){
 					newPos->_PionsPris[joueur] += newPos->_Cases[j][i];
 					newPos->_Cases[j][i]=0;
@@ -177,7 +166,6 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 					break;
 				}
 			}
-			ANNOTATE_SITE_END();
 		}
 	}
 	// on regarde si l'adversaire est affame
@@ -222,16 +210,13 @@ void print_eval_coup(EvalCoup* ec, int nb){
 int calculer_eval_coup(EvalCoup* ec, CaseSuivante* cs, Position* pos,const int joueur, const int alpha, const int beta, const int pmax){
 	int nbv=0;
 	Position newPos;
-	ANNOTATE_SITE_BEGIN(eval_coup);
 	for(int i=0;i<6;i++){
-		ANNOTATE_ITERATION_TASK(eval_coup);
 		if (jouer_coup(cs,&newPos,pos,joueur,i)){
 			ec->_Val[nbv]=valeur_minimax(cs,&newPos,!joueur,alpha,beta,pmax-1);
 			ec->_Coup[nbv]=i;
 			nbv++;
 		}
 	}
-	ANNOTATE_SITE_END();
 	return nbv;
 }
 
@@ -303,12 +288,9 @@ int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha
 
 int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, int beta, const int pmax,const bool gagne){
 	Position newPos;
-	ANNOTATE_SITE_BEGIN(calcul_coup);
 	if (joueur==0){// MAX
 		//cout << "MAX";
 		for(int i=0;i<6;i++){
-
-				ANNOTATE_ITERATION_TASK(calcul_coup_loop);
 			if (jouer_coup(cs,&newPos,pos,joueur,i)){
 				const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
 			//	cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
@@ -321,14 +303,11 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 				}
 			}
 		}
-		ANNOTATE_SITE_END();
 		return alpha;
 	}
 	//	cout << "MIN";
 	for(int i=0;i<6;i++){
 		if (jouer_coup(cs,&newPos,pos,joueur,i)){
-
-				ANNOTATE_ITERATION_TASK(calcul_coup_loop);
 			const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
 		//		cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
 			if (val < beta){
@@ -340,7 +319,6 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 			}
 		}
 	}
-	ANNOTATE_SITE_END();
 	return beta;
 }
 
@@ -376,7 +354,6 @@ int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha
 // Jean Charles, 19/05/2011.
 
 int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
-	ANNOTATE_SITE_BEGIN(decisionAB);
 	// on regarde le nombre de case vide et on ajoute de la profondeur eventuellement
 	// k case vide = profmax * k/12
 	int k=0;
@@ -398,7 +375,6 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 	Position newPos;
 	int coup;
 	for(int i=0;i<6;i++){
-		ANNOTATE_ITERATION_TASK(decisionAB_loop);
 		if (jouer_coup(cs,&newPos,pos,0,i)){
 			const int val=valeur_minimaxAB(cs,&newPos,1,alpha,beta,pmax-1,gagne);
 			if (val > alpha) {
@@ -409,7 +385,6 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 	}
 
 	VALMM=alpha;
-	ANNOTATE_SITE_END();
 	return coup;
 }
 
@@ -423,8 +398,7 @@ void position_debut(Position* pos) {
 
 }
 int main(int argc, char* argv[]){
-	std::chrono::time_point<std::chrono::system_clock> start, end;
-	start = std::chrono::system_clock::now();
+	freopen(argv[1], "r",stdin);
 	CaseSuivante cs;
 	cs._Cnext[0][0]=0;
 	cs._Jnext[0][0]=1;
@@ -517,10 +491,7 @@ int main(int argc, char* argv[]){
 		fin=test_fin(&pos);
 		joueur = !joueur;
 	}
-		//printf("Fin de la partie!\n");
-    end = std::chrono::system_clock::now();
-		std::chrono::duration<double> elapsed_seconds = end - start;
-		std::cout << elapsed_seconds.count() << std::endl;
+	printf("Fin de la partie!\n");
 }
 
 // REMARQUE : Une fois que l'on a trouv� un chemin gagnant a coup sur il faut le prendre et ne pas laisser le systeme en calculer un autre
