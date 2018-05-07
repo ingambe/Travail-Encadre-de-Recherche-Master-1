@@ -20,7 +20,7 @@ typedef std::chrono::high_resolution_clock Clock;
 #include "minimax_graph.h"
 
 void init_position(Position* pos) {
-  #pragma omp parallel for
+	#pragma omp parallel for
 	for(int i=0;i<6;i++){
 		pos->_Cases[0][i]=0;
 		pos->_Cases[1][i]=0;
@@ -432,11 +432,11 @@ int main(int argc, char* argv[]){
 	Position pos;
 	Position newPos;
 	position_debut(&pos);
-	/*
+/**
 	printf("DEBUT DU JEU AWALE\n");
 	printf("(0) l'ordinateur commence\n");
 	printf("(1) le joueur commence\n");
-	*/
+**/
 	int joueur;
 	if(scanf("%d",&joueur)){}
 
@@ -464,13 +464,13 @@ int main(int argc, char* argv[]){
 			NUM_MINIMAX=0;
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 			copier(&pos,&newPos);
-			/*
+/**
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-			*/
+**/
 		} else { // le JOUEUR JOUE
 			if (ordiCommence){
 				//printf("selectionner une case 12 11 10 9 8 7\n");
@@ -487,13 +487,13 @@ int main(int argc, char* argv[]){
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 
 			copier(&pos,&newPos);
-			/*
+/**
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-			*/
+**/
 		}
 		fin=test_fin(&pos);
 		joueur = !joueur;
