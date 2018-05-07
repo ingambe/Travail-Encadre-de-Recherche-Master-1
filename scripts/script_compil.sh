@@ -30,8 +30,8 @@ clang++ ../sources/minimax_graph.cpp -std=c++11 -O3 -o ../bin/clang_O3.out
 echo "compilation partie parallelisee"
 g++ ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/gcc_O3_naif.out -fopenmp
 
-icpc ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/intel_O3_naif.out -openmp
+icpc ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/intel_O3_naif.out -fopenmp
 
-clang++ ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/clang_O3_naif.out -fopenmp=libom
+clang++ ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/clang_O3_naif.out -fopenmp
 
 echo "fin de compilation \n"
