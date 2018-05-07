@@ -28,19 +28,10 @@ clang++ ../sources/minimax_graph.cpp -std=c++11 -O3 -o ../bin/clang_O3.out
 
 # PARALLELISEE
 echo "compilation partie parallelisee"
-g++ ../sources/minimax_graph.cpp -std=c++11 -o ../bin/gcc_no_option.out -fopenmp
-g++ ../sources/minimax_graph.cpp -std=c++11 -O1 -o ../bin/gcc_O1.out -fopenmp
-g++ ../sources/minimax_graph.cpp -std=c++11 -O2 -o ../bin/gcc_O2.out -fopenmp
-g++ ../sources/minimax_graph.cpp -std=c++11 -O3 -o ../bin/gcc_O3.out -fopenmp
+g++ ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/gcc_O3_naif.out -fopenmp
 
-icpc ../sources/minimax_graph.cpp -std=c++11 -O0 -o ../bin/intel_no_option.out -openmp
-icpc ../sources/minimax_graph.cpp -std=c++11 -O1 -o ../bin/intel_O1.out -openmp
-icpc ../sources/minimax_graph.cpp -std=c++11 -O2 -o ../bin/intel_O2.out -openmp
-icpc ../sources/minimax_graph.cpp -std=c++11 -O3 -o ../bin/intel_O3.out -openmp
+icpc ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/intel_O3_naif.out -openmp
 
-clang++ ../sources/minimax_graph.cpp -std=c++11 -O0 -o ../bin/clang_no_option.out -fopenmp=libom
-clang++ ../sources/minimax_graph.cpp -std=c++11 -O1 -o ../bin/clang_O1.out -fopenmp=libom
-clang++ ../sources/minimax_graph.cpp -std=c++11 -O2 -o ../bin/clang_O2.out -fopenmp=libom
-clang++ ../sources/minimax_graph.cpp -std=c++11 -O3 -o ../bin/clang_O3.out -fopenmp=libom
+clang++ ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/clang_O3_naif.out -fopenmp=libom
 
 echo "fin de compilation \n"

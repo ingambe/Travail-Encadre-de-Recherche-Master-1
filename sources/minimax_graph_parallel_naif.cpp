@@ -5,7 +5,7 @@
 #include <ratio>
 #include <thread>
 #include <chrono>
-#include "advisor-annotate.h"
+#include <omp.h>
 
 typedef std::chrono::high_resolution_clock Clock;
 
@@ -20,6 +20,7 @@ typedef std::chrono::high_resolution_clock Clock;
 #include "minimax_graph.h"
 
 void init_position(Position* pos) {
+  #pragma omp parallel for
 	for(int i=0;i<6;i++){
 		pos->_Cases[0][i]=0;
 		pos->_Cases[1][i]=0;
@@ -104,6 +105,7 @@ int est_affame(Position* pos, const int joueur){
 }
 
 void copier(Position* newPos, Position* pos){
+	#pragma omp parallel for
 	for(int i=0;i<6;i++){
 		newPos->_Cases[0][i]=pos->_Cases[0][i];
 		newPos->_Cases[1][i]=pos->_Cases[1][i];
@@ -398,7 +400,8 @@ void position_debut(Position* pos) {
 
 }
 int main(int argc, char* argv[]){
-	freopen(argv[1], "r",stdin);
+	std::chrono::time_point<std::chrono::system_clock> start, end;
+	start = std::chrono::system_clock::now();
 	CaseSuivante cs;
 	cs._Cnext[0][0]=0;
 	cs._Jnext[0][0]=1;
@@ -429,17 +432,17 @@ int main(int argc, char* argv[]){
 	Position pos;
 	Position newPos;
 	position_debut(&pos);
-
+	/*
 	printf("DEBUT DU JEU AWALE\n");
 	printf("(0) l'ordinateur commence\n");
 	printf("(1) le joueur commence\n");
-
+	*/
 	int joueur;
 	if(scanf("%d",&joueur)){}
 
 
 	int ordiCommence= (joueur==0)? 1 : 0;
-	printf("C'est parti!\n");
+	//printf("C'est parti!\n");
 	int fin=0;
 	bool gagne=false;
 	int numeroCoup = 1;
@@ -450,48 +453,55 @@ int main(int argc, char* argv[]){
 			coup=decisionAB(&cs,&pos,17,gagne); // ATTENTION C'est LA PROFONDEUR MAX 11
 			if (!gagne && VALMM==48){gagne=true;}
 //			if (!gagne && VALMM >= 48) { gagne = true; }
-			printf("Noeuds traites: %d valeur minimax:%d\n", NUM_MINIMAX, VALMM);
+			//printf("Noeuds traites: %d valeur minimax:%d\n", NUM_MINIMAX, VALMM);
 			int cj;
 			if (ordiCommence){
 				cj=6-coup;
 			} else {
 				cj=12-coup;
 			}
-			printf("COUP JOUE: %d\n",cj);
+			//printf("COUP JOUE: %d\n",cj);
 			NUM_MINIMAX=0;
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 			copier(&pos,&newPos);
+			/*
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
+			*/
 		} else { // le JOUEUR JOUE
 			if (ordiCommence){
-				printf("selectionner une case 12 11 10 9 8 7\n");
+				//printf("selectionner une case 12 11 10 9 8 7\n");
 				if(scanf("%d",&coup)){}
 				coup -=7;
 			} else {
-				printf("selectionner une case 1 2 3 4 5 6\n");
+				//printf("selectionner une case 1 2 3 4 5 6\n");
 				if(scanf("%d",&coup)){}
 				//coup=6-coup;
 				coup--;
 			}
-			printf("COUP interne JOUE: %d\n",coup);
+			//printf("COUP interne JOUE: %d\n",coup);
 
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 
 			copier(&pos,&newPos);
+			/*
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
+			*/
 		}
 		fin=test_fin(&pos);
 		joueur = !joueur;
 	}
-	printf("Fin de la partie!\n");
+		//printf("Fin de la partie!\n");
+    end = std::chrono::system_clock::now();
+		std::chrono::duration<double> elapsed_seconds = end - start;
+		std::cout << elapsed_seconds.count() << std::endl;
 }
 
 // REMARQUE : Une fois que l'on a trouv� un chemin gagnant a coup sur il faut le prendre et ne pas laisser le systeme en calculer un autre
