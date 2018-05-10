@@ -1,4 +1,0 @@
-# callstacks file version: 4
-#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance start rva	instance size	instance end rva	finst rowid	roi
-         1	        -1	      3712	    0	      0	                                  _start	/home/flyfire/Bureau/ter/bin/advisor_advisor.out	3712	42	0	1	0
-         2	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	1	0	35	0
