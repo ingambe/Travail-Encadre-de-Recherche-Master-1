@@ -1,0 +1,13 @@
+-r
+/home/ingambe/jeudi/ter/r000ah
+--itt-config=frame
+--stack-stitching
+--data-limit-mb=500
+--disk-space-limit=0
+--mrte-type=java
+--event-config=CPU_CLK_UNHALTED.THREAD:sa=2500000,CPU_CLK_UNHALTED.REF_TSC:sa=2500000,INST_RETIRED.ANY:sa=2500000,CPU_CLK_UNHALTED.REF_XCLK:sa=100003,CPU_CLK_UNHALTED.ONE_THREAD_ACTIVE:sa=100003
+--platform-type=88
+--uncore-sampling-interval=10
+--mrte-mode=auto
+--
+bin/advisor.out

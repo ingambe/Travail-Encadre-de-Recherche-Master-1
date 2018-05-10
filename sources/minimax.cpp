@@ -573,7 +573,6 @@ int main(int argc, char* argv[]){
 			coup=decisionAB(&cs,&pos,17,gagne); // ATTENTION C'est LA PROFONDEUR MAX 11
 			if (!gagne && VALMM==48){gagne=true;}
 //			if (!gagne && VALMM >= 48) { gagne = true; }
-			printf("Noeuds traites: %d valeur minimax:%d\n", NUM_MINIMAX, VALMM);
 			int cj;
 			if (ordiCommence){
 				cj=6-coup;
