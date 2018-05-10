@@ -3,20 +3,20 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls   s/call   s/call  name    
- 49.59    119.31   119.31 5172852992     0.00     0.00  jouer_coup(Next*, Pos*, Pos*, int, int)
- 17.54    161.52    42.21 3262157329     0.00     0.00  copier(Pos*, Pos*)
- 16.48    201.18    39.66 3262157262     0.00     0.00  est_affame(Pos*, int)
-  8.80    222.34    21.16 1457826958     0.00     0.00  calculer_coup(Next*, Pos*, int, int, int, int, bool)
-  5.97    236.70    14.36 3252245939     0.00     0.00  valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool)
-  0.89    238.85     2.15 1775297034     0.00     0.00  evaluer(Pos*)
-  0.47    240.00     1.14       67     0.02     0.02  test_fin(Pos*)
-  0.19    240.44     0.45                             print_position_ordi_haut(Pos*)
-  0.09    240.67     0.23       33     0.01     7.24  decisionAB(Next*, Pos*, int, bool)
-  0.02    240.72     0.05                             decision(Next*, Pos*, int)
-  0.00    240.73     0.01        1     0.01     0.01  _GLOBAL__sub_I__Z13init_positionP3Pos
-  0.00    240.73     0.00       67     0.00     0.00  print_position_ordi_bas_inv(Pos*)
-  0.00    240.73     0.00        1     0.00     0.00  position_debut(Pos*)
-  0.00    240.73     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+ 48.83    167.72   167.72 5172852992     0.00     0.00  jouer_coup(Next*, Pos*, Pos*, int, int)
+ 18.25    230.39    62.67 3262157329     0.00     0.00  copier(Pos*, Pos*)
+ 17.22    289.56    59.16 3262157262     0.00     0.00  est_affame(Pos*, int)
+  8.79    319.75    30.20 1457826958     0.00     0.00  calculer_coup(Next*, Pos*, int, int, int, int, bool)
+  5.31    337.98    18.23 3252245939     0.00     0.00  valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool)
+  0.87    340.99     3.00 1775297034     0.00     0.00  evaluer(Pos*)
+  0.52    342.77     1.79       67     0.03     0.03  test_fin(Pos*)
+  0.16    343.34     0.57                             print_position_ordi_haut(Pos*)
+  0.09    343.65     0.31       33     0.01    10.34  decisionAB(Next*, Pos*, int, bool)
+  0.01    343.70     0.05                             decision(Next*, Pos*, int)
+  0.00    343.71     0.01        1     0.01     0.01  _GLOBAL__sub_I__Z13init_positionP3Pos
+  0.00    343.71     0.00       67     0.00     0.00  print_position_ordi_bas_inv(Pos*)
+  0.00    343.71     0.00        1     0.00     0.00  position_debut(Pos*)
+  0.00    343.71     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -54,60 +54,60 @@ notice and this notice are preserved.
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 2 byte(s) for 0.00% of 240.73 seconds
+granularity: each sample hit covers 2 byte(s) for 0.00% of 343.71 seconds
 
 index % time    self  children    called     name
                                                  <spontaneous>
-[1]     99.8    0.00  240.22                 main [1]
-                0.23  238.85      33/33          decisionAB(Next*, Pos*, int, bool) [2]
-                1.14    0.00      67/67          test_fin(Pos*) [10]
+[1]     99.8    0.00  343.08                 main [1]
+                0.31  340.99      33/33          decisionAB(Next*, Pos*, int, bool) [2]
+                1.79    0.00      67/67          test_fin(Pos*) [10]
                 0.00    0.00      67/5172852992     jouer_coup(Next*, Pos*, Pos*, int, int) [5]
                 0.00    0.00      67/3262157329     copier(Pos*, Pos*) [6]
                 0.00    0.00      67/67          print_position_ordi_bas_inv(Pos*) [21]
                 0.00    0.00       1/1           position_debut(Pos*) [22]
 -----------------------------------------------
-                0.23  238.85      33/33          main [1]
-[2]     99.3    0.23  238.85      33         decisionAB(Next*, Pos*, int, bool) [2]
-               35.53  203.33     118/118         valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
+                0.31  340.99      33/33          main [1]
+[2]     99.3    0.31  340.99      33         decisionAB(Next*, Pos*, int, bool) [2]
+               48.43  292.56     118/118         valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
                 0.00    0.00     198/5172852992     jouer_coup(Next*, Pos*, Pos*, int, int) [5]
 -----------------------------------------------
-[3]     99.2   35.53  203.33     118+4710072779 <cycle 1 as a whole> [3]
-               21.16  201.18 1457826958             calculer_coup(Next*, Pos*, int, int, int, int, bool) <cycle 1> [4]
-               14.36    2.15 3252245939             valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
+[3]     99.2   48.43  292.56     118+4710072779 <cycle 1 as a whole> [3]
+               30.20  289.56 1457826958             calculer_coup(Next*, Pos*, int, int, int, int, bool) <cycle 1> [4]
+               18.23    3.00 3252245939             valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
 -----------------------------------------------
                              1457826958             valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
-[4]     92.4   21.16  201.18 1457826958         calculer_coup(Next*, Pos*, int, int, int, int, bool) <cycle 1> [4]
-              119.31   81.86 5172852727/5172852992     jouer_coup(Next*, Pos*, Pos*, int, int) [5]
+[4]     93.0   30.20  289.56 1457826958         calculer_coup(Next*, Pos*, int, int, int, int, bool) <cycle 1> [4]
+              167.72  121.83 5172852727/5172852992     jouer_coup(Next*, Pos*, Pos*, int, int) [5]
                              3252245821             valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
 -----------------------------------------------
                 0.00    0.00      67/5172852992     main [1]
                 0.00    0.00     198/5172852992     decisionAB(Next*, Pos*, int, bool) [2]
-              119.31   81.86 5172852727/5172852992     calculer_coup(Next*, Pos*, int, int, int, int, bool) <cycle 1> [4]
-[5]     83.6  119.31   81.86 5172852992         jouer_coup(Next*, Pos*, Pos*, int, int) [5]
-               42.21    0.00 3262157262/3262157329     copier(Pos*, Pos*) [6]
-               39.66    0.00 3262157262/3262157262     est_affame(Pos*, int) [7]
+              167.72  121.83 5172852727/5172852992     calculer_coup(Next*, Pos*, int, int, int, int, bool) <cycle 1> [4]
+[5]     84.2  167.72  121.83 5172852992         jouer_coup(Next*, Pos*, Pos*, int, int) [5]
+               62.67    0.00 3262157262/3262157329     copier(Pos*, Pos*) [6]
+               59.16    0.00 3262157262/3262157262     est_affame(Pos*, int) [7]
 -----------------------------------------------
                 0.00    0.00      67/3262157329     main [1]
-               42.21    0.00 3262157262/3262157329     jouer_coup(Next*, Pos*, Pos*, int, int) [5]
-[6]     17.5   42.21    0.00 3262157329         copier(Pos*, Pos*) [6]
+               62.67    0.00 3262157262/3262157329     jouer_coup(Next*, Pos*, Pos*, int, int) [5]
+[6]     18.2   62.67    0.00 3262157329         copier(Pos*, Pos*) [6]
 -----------------------------------------------
-               39.66    0.00 3262157262/3262157262     jouer_coup(Next*, Pos*, Pos*, int, int) [5]
-[7]     16.5   39.66    0.00 3262157262         est_affame(Pos*, int) [7]
+               59.16    0.00 3262157262/3262157262     jouer_coup(Next*, Pos*, Pos*, int, int) [5]
+[7]     17.2   59.16    0.00 3262157262         est_affame(Pos*, int) [7]
 -----------------------------------------------
                              3252245821             calculer_coup(Next*, Pos*, int, int, int, int, bool) <cycle 1> [4]
-               35.53  203.33     118/118         decisionAB(Next*, Pos*, int, bool) [2]
-[8]      6.9   14.36    2.15 3252245939         valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
-                2.15    0.00 1775297034/1775297034     evaluer(Pos*) [9]
+               48.43  292.56     118/118         decisionAB(Next*, Pos*, int, bool) [2]
+[8]      6.2   18.23    3.00 3252245939         valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
+                3.00    0.00 1775297034/1775297034     evaluer(Pos*) [9]
                              1457826958             calculer_coup(Next*, Pos*, int, int, int, int, bool) <cycle 1> [4]
 -----------------------------------------------
-                2.15    0.00 1775297034/1775297034     valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
-[9]      0.9    2.15    0.00 1775297034         evaluer(Pos*) [9]
+                3.00    0.00 1775297034/1775297034     valeur_minimaxAB(Next*, Pos*, int, int, int, int, bool) <cycle 1> [8]
+[9]      0.9    3.00    0.00 1775297034         evaluer(Pos*) [9]
 -----------------------------------------------
-                1.14    0.00      67/67          main [1]
-[10]     0.5    1.14    0.00      67         test_fin(Pos*) [10]
+                1.79    0.00      67/67          main [1]
+[10]     0.5    1.79    0.00      67         test_fin(Pos*) [10]
 -----------------------------------------------
                                                  <spontaneous>
-[11]     0.2    0.45    0.00                 print_position_ordi_haut(Pos*) [11]
+[11]     0.2    0.57    0.00                 print_position_ordi_haut(Pos*) [11]
 -----------------------------------------------
                                                  <spontaneous>
 [12]     0.0    0.05    0.00                 decision(Next*, Pos*, int) [12]

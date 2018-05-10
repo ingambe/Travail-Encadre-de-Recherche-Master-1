@@ -1,0 +1,15 @@
+-r
+/home/ingambe/ter/intel_tools/advisor/suitability/e000/st010
+-type
+projection:stack
+-quiet
+--mrte-mode=auto
+--follow-child
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=10
+--data-limit-mb=500
+--stack-stitching
+--stackwalk=offline
+--mrte-type=java,python
+--
+./../bin/advisor_annotate.out
