@@ -1,9 +1,9 @@
-setwd("/home/ingambe/ter/output/")
+setwd("../output/")
 sizes<-read.table(file = "size.txt",sep=" ", header=FALSE)
 
 plot(sizes$V1, sizes$V2)
 
-title(main = "Compartif taille des éxécutables en fonction des options de compilation utilisé", ylab = "Taille (Octets)", xlab="Options de compilation", line = 2)
+title(ylab = "Taille (Octets)", xlab="Options de compilation", line = 2)
 
 generalDetails<-c(expression(
   

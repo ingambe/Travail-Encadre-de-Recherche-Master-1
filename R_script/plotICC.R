@@ -1,4 +1,4 @@
-setwd("/home/ingambe/ter/output/")
+setwd("../output/")
 
 xLabels<-c("O0", "O1", "O2","O3")
 
