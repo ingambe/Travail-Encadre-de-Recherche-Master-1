@@ -1,5 +1,5 @@
 library(wvioplot)
-setwd("../output/parallel/naif/")
+setwd("/home/ingambe/Bureau/ter/output/parallel/naif")
 
 xLabels<-c("O0", "O1", "O2","O3")
 
