@@ -55,7 +55,7 @@ echo "debug generation resultat \n"
 
 echo "1 thread \n"
 export OMP_NUM_THREADS=1
-for i in  `seq 1 20`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -73,7 +73,7 @@ done
 
 echo "2 thread \n"
 export OMP_NUM_THREADS=2
-for i in  `seq 1 20`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -91,7 +91,7 @@ done
 
 echo "3 thread \n"
 export OMP_NUM_THREADS=3
-for i in  `seq 1 20`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -109,7 +109,7 @@ done
 
 echo "4 thread \n"
 export OMP_NUM_THREADS=4
-for i in  `seq 1 20`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -127,7 +127,7 @@ done
 
 echo "5 thread \n"
 export OMP_NUM_THREADS=5
-for i in  `seq 1 20`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -145,7 +145,7 @@ done
 
 echo "6 thread \n"
 export OMP_NUM_THREADS=6
-for i in  `seq 1 20`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -163,7 +163,7 @@ done
 
 echo "7 thread \n"
 export OMP_NUM_THREADS=7
-for i in  `seq 1 20`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -181,7 +181,7 @@ done
 
 echo "8 thread \n"
 export OMP_NUM_THREADS=8
-for i in  `seq 1 20`
+for i in  `seq 1 10`
 do
   echo "i : $i \n"
   echo "GCC \n"
