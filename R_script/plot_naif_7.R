@@ -3,9 +3,9 @@ setwd("/home/ingambe/Bureau/ter/output/parallel/naif")
 
 xLabels<-c("O0", "O1", "O2","O3")
 
-gcc<-read.table(file = "gcc/resultat_1.txt",sep="\n", header=FALSE)
-clang<-read.table(file="clang/resultat_1.txt",sep="\n", header=FALSE)
-intel<-read.table(file="intel/resultat_1.txt",sep="\n", header=FALSE)
+gcc<-read.table(file = "gcc/resultat_7.txt",sep="\n", header=FALSE)
+clang<-read.table(file="clang/resultat_7.txt",sep="\n", header=FALSE)
+intel<-read.table(file="intel/resultat_7.txt",sep="\n", header=FALSE)
 
 generalDetails<-c(expression(
   
@@ -13,7 +13,7 @@ generalDetails<-c(expression(
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
 	italic("Compiler = CLANG 18.0.2"),
-  italic("Nombre processeur = 1"),
+  italic("Nombre processeurs = 7"),
   italic("Fichier = j1.txt"),
   italic("Executions = 5")))
 

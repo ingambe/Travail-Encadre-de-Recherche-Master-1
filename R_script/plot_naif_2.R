@@ -15,7 +15,7 @@ generalDetails<-c(expression(
   italic("Compiler = CLANG 18.0.2"),
   italic("Nombre processeurs = 2"),
   italic("Fichier = j1.txt"),
-  italic("Executions = 20")))
+  italic("Executions = 5")))
 
 #cicada
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
