@@ -16,16 +16,15 @@ typedef std::chrono::high_resolution_clock Clock;
 //j=1 5 4 3 2 1 0
 // voir tableau des next
 
-#include "minimax_graph.h"
+#include "minimax_hashmap.h"
 
 /**
  * Initialisation de la position des deux joueurs
  * @param pos la position à initialiser
  */
 void init_position(Position* pos) {
-	for(int i=0;i<6;i++){
-		pos->_Cases[0][i]=0;
-		pos->_Cases[1][i]=0;
+	for(int i=0;i<12;i++){
+		pos->_Cases[i]=0;
 	}
 	pos->_PionsPris[0]=pos->_PionsPris[1]=0;
 }
@@ -33,11 +32,11 @@ void init_position(Position* pos) {
 void print_position(Position* pos){
 	printf("--------------------------\n");
 	for(int i = 5 ; i >= 0 ; i--){
-		printf("[%d] " , pos->_Cases[0][i]);
+		printf("[%d] " , pos->_Cases[i]);
 	}
 	printf(" PP=%d\n",pos->_PionsPris[0]);
 	for(int i = 5 ; i >= 0 ; i--){
-		printf("[%d] " , pos->_Cases[1][i]);
+		printf("[%d] " , pos->_Cases[11 - i]);
 	}
 	printf(" PP=%d\n--------------------------\n",pos->_PionsPris[1]);
 }
@@ -45,11 +44,11 @@ void print_position(Position* pos){
 void print_position_ordi_bas_inv(Position* pos){
 	printf("--------------------------\n");
 	for(int i = 0 ; i <6 ; i++){
-		printf("[%d] " , pos->_Cases[1][i]);
+		printf("[%d] " , pos->_Cases[i]);
 	}
 	printf(" PP=%d\n",pos->_PionsPris[1]);
 	for(int i = 0 ; i <6 ; i++){
-		printf("[%d] " , pos->_Cases[0][i]);
+		printf("[%d] " , pos->_Cases[6 + i]);
 	}
 	printf(" PP=%d\n--------------------------\n",pos->_PionsPris[0]);
 }
@@ -57,11 +56,11 @@ void print_position_ordi_bas_inv(Position* pos){
 void print_position_ordi_haut_inv(Position* pos){
 	printf("--------------------------\n");
 	for(int i = 5 ; i >= 0 ; i--){
-		printf("[%d] " , pos->_Cases[0][i]);
+		printf("[%d] " , pos->_Cases[i]);
 	}
 	printf(" PP=%d\n",pos->_PionsPris[0]);
 	for(int i = 5 ; i >=0 ; i--){
-		printf("[%d] " , pos->_Cases[1][i]);
+		printf("[%d] " , pos->_Cases[11 - i]);
 	}
 	printf(" PP=%d\n--------------------------\n",pos->_PionsPris[1]);
 }
@@ -74,11 +73,11 @@ void print_position_ordi_haut_inv(Position* pos){
 void print_position_ordi_bas(Position* pos){
 	printf("--------------------------\n");
 	for(int i = 5 ; i >= 0 ; i--){
-		printf("[%d] " , pos->_Cases[1][i]);
+		printf("[%d] " , pos->_Cases[11 - i]);
 	}
 	printf(" PP=%d\n",pos->_PionsPris[1]);
 	for(int i = 5 ; i >= 0 ; i--){
-		printf("[%d] " , pos->_Cases[0][i]);
+		printf("[%d] " , pos->_Cases[i]);
 	}
 	printf(" PP=%d\n--------------------------\n",pos->_PionsPris[0]);
 }
@@ -86,11 +85,11 @@ void print_position_ordi_bas(Position* pos){
 void print_position_ordi_haut(Position* pos){
 	printf("--------------------------\n");
 	for(int i = 0 ; i < 6 ; i++){
-		printf("[%d] " , pos->_Cases[0][i]);
+		printf("[%d] " , pos->_Cases[i]);
 	}
 	printf(" PP=%d\n",pos->_PionsPris[0]);
 	for(int i = 0 ; i <6 ; i++){
-		printf("[%d] " , pos->_Cases[1][i]);
+		printf("[%d] " , pos->_Cases[6 + i]);
 	}
 	printf(" PP=%d\n--------------------------\n",pos->_PionsPris[1]);
 }
@@ -106,7 +105,7 @@ int est_affame(Position* pos, const int joueur){
 	int somme=0;
 	for(int i=0;i<6;i++){
 //		if (pos->_Cases[joueur][i] > 0) return 0;
-		somme += pos->_Cases[joueur][i];
+		somme += pos->_Cases[(joueur * 6) + i];
 	}
 	return !somme;
 //	return 1;
@@ -118,9 +117,8 @@ int est_affame(Position* pos, const int joueur){
  * @param pos l'ancienne position
  */
 void copier(Position* newPos, Position* pos){
-	for(int i=0;i<6;i++){
-		newPos->_Cases[0][i]=pos->_Cases[0][i];
-		newPos->_Cases[1][i]=pos->_Cases[1][i];
+	for(int i=0;i<12;i++){
+		newPos->_Cases[i]=pos->_Cases[i];
 	}
 	newPos->_PionsPris[0]=pos->_PionsPris[0];
 	newPos->_PionsPris[1]=pos->_PionsPris[1];
@@ -137,7 +135,7 @@ void copier(Position* newPos, Position* pos){
  */
 int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joueur, const int coup){
 	// retourne 1 si le coup est jouable et 0 sinon
-	const int nbpions=pos->_Cases[joueur][coup];
+	const int nbpions=pos->_Cases[(joueur * 6) + coup];
 //	cout << "joueur: " << joueur << " coup: " << coup << " nbpions : " << nbpions << endl;
 	if (nbpions == 0){
 //		cout << "pas de pions" << endl;
@@ -145,7 +143,7 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 	}
 	// on met a 0 la structure
 	copier(newPos,pos);
-	newPos->_Cases[joueur][coup]=0;
+	newPos->_Cases[(joueur * 6) + coup]=0;
 	int j=joueur;
 	int c=coup;
 	for(int i=0;i<nbpions;i++){
@@ -153,38 +151,38 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 		j=cs->_Jnext[j][c];
 		c=cs->_Cnext[tj][c];
 //		cout << "[" << j << "][" << c << "] ";
-		newPos->_Cases[j][c]++;
+		newPos->_Cases[(j * 6) + c]++;
 	}
 //	cout << endl;
 //	print_position(newPos);
 	// on regarde si la case de d�part est vide ou pas.
-	int nbp=newPos->_Cases[joueur][coup];
+	int nbp=newPos->_Cases[(joueur * 6) + coup];
 	while (nbp != 0){
 		// on distribue ces pions
-		newPos->_Cases[joueur][coup]=0;
+		newPos->_Cases[(joueur * 6) + coup]=0;
 		for(int i=0;i<nbp;i++){
 			const int tj=j;
 			j=cs->_Jnext[j][c];
 			c=cs->_Cnext[tj][c];
-			newPos->_Cases[j][c]++;
+			newPos->_Cases[(j * 6) + c]++;
 		}
-		nbp=newPos->_Cases[joueur][coup];
+		nbp=newPos->_Cases[(joueur * 6) + coup];
 	}
 	if (j != joueur){// on regarde si on doit prendre des pions
 		if (j ==0){
 			for(int i=c;i<=5;i++){
-				if (newPos->_Cases[j][i] == 2 || newPos->_Cases[j][i] == 3){
-					newPos->_PionsPris[joueur] += newPos->_Cases[j][i];
-					newPos->_Cases[j][i]=0;
+				if (newPos->_Cases[(j * 6) + i] == 2 || newPos->_Cases[(j * 6) + i] == 3){
+					newPos->_PionsPris[joueur] += newPos->_Cases[(j * 6) + i];
+					newPos->_Cases[(j * 6) + i]=0;
 				} else {
 					break;
 				}
 			}
 		} else {
 			for(int i=c;i>=0;i--){
-				if (newPos->_Cases[j][i] == 2 || newPos->_Cases[j][i] == 3){
-					newPos->_PionsPris[joueur] += newPos->_Cases[j][i];
-					newPos->_Cases[j][i]=0;
+				if (newPos->_Cases[(j * 6) + i] == 2 || newPos->_Cases[(j * 6) + i] == 3){
+					newPos->_PionsPris[joueur] += newPos->_Cases[(j * 6) + i];
+					newPos->_Cases[(j * 6) + i]=0;
 				} else {
 					break;
 				}
@@ -196,21 +194,10 @@ int jouer_coup(CaseSuivante* cs, Position* newPos, Position* pos, const int joue
 	return 1;
 }
 
-/**
- * Fonction d'evaluation basique
- * On compte la difference de pion entre nous et l'adversaire
- * @param pos l'etat actuel du jeux
- * @return la difference de pion
- */
 inline int evaluer(Position* pos){
 	return pos->_PionsPris[0] - pos->_PionsPris[1];
 }
 
-/**
- * Test si la partie est finie
- * @param pos l'etat actuel du jeu
- * @return 1 si la partie est fini, 0 sinon
- */
 int test_fin(Position* pos){
 	if (pos->_PionsPris[0] + pos->_PionsPris[1] > 24){
 		if (48-pos->_PionsPris[0]-pos->_PionsPris[1] <= 6){
@@ -239,17 +226,7 @@ void print_eval_coup(EvalCoup* ec, int nb){
 	}
 }
 
-/**
- * Evalue les coups possible et donne le nombre de coup jouables
- * @param ec L'evalution d'un coup donne
- * @param cs Les cases suivantes
- * @param pos L'etat actuel du jeux
- * @param joueur le joueur qui joue
- * @param alpha score minimum
- * @param beta score maximum
- * @param pmax profondeur d'exploration
- * @return nombre de coups jouables
- */
+
 int calculer_eval_coup(EvalCoup* ec, CaseSuivante* cs, Position* pos,const int joueur, const int alpha, const int beta, const int pmax){
 	int nbv=0;
 	Position newPos;
@@ -263,16 +240,6 @@ int calculer_eval_coup(EvalCoup* ec, CaseSuivante* cs, Position* pos,const int j
 	return nbv;
 }
 
-/**
- *
- * @param cs
- * @param pos
- * @param joueur
- * @param alpha
- * @param beta
- * @param pmax
- * @return
- */
 int valeur_minimax(CaseSuivante* cs, Position* pos,const int joueur, int alpha,int beta, const int pmax){
 	// Calcule la valeur de e pour le joueur J selon que e EstUnEtatMax ou pas et pmax la
 	NUM_MINIMAX++;
@@ -312,8 +279,7 @@ int decision(CaseSuivante* cs,Position* pos,int pmax){
 	// k case vide = profmax * k/12
 	int k=0;
 	for(int i=0;i<6;i++){
-		if (pos->_Cases[0][i] == 0) k++;
-//		if (pos->_Cases[1][i] == 0) k++;
+		if (pos->_Cases[i] == 0) k++;
 	}
 //	k--;
 	if (k >0){
@@ -411,7 +377,7 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 	// k case vide = profmax * k/12
 	int k=0;
 	for(int i=0;i<6;i++){
-		if (pos->_Cases[0][i] == 0) k++;
+		if (pos->_Cases[i] == 0) k++;
 //		if (pos->_Cases[1][i] == 0) k++;
 	}
 //	k--;
@@ -425,33 +391,27 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 
 	int alpha=-VALMAX-50; // avant -1
 	int beta=VALMAX+50; // avant +1
+	Position newPos;
 	int coup;
-	int valTab[6];
-	Position newPos[6];
-	for(int i = 0; i < 6; i++){
-	    valTab[i] = -50;
-	}
-  #pragma omp parallel for
 	for(int i=0;i<6;i++){
-        if (jouer_coup(cs,&newPos[i],pos,0,i)){
-            valTab[i] =valeur_minimaxAB(cs,&newPos[i],1,alpha,beta,pmax-1,gagne);
+		if (jouer_coup(cs,&newPos,pos,0,i)){
+			const int val=valeur_minimaxAB(cs,&newPos,1,alpha,beta,pmax-1,gagne);
+			if (val > alpha) {
+				alpha=val;
+				coup=i;
+			}
 		}
 	}
-	int maximumIndice = 0;
-    for(int i = 1; i <6; i++){
-        if(valTab[i] > valTab[maximumIndice]){
-            maximumIndice = i;
-        }
-    }
-	VALMM=valTab[maximumIndice];
-	return maximumIndice;
+
+	VALMM=alpha;
+	return coup;
 }
 
 /// <summary> Position a partir de laquelle on commence � jouer </summary>
 void position_debut(Position* pos) {
 	for(int i=0;i<6;i++){
-		pos->_Cases[0][i]=4;
-		pos->_Cases[1][i]=4;
+		pos->_Cases[i]=4;
+		pos->_Cases[6 + i]=4;
 	}
 	pos->_PionsPris[0]=pos->_PionsPris[1]=0;
 
@@ -489,11 +449,11 @@ int main(int argc, char* argv[]){
 	Position pos;
 	Position newPos;
 	position_debut(&pos);
-	/**
+	/*
 	printf("DEBUT DU JEU AWALE\n");
 	printf("(0) l'ordinateur commence\n");
 	printf("(1) le joueur commence\n");
-	 **/
+	*/
 	int joueur;
 	if(scanf("%d",&joueur)){}
 
@@ -517,18 +477,17 @@ int main(int argc, char* argv[]){
 			} else {
 				cj=12-coup;
 			}
-			//printf("COUP JOUE: %d\n",cj);
+			printf("COUP JOUE: %d\n",cj);
 			NUM_MINIMAX=0;
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 			copier(&pos,&newPos);
-/**
+			/*
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-			**/
-
+			*/
 		} else { // le JOUEUR JOUE
 			if (ordiCommence){
 				//printf("selectionner une case 12 11 10 9 8 7\n");
@@ -545,14 +504,13 @@ int main(int argc, char* argv[]){
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 
 			copier(&pos,&newPos);
-/**
+			/*
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-			**/
-
+			*/
 		}
 		fin=test_fin(&pos);
 		joueur = !joueur;
