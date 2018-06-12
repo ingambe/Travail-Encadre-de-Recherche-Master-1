@@ -18,6 +18,8 @@ typedef std::chrono::high_resolution_clock Clock;
 
 #include "minimax_hashmap.h"
 
+std::map<Board, int> hashScoresPositions;
+
 /**
  * Initialisation de la position des deux joueurs
  * @param pos la position à initialiser
@@ -327,7 +329,13 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 	//	cout << "MIN";
 	for(int i=0;i<6;i++){
 		if (jouer_coup(cs,&newPos,pos,joueur,i)){
-			const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
+			int val;
+			std::map<Board,int>::iterator it = hashScoresPositions.find(newPos._Cases);
+			if (it == hashScoresPositions.end() ) {
+				val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
+			} else {
+				val = it->second;
+			}
 		//		cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
 			if (val < beta){
 				beta=val;
@@ -364,7 +372,11 @@ int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha
 		}
 		if (pos->_PionsPris[1] >= 25) return -VALMAX-ajoutProf;
 	}
-	if (pmax == 0) return evaluer(pos);
+	if (pmax == 0){
+		int valuePos = evaluer(pos);
+		hashScoresPositions.insert(std::make_pair(pos->_Cases, valuePos));
+		return valuePos;
+	}
 	return calculer_coup(cs,pos,joueur,alpha,beta,pmax,gagne);
 }
 

@@ -1,8 +1,9 @@
 #include <array>
+#include <map>
 ///<summary>
 ///Structure d?terminant une position de jeu 
 ///</summary>
-typedef std::array<unsigned char, 12> Board;
+typedef std::array<int, 12> Board;
 
 struct Pos {
 	//int _Cases[2][6]; // 6 cases et 2 joueurs
