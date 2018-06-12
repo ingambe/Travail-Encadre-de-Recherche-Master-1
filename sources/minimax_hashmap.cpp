@@ -303,9 +303,9 @@ int decision(CaseSuivante* cs,Position* pos,int pmax){
 	return ec._Coup[imin];
 }
 
-int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha,int beta, const int pmax, const bool gagne, std::map<Board, int> hashScoresPositions);
+int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha,int beta, const int pmax, const bool gagne, std::map<Board,int> hashScoresPositions);
 
-int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, int beta, const int pmax,const bool gagne, std::map<Board, int> hashScoresPositions){
+int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, int beta, const int pmax,const bool gagne, std::map<Board,int> hashScoresPositions){
 	Position newPos;
 	if (joueur==0){// MAX
 		//cout << "MAX";
@@ -354,7 +354,7 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 }
 
 /// <summary> Fonction qui calcule la valeur minimax avec coupes Alpha-Beta </summary>
-int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha,int beta, const int pmax, const bool gagne, std::map<Board, int> hashScoresPositions){
+int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha,int beta, const int pmax, const bool gagne, std::map<Board,int> hashScoresPositions){
 	// Calcule la valeur de e pour le joueur J selon que e EstUnEtatMax ou pas et pmax la
 	NUM_MINIMAX++;
 	int ajoutProf=(gagne) ? pmax : 0;
@@ -378,11 +378,7 @@ int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha
 	}
 	if (pmax == 0){
 		int valuePos = evaluer(pos);
-
-		std::map<Board,int>::iterator it = hashScoresPositions.find(pos->_Cases);
-		if (it == hashScoresPositions.end() ) {
-			hashScoresPositions.insert(std::make_pair(pos->_Cases, valuePos));
-		}
+		hashScoresPositions.insert(std::make_pair(pos->_Cases, valuePos));
 		return valuePos;
 	}
 	return calculer_coup(cs,pos,joueur,alpha,beta,pmax,gagne, hashScoresPositions);
@@ -395,7 +391,7 @@ int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha
 int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 	// on regarde le nombre de case vide et on ajoute de la profondeur eventuellement
 	// k case vide = profmax * k/12
-	std::map<Board, int> hashScoresPositions;
+	std::map<Board,int> hashScoresPositions;
 	int k=0;
 	for(int i=0;i<6;i++){
 		if (pos->_Cases[i] == 0) k++;
