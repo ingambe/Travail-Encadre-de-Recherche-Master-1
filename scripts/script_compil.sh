@@ -49,5 +49,12 @@ icpc ../sources/minimax_unordered_map.cpp -std=c++11 -O3 -o ../bin/intel_unorder
 
 clang++ ../sources/minimax_unordered_map.cpp -std=c++11 -O3 -o ../bin/clang_unordered_map.out
 
+echo "compilation trie coups"
+
+g++ ../sources/minimax_graph_trie.cpp -std=c++11 -O3 -o ../bin/gcc_trie.out
+
+icpc ../sources/minimax_graph_trie.cpp -std=c++11 -O3 -o ../bin/intel_trie.out
+
+clang++ ../sources/minimax_graph_trie.cpp -std=c++11 -O3 -o ../bin/clang_trie.out
 
 echo "fin de compilation"
