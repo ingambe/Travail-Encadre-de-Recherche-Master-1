@@ -23,7 +23,7 @@ generalDetails<-c(expression(
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
   italic("Compiler = CLANG 3.8.0"),
-  italic("Fichier = p5_j1.txt"),
+  italic("Fichier = j1.txt"),
   italic("Executions = 20")))
 
 #cicada
