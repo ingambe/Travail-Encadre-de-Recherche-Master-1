@@ -1,11 +1,16 @@
 library(wvioplot)
 setwd("/home/ingambe/Bureau/ter/output/map/sorted")
 
-xLabels<-c("gcc", "intel", "clang")
+xLabels<-c("normal", "map","normal", "map","normal", "map")
 
-gcc<-read.table(file = "gcc/resultat.txt",sep="\n", header=FALSE)
-clang<-read.table(file="clang/resultat.txt",sep="\n", header=FALSE)
-intel<-read.table(file="intel/resultat.txt",sep="\n", header=FALSE)
+
+gcc<-read.table(file = "../../gcc/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
+clang<-read.table(file="../../clang/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
+intel<-read.table(file="../../intel/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
+
+gccMap<-read.table(file = "gcc/resultat.txt",sep="\n", header=FALSE)
+clangMap<-read.table(file="clang/resultat.txt",sep="\n", header=FALSE)
+intelMap<-read.table(file="intel/resultat.txt",sep="\n", header=FALSE)
 
 generalDetails<-c(expression(
   
@@ -20,11 +25,20 @@ generalDetails<-c(expression(
 #cicada
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
-wvioplot(gcc$V1,intel$V1,clang$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
+wvioplot(gcc$V1, gccMap$V1, intel$V1, intelMap$V1, clang$V1, clangMap$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
 
-axis(1,cex.axis=0.8,at=1:3, labels=xLabels)
+abline(v = 2.5, col = "black")
 
-legend("bottomleft", generalDetails, bty = "n", cex=1)
+abline(v = 4.5, col = "black")
+
+
+axis(1,cex.axis=0.8,at=1:6, labels=xLabels)
+
+mtext(side=1,text="GCC",line=2,at=1.5)
+mtext(side=1,text="INTEL",line=2,at=3.5)
+mtext(side=1,text="CLANG",line=2,at=5.5)
+
+legend("bottomleft", generalDetails, bty = "n", cex=.5)
 
 legend("topright", inset=.03, c("GCC","INTEL","CLANG"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
 
