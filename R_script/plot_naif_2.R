@@ -1,7 +1,7 @@
 library(wvioplot)
 setwd("/home/ingambe/Bureau/ter/output/parallel/naif")
 
-xLabels<-c("O0", "O1", "O2","O3")
+xLabels<-c("GCC", "CLANG", "INTEL")
 
 gcc<-read.table(file = "gcc/resultat_2.txt",sep="\n", header=FALSE)
 clang<-read.table(file="clang/resultat_2.txt",sep="\n", header=FALSE)
@@ -22,15 +22,11 @@ generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
 wvioplot(gcc$V1,clang$V1,intel$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
 
-axis(1,cex.axis=0.8,at=1:4, labels=xLabels)
-
-mtext(side=1,text="GCC",line=2,at=1)
-mtext(side=1,text="INTEL",line=2,at=2)
-mtext(side=1,text="CLANG",line=2,at=3)
+axis(1,cex.axis=0.8,at=1:3, labels=xLabels)
 
 legend("bottomleft", generalDetails, bty = "n", cex=1)
 
-legend("topright", inset=.03, c("GCC","INTEL","CLANG"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
+legend("topright", inset=.03, c("GCC","CLANG","INTEL"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
 
 mtext(generalHardware, side=3, cex=1.5)
 
