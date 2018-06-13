@@ -11,7 +11,7 @@ mkdir -p ../output/parallel/
 
 mkdir -p ../output/parallel/affinity/
 
-#GCC
+#INTEl
 mkdir -p ../output/parallel/affinity/intel
 
 cat /dev/null >../output/parallel/affinity/intel/scatter.txt

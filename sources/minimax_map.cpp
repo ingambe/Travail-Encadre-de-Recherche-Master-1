@@ -16,7 +16,7 @@ typedef std::chrono::high_resolution_clock Clock;
 //j=1 5 4 3 2 1 0
 // voir tableau des next
 
-#include "minimax_hashmap.h"
+#include "minimax_map.h"
 
 /**
  * Initialisation de la position des deux joueurs
@@ -500,7 +500,7 @@ int main(int argc, char* argv[]){
 			} else {
 				cj=12-coup;
 			}
-			printf("COUP JOUE: %d\n",cj);
+			//printf("COUP JOUE: %d\n",cj);
 			NUM_MINIMAX=0;
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 			copier(&pos,&newPos);

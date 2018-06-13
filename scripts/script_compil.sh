@@ -34,4 +34,20 @@ icpc ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/intel_O
 
 clang++ ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/clang_O3_naif.out -fopenmp
 
-echo "fin de compilation \n"
+echo "compilation hashmap"
+
+g++ ../sources/minimax_map.cpp -std=c++11 -O3 -o ../bin/gcc_map.out
+
+icpc ../sources/minimax_map.cpp -std=c++11 -O3 -o ../bin/intel_map.out
+
+clang++ ../sources/minimax_map.cpp -std=c++11 -O3 -o ../bin/clang_map.out
+
+
+g++ ../sources/minimax_unordered_map.cpp -std=c++11 -O3 -o ../bin/gcc_unordered_map.out
+
+icpc ../sources/minimax_unordered_map.cpp -std=c++11 -O3 -o ../bin/intel_unordered_map.out
+
+clang++ ../sources/minimax_unordered_map.cpp -std=c++11 -O3 -o ../bin/clang_unordered_map.out
+
+
+echo "fin de compilation"
