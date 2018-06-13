@@ -16,7 +16,7 @@ typedef std::chrono::high_resolution_clock Clock;
 //j=1 5 4 3 2 1 0
 // voir tableau des next
 
-#include "minimax_unordered_map.h.h"
+#include "minimax_unordered_map.h"
 
 /**
  * Initialisation de la position des deux joueurs
