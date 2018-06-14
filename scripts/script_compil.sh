@@ -57,4 +57,13 @@ icpc ../sources/minimax_graph_trie.cpp -std=c++11 -O3 -o ../bin/intel_trie.out
 
 clang++ ../sources/minimax_graph_trie.cpp -std=c++11 -O3 -o ../bin/clang_trie.out
 
+echo "compilation nouvelle version parallele"
+
+g++ ../sources/minimax_jouecoup_parallel.cpp -std=c++11 -O3 -o ../bin/gcc_O3_parallel.out -fopenmp
+
+icpc ../sources/minimax_jouecoup_parallel.cpp -std=c++11 -O3 -o ../bin/intel_O3_parallel.out -fopenmp
+
+clang++ ../sources/minimax_jouecoup_parallel.cpp -std=c++11 -O3 -o ../bin/clang_O3_parallel.out -fopenmp
+
+
 echo "fin de compilation"

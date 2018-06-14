@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <algorithm>
 
 // a decommenter si vous voulez utiliser les couts
 #include <iostream>
@@ -18,19 +17,6 @@ typedef std::chrono::high_resolution_clock Clock;
 // voir tableau des next
 
 #include "minimax_graph.h"
-
-int * sort_indexes(const int * tableau) {
-
-	int * idx = (int *) malloc(6 * sizeof(int));
-	for(int i = 0 ; i < 6; i++){
-		idx[i] = i;
-	}
-
-	std::sort(idx, idx + 6,
-		 [tableau](int i1, int i2) {return tableau[i1] > tableau[i2];});
-
-	return idx;
-}
 
 void init_position(Position* pos) {
 	for(int i=0;i<6;i++){
@@ -301,11 +287,9 @@ int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha
 
 int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, int beta, const int pmax,const bool gagne){
 	Position newPos;
-	//int * meuilleur_coups = sort_indexes(pos->_Cases[joueur]);
 	if (joueur==0){// MAX
 		//cout << "MAX";
 		for(int i=0;i<6;i++){
-			//int coup_actuel = meuilleur_coups[i];
 			if (jouer_coup(cs,&newPos,pos,joueur,i)){
 				const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
 			//	cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
@@ -314,7 +298,6 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 				}
 				if (alpha >= beta){
 					//cout << "a";
-					//free(meuilleur_coups);
 					return alpha;
 				}
 			}
@@ -323,7 +306,6 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 	}
 	//	cout << "MIN";
 	for(int i=0;i<6;i++){
-		//int coup_actuel = meuilleur_coups[i];
 		if (jouer_coup(cs,&newPos,pos,joueur,i)){
 			const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
 		//		cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
@@ -332,12 +314,10 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 			}
 			if (beta <= alpha){
 				//cout << "b";
-				//free(meuilleur_coups);
 				return beta;
 			}
 		}
 	}
-	//free(meuilleur_coups);
 	return beta;
 }
 
@@ -391,20 +371,21 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 
 	int alpha=-VALMAX-50; // avant -1
 	int beta=VALMAX+50; // avant +1
-	Position newPos;
-	int coup;
-	int * meuilleur_coups = sort_indexes(pos->_Cases[1]);
+	Position newPos[6];
+  int resultat_jouecoup[6];
 	for(int i=0;i<6;i++){
-		int coup_actuel = meuilleur_coups[i];
-		if (jouer_coup(cs,&newPos,pos,0,coup_actuel)){
-			const int val=valeur_minimaxAB(cs,&newPos,1,alpha,beta,pmax-1,gagne);
+    resultat_jouecoup[i] = jouer_coup(cs,&newPos[i],pos,0,i);
+  }
+	int coup;
+	for(int i=0;i<6;i++){
+		if (resultat_jouecoup[i]){
+			const int val=valeur_minimaxAB(cs,&newPos[i],1,alpha,beta,pmax-1,gagne);
 			if (val > alpha) {
 				alpha=val;
-				coup=coup_actuel;
+				coup=i;
 			}
 		}
 	}
-	free(meuilleur_coups);
 
 	VALMM=alpha;
 	return coup;

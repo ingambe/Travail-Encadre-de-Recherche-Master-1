@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 
 echo "debut creation fichiers de sortie\n"
 

@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 
 echo "debut creation fichiers de sortie\n"
 
@@ -39,4 +39,3 @@ do
   echo "i : $i \n"
   cat ../input/j1.txt | ./../bin/clang_trie.out >> ../output/trie/clang/resultat.txt
 done
-
