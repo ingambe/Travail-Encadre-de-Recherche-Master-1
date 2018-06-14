@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "debut creation fichiers de sortie\n"
+echo "debut creation fichiers de sortie"
 
 #
 #CREATION DES FICHIERS DE RESULTATS
@@ -49,11 +49,11 @@ cat /dev/null > ../output/parallel/joue_coup/clang/resultat_6.txt
 cat /dev/null > ../output/parallel/joue_coup/clang/resultat_7.txt
 cat /dev/null > ../output/parallel/joue_coup/clang/resultat_8.txt
 
-echo "fin de creation fichier de sortie \n"
+echo "fin de creation fichier de sortie"
 
-echo "debug generation resultat \n"
+echo "debug generation resultat"
 
-echo "1 thread \n"
+echo "1 thread"
 export OMP_NUM_THREADS=1
 for i in  `seq 1 5`
 do

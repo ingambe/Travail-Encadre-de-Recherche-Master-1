@@ -5,6 +5,7 @@
 #include <ratio>
 #include <thread>
 #include <chrono>
+#include <omp.h>
 
 typedef std::chrono::high_resolution_clock Clock;
 
@@ -286,12 +287,17 @@ int decision(CaseSuivante* cs,Position* pos,int pmax){
 int valeur_minimaxAB(CaseSuivante* cs, Position* pos,const int joueur, int alpha,int beta, const int pmax, const bool gagne);
 
 int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, int beta, const int pmax,const bool gagne){
-	Position newPos;
+    Position newPos[6];
+    int resultat_jouecoup[6];
+    #pragma omp parallel
+    for(int i=0;i<6;i++){
+        resultat_jouecoup[i] = jouer_coup(cs,&newPos[i],pos,joueur,i);
+    }
 	if (joueur==0){// MAX
 		//cout << "MAX";
 		for(int i=0;i<6;i++){
-			if (jouer_coup(cs,&newPos,pos,joueur,i)){
-				const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
+			if (resultat_jouecoup[i]){
+				const int val=valeur_minimaxAB(cs,&newPos[i],!joueur,alpha,beta,pmax-1,gagne);
 			//	cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
 				if (val > alpha) {
 					alpha=val;
@@ -306,8 +312,8 @@ int calculer_coup(CaseSuivante* cs, Position* pos,const int joueur, int alpha, i
 	}
 	//	cout << "MIN";
 	for(int i=0;i<6;i++){
-		if (jouer_coup(cs,&newPos,pos,joueur,i)){
-			const int val=valeur_minimaxAB(cs,&newPos,!joueur,alpha,beta,pmax-1,gagne);
+        if (resultat_jouecoup[i]){
+			const int val=valeur_minimaxAB(cs,&newPos[i],!joueur,alpha,beta,pmax-1,gagne);
 		//		cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
 			if (val < beta){
 				beta=val;
@@ -372,10 +378,11 @@ int decisionAB(CaseSuivante* cs,Position* pos,int pmax, bool gagne){
 	int alpha=-VALMAX-50; // avant -1
 	int beta=VALMAX+50; // avant +1
 	Position newPos[6];
-  int resultat_jouecoup[6];
+    int resultat_jouecoup[6];
+    #pragma omp parallel
 	for(int i=0;i<6;i++){
-    resultat_jouecoup[i] = jouer_coup(cs,&newPos[i],pos,0,i);
-  }
+        resultat_jouecoup[i] = jouer_coup(cs,&newPos[i],pos,0,i);
+    }
 	int coup;
 	for(int i=0;i<6;i++){
 		if (resultat_jouecoup[i]){
