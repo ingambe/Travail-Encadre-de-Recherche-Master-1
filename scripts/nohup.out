@@ -454,3 +454,142 @@ i : 17 \n
 i : 18 \n
 i : 19 \n
 i : 20 \n
+debut creation fichiers de sortie
+fin de creation fichier de sortie
+debug generation resultat
+1 thread
+i : 1 \n
+GCC \n
+debut creation fichiers de sortie
+fin de creation fichier de sortie
+debug generation resultat
+1 thread
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+2 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+3 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+4 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+5 thread \n
+i : 1 \n
+GCC \n
+debut creation fichiers de sortie
+fin de creation fichier de sortie
+debug generation resultat
+1 thread
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+2 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+3 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+4 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+5 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+6 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+7 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+8 thread \n
+i : 1 \n
+GCC \n
+INTEL \n
+CLANG \n
+debut creation fichiers de sortie\n
+gcc
+i : 1 \n
+i : 2 \n
+i : 3 \n
+i : 4 \n
+i : 5 \n
+i : 6 \n
+i : 7 \n
+i : 8 \n
+i : 9 \n
+i : 10 \n
+i : 11 \n
+i : 12 \n
+i : 13 \n
+i : 14 \n
+i : 15 \n
+i : 16 \n
+i : 17 \n
+i : 18 \n
+i : 19 \n
+i : 20 \n
+intel
+i : 1 \n
+i : 2 \n
+i : 3 \n
+i : 4 \n
+i : 5 \n
+i : 6 \n
+i : 7 \n
+i : 8 \n
+i : 9 \n
+i : 10 \n
+i : 11 \n
+i : 12 \n
+i : 13 \n
+i : 14 \n
+i : 15 \n
+i : 16 \n
+i : 17 \n
+i : 18 \n
+i : 19 \n
+i : 20 \n
+clang
+i : 1 \n
+i : 2 \n
+i : 3 \n
+i : 4 \n
+i : 5 \n
+i : 6 \n
+i : 7 \n
+i : 8 \n
+i : 9 \n
+i : 10 \n
+i : 11 \n
+i : 12 \n
+i : 13 \n
+i : 14 \n
+i : 15 \n
+i : 16 \n
+i : 17 \n
+i : 18 \n
+i : 19 \n
+i : 20 \n
