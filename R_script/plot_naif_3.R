@@ -24,9 +24,8 @@ wvioplot(gcc$V1,clang$V1,intel$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FA
 
 axis(1,cex.axis=0.8,at=1:3, labels=xLabels)
 
-legend("bottomleft", generalDetails, bty = "n", cex=1)
+legend("topright", generalDetails, bty = "n", cex=0.8)
 
-legend("topright", inset=.03, c("GCC","CLANG","INTEL"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
 mtext(generalHardware, side=3, cex=1.5)
 
 title(ylab = "Temps (ms)", xlab="Compilateur utilisé", line = NA)

@@ -1,4 +1,4 @@
-setwd("../output/")
+setwd("/home/ingambe/Bureau/ter/output")
 
 xLabels<-c("O0", "O1", "O2","O3", "O0", "O1", "O2","O3","O0", "O1", "O2","O3")
 
@@ -22,7 +22,7 @@ generalDetails<-c(expression(
   italic("Linux kernel = 4.13.0-38"), 
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
-  italic("Compiler = CLANG 3.8.0"),
+  italic("Compiler = CLANG 6.0.0-1"),
   italic("Fichier = j1.txt"),
   italic("Executions = 20")))
 
@@ -42,9 +42,7 @@ mtext(side=1,text="GCC",line=2,at=2.5)
 mtext(side=1,text="INTEL",line=2,at=6.5)
 mtext(side=1,text="CLANG",line=2,at=10.5)
 
-legend("topright", inset=.03, c("GCC","INTEL","CLANG"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
-
-legend("bottomleft", generalDetails, bty = "n", cex=0.5)
+legend("topright", generalDetails, bty = "n", cex=0.7)
 mtext(generalHardware, side=3, cex=1.0)
 
 title(ylab = "Temps (s)", xlab="Options de compilation", line = NA)

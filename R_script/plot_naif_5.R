@@ -12,7 +12,7 @@ generalDetails<-c(expression(
   italic("Linux kernel = 4.13.0-38"), 
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
-	italic("Compiler = CLANG 18.0.2"),
+	italic("Compiler = CLANG 6.0.0-1"),
   italic("Nombre processeurs = 5"),
   italic("Fichier = j1.txt"),
   italic("Executions = 5")))
@@ -24,9 +24,7 @@ wvioplot(gcc$V1,clang$V1,intel$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FA
 
 axis(1,cex.axis=0.8,at=1:3, labels=xLabels)
 
-legend("bottomleft", generalDetails, bty = "n", cex=1)
-
-legend("topright", inset=.03, c("GCC","CLANG","INTEL"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
+legend("topright", generalDetails, bty = "n", cex=0.8)
 
 mtext(generalHardware, side=3, cex=1.5)
 

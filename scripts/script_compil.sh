@@ -34,6 +34,9 @@ icpc ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/intel_O
 
 clang++ ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -O3 -o ../bin/clang_O3_naif.out -fopenmp
 
+echo "compilation vtune partie parallelisee"
+icpc ../sources/minimax_graph_parallel_naif.cpp -std=c++11 -g -debug inline-debug-info -parallel-source-info=2 -shared-intel -O3 -o ../bin/intel_O3_naif_vtune.out -fopenmp
+
 echo "compilation hashmap"
 
 g++ ../sources/minimax_map.cpp -std=c++11 -O3 -o ../bin/gcc_map.out
