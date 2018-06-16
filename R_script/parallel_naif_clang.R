@@ -1,7 +1,9 @@
 library(wvioplot)
+library(wesanderson)
 
 setwd("/home/ingambe/Bureau/ter/output/parallel/naif")
 
+palette <- wes_palette(n=3,name="Zissou1")
 xLabels<-c("sequentiel", "1 Thread", "2 Thread", "3 Thread", "4 Thread", "5 Thread", "6 Thread", "7 Thread", "8 Thread")
 
 gccSeq<-read.table(file = "../../clang/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
@@ -25,7 +27,7 @@ generalDetails<-c(expression(
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
 
-wvioplot(gccSeq$V1,gcc1TH$V1,gcc2TH$V1, gcc3TH$V1,gcc4TH$V1,gcc5TH$V1,gcc6TH$V1,gcc7TH$V1,gcc8TH$V1,clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
+wvioplot(gccSeq$V1,gcc1TH$V1,gcc2TH$V1, gcc3TH$V1,gcc4TH$V1,gcc5TH$V1,gcc6TH$V1,gcc7TH$V1,gcc8TH$V1,clip=TRUE, adjust = 1, col=palette[1],names=FALSE)
 
 axis(1,cex.axis=0.6,at=1:9, labels=xLabels)
 
