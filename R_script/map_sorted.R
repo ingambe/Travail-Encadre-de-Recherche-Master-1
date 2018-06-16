@@ -1,8 +1,10 @@
 library(wvioplot)
+library(wesanderson)
+
 setwd("/home/ingambe/Bureau/ter/output/map/sorted")
 
 xLabels<-c("normal", "map","normal", "map","normal", "map")
-
+palette <- wes_palette(n=3,name="Zissou1")
 
 gcc<-read.table(file = "../../gcc/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
 clang<-read.table(file="../../clang/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
@@ -25,7 +27,7 @@ generalDetails<-c(expression(
 #cicada
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
-wvioplot(gcc$V1, gccMap$V1, intel$V1, intelMap$V1, clang$V1, clangMap$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
+wvioplot(gcc$V1, gccMap$V1, intel$V1, intelMap$V1, clang$V1, clangMap$V1, clip=TRUE, adjust = 1, col=palette[1],names=FALSE)
 
 abline(v = 2.5, col = "black")
 
@@ -38,9 +40,7 @@ mtext(side=1,text="GCC",line=2,at=1.5)
 mtext(side=1,text="INTEL",line=2,at=3.5)
 mtext(side=1,text="CLANG",line=2,at=5.5)
 
-legend("bottomleft", generalDetails, bty = "n", cex=.5)
-
-legend("topright", inset=.03, c("GCC","INTEL","CLANG"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
+legend("topleft", generalDetails, bty = "n", cex=.5)
 
 mtext(generalHardware, side=3, cex=1.5)
 

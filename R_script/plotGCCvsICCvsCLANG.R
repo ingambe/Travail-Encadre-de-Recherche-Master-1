@@ -1,3 +1,5 @@
+library(wesanderson)
+
 setwd("/home/ingambe/Bureau/ter/output")
 
 xLabels<-c("O0", "O1", "O2","O3", "O0", "O1", "O2","O3","O0", "O1", "O2","O3")
@@ -29,20 +31,21 @@ generalDetails<-c(expression(
 #cicada
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
+palette <- wes_palette(n=3,name="Zissou1")
+
 y <- c(median(gcc_0_p5_j1$V1), median(gcc_1_p5_j1$V1), median(gcc_2_p5_j1$V1), median(gcc_3_p5_j1$V1),median(intel_0_p5_j1$V1), median(intel_1_p5_j1$V1), median(intel_2_p5_j1$V1), median(intel_3_p5_j1$V1),median(clang_0_p5_j1$V1), median(clang_1_p5_j1$V1), median(clang_2_p5_j1$V1), median(clang_3_p5_j1$V1))
-barplot(y)
+barplot(y, col=c(palette[1], palette[1], palette[1], palette[1], palette[2], palette[2], palette[2], palette[2], palette[3], palette[3], palette[3], palette[3]), names.arg=xLabels)
 
-abline(v = 4.5, col = "black")
+abline(v = 4.9, col = "black")
 
-abline(v = 8.5, col = "black")
-
-axis(1,cex.axis=0.8,at=1:12, labels=xLabels)
+abline(v = 9.7, col = "black")
 
 mtext(side=1,text="GCC",line=2,at=2.5)
 mtext(side=1,text="INTEL",line=2,at=6.5)
 mtext(side=1,text="CLANG",line=2,at=10.5)
 
-legend("topright", generalDetails, bty = "n", cex=0.7)
+legend("topright", generalDetails, bty = "n", cex=0.6)
+legend("bottomleft", inset=.03, c("GCC", "INTEL","CLANG"), fill=wes_palette(n=3,name="Zissou1"), horiz=TRUE, cex=0.8)
 mtext(generalHardware, side=3, cex=1.0)
 
 title(ylab = "Temps (s)", xlab="Options de compilation", line = NA)

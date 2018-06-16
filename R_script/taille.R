@@ -1,25 +1,31 @@
 setwd("../output/")
 sizes<-read.table(file = "size.txt",sep=" ", header=FALSE)
 
-plot(sizes$V1, sizes$V2)
+x <- c(0,1,2,3)
+xLabele <- c("O0", "O1", "O2","O3")
 
-title(ylab = "Taille (Octets)", xlab="Options de compilation", line = 2)
+intel <- c(sizes$V2[4],sizes$V2[3],sizes$V2[2],sizes$V2[1])
+gcc <- c(sizes$V2[8],sizes$V2[7],sizes$V2[6],sizes$V2[5])
+clang <- c(sizes$V2[12],sizes$V2[11],sizes$V2[10],sizes$V2[9])
+           
+plot(x, intel, type="l", xaxt='n', ylim = c(19700,35000), ylab='', xlab='', col=palette[1], lwd=2)
+lines(x, gcc, col=palette[2], lwd=2)
+lines(x, clang, col=palette[3], lwd=2)
+
+palette <- wes_palette(n=3,name="BottleRocket2")
 
 generalDetails<-c(expression(
   
   italic("Linux kernel = 4.13.0-38"), 
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
-  italic("Compiler = CLANG 3.8.0"),))
+  italic("Compiler = CLANG 6.0.0-1")))
 
-#cicada
-generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
+mtext(generalHardware, side=3, cex=1.0)
 
-legend("topright", inset=.05, c("GCC","INTEL","CLANG"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.3)
+axis(1,at=x,labels=xLabele)
 
-abline(v = 4.5, col = "black")
+legend("topleft", inset=.03, c("INTEL", "GCC","CLANG"), fill=palette, horiz=TRUE, cex=0.8)
 
-abline(v = 8.5, col = "black")
 
-legend("bottomleft", generalDetails, bty = "n", cex=0.5)
-mtext(generalHardware, side=3, cex=1.5)
+title(ylab = "Taille (octets)", xlab="Options de compilation", line = NA)
