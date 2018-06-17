@@ -2,16 +2,14 @@ Cette archive contient les traces de recherche et le rapport comparant les perfo
 paramètres de compilation utilisés et l'analyse des performances 
 
 Contenu de l'archive :
+  -R_script: les scripts pour dessiner les graphs avec R
   -bin : les binaires généré par les tests d'options de compilation
-  -bin_vtune_gprof : les binaires dédiés à l'analyse
-  -grpof : les résultats de l'analyse avec l'outil GProf
+  -gprof : les résultats de l'analyse avec l'outil GProf
   -input : les entrées utilisées (les parties)
+  -intel_tools : les resultats de certaines execution des outils de la suite Intel Parallel Studio (pas tous à cause de la limitation de taille de Github)
   -output : le résultat de l'exécution de ces parties au format
     numero_coup : temps_calcul
   -plot : les différents graphs généré
-  -vtune : le résultat de l'analyse avec VTune
-  -minimax_graph.cpp/h : le code source pour l'analyse des options de compilation
-  -minimax_vtune.cpp/h : le code source pour l'analyse avec VTune et GProf
+  -sources: les différents codes sources utilisés
+  -latex : le code source du rapport latex
   -Rapport.pdf : le rapport
-  -script_execution_minimax.ps1 : le script PowerShell pour exécuter les différentes parties sur les exécutables générés
-  -script_plot_resultats.gp : permet de générer les graphs à partir des sorties dans le dossier output
