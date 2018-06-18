@@ -69,9 +69,9 @@ Master Informatique}
 \end{itemize}
 \end{frame}
 
-\section{Analyse des performances}
+\section{Analyse des performances séquentielles}
 
-\begin{frame}{Analyse des performances}
+\begin{frame}{Analyse des performances séquentielles}
 
 \begin{figure}
 	\begin{columns}
@@ -155,17 +155,87 @@ Usage de pointeurs qui pourraient aveugler les compilateurs
 \end{frame}
 
 \subsection{Thread Affinity}
-\begin{frame}{Thread affinity}
+\begin{frame}{Thread Affinity}
 	\begin{figure}
 	\begin{columns}
       \column{.25\linewidth}
-      \caption{Analyse impact du placement des threads.\label{Fig:thread_affinity}}
+      \caption{Analyse de l'impact du placement des threads.\label{Fig:thread_affinity}}
       \column{.72\linewidth}
       \includegraphics[width=\textwidth]{defaultVSscatterVScompact.png}
     \end{columns}	
-   		
 	\end{figure}
 \end{frame}
+
+\subsection{Utilisation outils Intel}
+
+\begin{frame}{Intel Advisor}
+	\begin{figure}
+	\begin{columns}
+      \column{.60\linewidth}
+      \includegraphics[width=\textwidth]{Intel.jpg}
+      \column{.25\linewidth}
+      \caption{Processus itératif d'Intel pour ajout parallélisme.\label{Fig:intel_iter}}
+    \end{columns}	
+    \end{figure}
+\end{frame}
+
+\section{Modification Algorithmique}
+
+
+\begin{frame}{Modification Algorithmique}
+
+\begin{itemize}
+  \item
+    Dictionnaires ouvertures.
+  \item
+    Trie des coups.
+  \item
+    Table de transposition.
+ \end{itemize}	
+\end{frame}
+
+
+\subsection{Trie coups}
+
+\begin{frame}{Trie coups}
+	\begin{figure}
+	\begin{columns}
+      \column{.25\linewidth}
+      \caption{Analyse de l'impact du trie des coups.\label{Fig:trie}}
+      \column{.72\linewidth}
+      \includegraphics[width=\textwidth]{trie.png}
+    \end{columns}	
+	\end{figure}
+\end{frame}
+
+\subsection{Table de transposition}
+
+\begin{frame}{Table de transposition}
+	\begin{figure}
+	\begin{columns}
+      \column{.5\linewidth}
+      \includegraphics[width=\textwidth]{sorted_map.png}
+      \caption{Arbre binaire de recherche.\label{Fig:arbre_binaire}}
+      \column{.5\linewidth}
+      \includegraphics[width=\textwidth]{unsorted_map.png}
+      \caption{Table de hashage.\label{Fig:arbre_binaire}}
+    \end{columns}	
+	\end{figure}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Conclusion et perspective}
+\begin{itemize}
+  \item
+    Dictionnaires ouvertures.
+  \item
+    Trie des coups.
+  \item
+    Table de transposition.
+ \end{itemize}	
+\end{frame}
+
 
 \end{document}
 

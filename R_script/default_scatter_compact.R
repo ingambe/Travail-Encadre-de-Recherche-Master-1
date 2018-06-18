@@ -1,8 +1,12 @@
 library(wvioplot)
+library(wesanderson)
+
 setwd("/home/ingambe/Bureau/ter/output/parallel/affinity/intel")
 
 xLabels<-c("Par Defaut", "Compact", "Scatter")
 
+
+palette <- wes_palette(n=3,name="Zissou1")
 
 default<-read.table(file = "../../naif/intel/resultat_8.txt",sep="\n", header=FALSE)
 gcc<-read.table(file = "compact.txt",sep="\n", header=FALSE)
@@ -19,16 +23,14 @@ generalDetails<-c(expression(
 #cicada
 generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
 
-wvioplot(default$V1, gcc$V1, clang$V1, clip=TRUE, adjust = 1, col="#E0EEEE",names=FALSE)
+wvioplot(default$V1, gcc$V1, clang$V1, col=palette ,clip=TRUE, adjust = 1,names=FALSE)
 
 
 mtext(side=1,text="Par Defaut",line=2,at=1)
 mtext(side=1,text="Compact",line=2,at=2)
 mtext(side=1,text="Scatter",line=2,at=3)
 
-legend("bottomleft", generalDetails, bty = "n", cex=1)
-
-legend("topright", inset=.03, c("Par Defaut", "Compact","Scatter"), fill=c("dark grey","#E0EEEE"), horiz=TRUE, cex=0.5)
+legend("topright", generalDetails, bty = "n", cex=1)
 
 mtext(generalHardware, side=3, cex=1.5)
 

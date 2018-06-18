@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  18 JUN 2018 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  18 JUN 2018 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1028,7 +1028,11 @@ Package french.ldf Info: No list customisation for the beamer class,
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty))
-(./presentation.aux)
+(./presentation.aux
+
+LaTeX Warning: Label `Fig:arbre_binaire' multiply defined.
+
+)
 \openout1 = `presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1255,7 +1259,7 @@ Overfull \hbox (252.62538pt too wide) has occurred while \output is active
 [2
 
 ]
-<Awale.jpg, id=134, 1552.80125pt x 858.20625pt>
+<Awale.jpg, id=170, 1552.80125pt x 858.20625pt>
 File: Awale.jpg Graphic file (type jpg)
 <use Awale.jpg>
 Package pdftex.def Info: Awale.jpg  used on input line 54.
@@ -1305,7 +1309,7 @@ line 85.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<GCCvsICCvsCLANG_j2.png, id=189, 542.025pt x 498.36188pt>
+<GCCvsICCvsCLANG_j2.png, id=224, 542.025pt x 498.36188pt>
 File: GCCvsICCvsCLANG_j2.png Graphic file (type png)
 <use GCCvsICCvsCLANG_j2.png>
 Package pdftex.def Info: GCCvsICCvsCLANG_j2.png  used on input line 85.
@@ -1323,7 +1327,7 @@ Overfull \hbox (252.62538pt too wide) has occurred while \output is active
 [5
 
  <./GCCvsICCvsCLANG_j2.png (PNG copy)>]
-<gprof.png, id=216, 1653.17625pt x 379.4175pt>
+<gprof.png, id=251, 1653.17625pt x 379.4175pt>
 File: gprof.png Graphic file (type png)
 <use gprof.png>
 Package pdftex.def Info: gprof.png  used on input line 95.
@@ -1341,12 +1345,12 @@ Overfull \hbox (252.62538pt too wide) has occurred while \output is active
 [6
 
  <./gprof.png>]
-<vtune.png, id=245, 246.1697pt x 323.70938pt>
+<vtune.png, id=281, 246.1697pt x 323.70938pt>
 File: vtune.png Graphic file (type png)
 <use vtune.png>
 Package pdftex.def Info: vtune.png  used on input line 114.
 (pdftex.def)             Requested size: 138.70717pt x 182.40714pt.
-<memory_vtune.png, id=246, 280.04625pt x 223.58531pt>
+<memory_vtune.png, id=282, 280.04625pt x 223.58531pt>
 File: memory_vtune.png Graphic file (type png)
 <use memory_vtune.png>
 Package pdftex.def Info: memory_vtune.png  used on input line 114.
@@ -1385,7 +1389,7 @@ Overfull \hbox (252.62538pt too wide) has occurred while \output is active
 [8
 
 ]
-<intel_parallel_naif.png, id=303, 542.025pt x 498.36188pt>
+<intel_parallel_naif.png, id=338, 542.025pt x 498.36188pt>
 File: intel_parallel_naif.png Graphic file (type png)
 <use intel_parallel_naif.png>
 Package pdftex.def Info: intel_parallel_naif.png  used on input line 143.
@@ -1407,7 +1411,7 @@ Overfull \hbox (252.62538pt too wide) has occurred while \output is active
 [9
 
  <./intel_parallel_naif.png (PNG copy)>]
-<false_sharing.jpg, id=330, 521.95pt x 470.75874pt>
+<false_sharing.jpg, id=365, 521.95pt x 470.75874pt>
 File: false_sharing.jpg Graphic file (type jpg)
 <use false_sharing.jpg>
 Package pdftex.def Info: false_sharing.jpg  used on input line 155.
@@ -1428,23 +1432,15 @@ Overfull \hbox (252.62538pt too wide) has occurred while \output is active
 
 [10
 
- <./false_sharing.jpg>]pdfTeX warning (ext4): destination with the same identif
-ier (name{Fig:naif_intel}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.169 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{Fig:naif_intel}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.169 \end{frame}
-                 
-File: intel_parallel_naif.png Graphic file (type png)
-<use intel_parallel_naif.png>
-Package pdftex.def Info: intel_parallel_naif.png  used on input line 169.
+ <./false_sharing.jpg>]
+<defaultVSscatterVScompact.png, id=393, 542.025pt x 498.36188pt>
+File: defaultVSscatterVScompact.png Graphic file (type png)
+<use defaultVSscatterVScompact.png>
+Package pdftex.def Info: defaultVSscatterVScompact.png  used on input line 167.
+
 (pdftex.def)             Requested size: 246.55383pt x 226.69417pt.
 
-Overfull \vbox (10.93024pt too high) detected at line 169
+Overfull \vbox (10.93024pt too high) detected at line 167
  []
 
 
@@ -1459,6 +1455,88 @@ Overfull \hbox (252.62538pt too wide) has occurred while \output is active
 
 [11
 
+ <./defaultVSscatterVScompact.png (PNG copy)>]
+<Intel.jpg, id=420, 325.96782pt x 337.26pt>
+File: Intel.jpg Graphic file (type jpg)
+<use Intel.jpg>
+Package pdftex.def Info: Intel.jpg  used on input line 180.
+(pdftex.def)             Requested size: 205.46327pt x 212.58813pt.
+
+Overfull \hbox (114.50616pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/sc/6 ([])  
+ []
+
+
+Overfull \hbox (252.62538pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[12
+
+ <./Intel.jpg>]
+Overfull \hbox (114.50616pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/sc/6 ([])  
+ []
+
+
+Overfull \hbox (252.62538pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
+]
+<trie.png, id=473, 542.025pt x 498.36188pt>
+File: trie.png Graphic file (type png)
+<use trie.png>
+Package pdftex.def Info: trie.png  used on input line 209.
+(pdftex.def)             Requested size: 246.55383pt x 226.69417pt.
+
+Overfull \vbox (10.93024pt too high) detected at line 209
+ []
+
+
+Overfull \hbox (114.50616pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/sc/6 ([])  
+ []
+
+
+Overfull \hbox (252.62538pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+ <./trie.png (PNG copy)>]
+<sorted_map.png, id=501, 542.025pt x 498.36188pt>
+File: sorted_map.png Graphic file (type png)
+<use sorted_map.png>
+Package pdftex.def Info: sorted_map.png  used on input line 224.
+(pdftex.def)             Requested size: 171.21765pt x 157.42587pt.
+<unsorted_map.png, id=502, 542.025pt x 498.36188pt>
+File: unsorted_map.png Graphic file (type png)
+<use unsorted_map.png>
+Package pdftex.def Info: unsorted_map.png  used on input line 224.
+(pdftex.def)             Requested size: 171.21765pt x 157.42587pt.
+
+Overfull \hbox (114.50616pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/m/sc/6 ([])  
+ []
+
+
+Overfull \hbox (252.62538pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[15
+
+pdfTeX warning (ext4): destination with the same identifier (name{Fig:arbre_bin
+aire}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.224 \end{frame}
+                  <./sorted_map.png (PNG copy)> <./unsorted_map.png (PNG copy)>
 ]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
@@ -1469,32 +1547,26 @@ Overfull \hbox (252.62538pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
+Package rerunfilecheck Info: File `presentation.out' has not changed.
+(rerunfilecheck)             Checksum: 27E60DDEBA6DD695EFEAAEDEEE28AD9E;967.
 
-
-Package rerunfilecheck Warning: File `presentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `presentation.out':
-(rerunfilecheck)             Before: D54F1B3E59C6651202C2B1E25514B2E8;549
-(rerunfilecheck)             After:  D985DAB5ED7B28DA896EE1E8C58D6DA2;679.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18851 strings out of 492982
- 349280 string characters out of 6134896
- 433775 words of memory out of 5000000
- 21933 multiletter control sequences out of 15000+600000
+ 18925 strings out of 492982
+ 350291 string characters out of 6134896
+ 435999 words of memory out of 5000000
+ 21986 multiletter control sequences out of 15000+600000
  15161 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,62p,779b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1504,10 +1576,10 @@ m-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfss1440.pfb>
-Output written on presentation.pdf (11 pages, 624108 bytes).
+Output written on presentation.pdf (15 pages, 854499 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
- 41 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 511 compressed objects within 6 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 253 words of extra memory for PDF output out of 10000 (max. 10000000)
 

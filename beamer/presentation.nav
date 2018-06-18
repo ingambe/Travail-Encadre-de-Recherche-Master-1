@@ -14,7 +14,7 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\beamer@sectionpages {4}{4}}
 \headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\sectionentry {3}{Analyse des performances}{5}{Analyse des performances}{0}}
+\headcommand {\sectionentry {3}{Analyse des performances s\IeC {\'e}quentielles}{5}{Analyse des performances s\IeC {\'e}quentielles}{0}}
 \headcommand {\slideentry {3}{0}{1}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
 \headcommand {\beamer@sectionpages {5}{5}}
@@ -48,8 +48,25 @@
 \headcommand {\beamer@subsectionentry {0}{6}{3}{11}{Thread Affinity}}
 \headcommand {\slideentry {6}{3}{1}{11/11}{Thread Affinity}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@partpages {1}{11}}
 \headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\beamer@sectionpages {9}{11}}
-\headcommand {\beamer@documentpages {11}}
-\headcommand {\gdef \inserttotalframenumber {11}}
+\headcommand {\beamer@subsectionentry {0}{6}{4}{12}{Utilisation outils Intel}}
+\headcommand {\slideentry {6}{4}{1}{12/12}{Utilisation outils Intel}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@sectionpages {9}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\sectionentry {7}{Modification Algorithmique}{13}{Modification Algorithmique}{0}}
+\headcommand {\slideentry {7}{0}{1}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{7}{1}{14}{Trie coups}}
+\headcommand {\slideentry {7}{1}{1}{14/14}{Trie coups}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{7}{2}{15}{Table de transposition}}
+\headcommand {\slideentry {7}{2}{1}{15/15}{Table de transposition}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@partpages {1}{15}}
+\headcommand {\beamer@subsectionpages {16}{15}}
+\headcommand {\beamer@sectionpages {16}{15}}
+\headcommand {\beamer@documentpages {15}}
+\headcommand {\gdef \inserttotalframenumber {15}}

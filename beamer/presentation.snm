@@ -5,4 +5,8 @@
 \beamer@slide {Fig:vTune_mem}{7}
 \beamer@slide {Fig:naif_intel}{9}
 \beamer@slide {Fig:false_sharing}{10}
-\beamer@slide {Fig:naif_intel}{11}
+\beamer@slide {Fig:thread_affinity}{11}
+\beamer@slide {Fig:intel_iter}{12}
+\beamer@slide {Fig:trie}{14}
+\beamer@slide {Fig:arbre_binaire}{15}
+\beamer@slide {Fig:arbre_binaire}{15}
