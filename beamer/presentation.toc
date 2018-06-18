@@ -14,3 +14,4 @@
 \beamer@sectionintoc {7}{Modification Algorithmique}{13}{0}{7}
 \beamer@subsectionintoc {7}{1}{Trie coups}{14}{0}{7}
 \beamer@subsectionintoc {7}{2}{Table de transposition}{15}{0}{7}
+\beamer@sectionintoc {8}{Conclusion et perspectives}{16}{0}{8}
