@@ -1,0 +1,12 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Pr\IeC {\'e}sentation du programme}{3}{0}{1}
+\beamer@sectionintoc {2}{D\IeC {\'e}marche exp\IeC {\'e}rimentale}{4}{0}{2}
+\beamer@sectionintoc {3}{Analyse des performances}{5}{0}{3}
+\beamer@sectionintoc {4}{Profilage du code}{6}{0}{4}
+\beamer@subsectionintoc {4}{1}{GProf}{6}{0}{4}
+\beamer@subsectionintoc {4}{2}{vTune}{7}{0}{4}
+\beamer@sectionintoc {5}{Difficult\IeC {\'e}s de l'optimisation du code}{8}{0}{5}
+\beamer@sectionintoc {6}{Parall\IeC {\'e}lisme de donn\IeC {\'e}e}{9}{0}{6}
+\beamer@subsectionintoc {6}{1}{Approche na\IeC {\"\i }ve}{9}{0}{6}
+\beamer@subsectionintoc {6}{2}{False Sharing}{10}{0}{6}
+\beamer@subsectionintoc {6}{3}{Thread Affinity}{11}{0}{6}
