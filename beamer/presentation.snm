@@ -1,12 +1,11 @@
 \beamer@slide {Fig:awale}{3}
-\beamer@slide {fig:exec_seq}{5}
 \beamer@slide {Fig:GProf}{6}
 \beamer@slide {Fig:vTune_proc}{7}
 \beamer@slide {Fig:vTune_mem}{7}
-\beamer@slide {Fig:naif_intel}{9}
-\beamer@slide {Fig:false_sharing}{10}
-\beamer@slide {Fig:thread_affinity}{11}
-\beamer@slide {Fig:intel_iter}{12}
+\beamer@slide {Fig:naif_intel}{8}
+\beamer@slide {Fig:false_sharing}{9}
+\beamer@slide {Fig:thread_affinity}{10}
+\beamer@slide {Fig:intel_iter}{11}
 \beamer@slide {Fig:trie}{14}
 \beamer@slide {Fig:arbre_binaire}{15}
 \beamer@slide {Fig:arbre_binaire}{15}

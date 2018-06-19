@@ -20,53 +20,37 @@
 \headcommand {\beamer@sectionpages {5}{5}}
 \headcommand {\beamer@subsectionpages {5}{5}}
 \headcommand {\sectionentry {4}{Profilage du code}{6}{Profilage du code}{0}}
-\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{6}{GProf}}
-\headcommand {\slideentry {4}{1}{1}{6/6}{GProf}{0}}
+\headcommand {\slideentry {4}{0}{1}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{7}{vTune}}
-\headcommand {\slideentry {4}{2}{1}{7/7}{vTune}{0}}
+\headcommand {\slideentry {4}{0}{2}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\beamer@sectionpages {6}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\sectionentry {5}{Difficult\IeC {\'e}s de l'optimisation du code}{8}{Difficult\IeC {\'e}s de l'optimisation du code}{0}}
+\headcommand {\beamer@subsectionpages {6}{7}}
+\headcommand {\sectionentry {5}{Parall\IeC {\'e}lisme de boucles}{8}{Parall\IeC {\'e}lisme de boucles}{0}}
 \headcommand {\slideentry {5}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@sectionpages {8}{8}}
-\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\sectionentry {6}{Parall\IeC {\'e}lisme de donn\IeC {\'e}e}{9}{Parall\IeC {\'e}lisme de donn\IeC {\'e}e}{0}}
-\headcommand {\beamer@subsectionpages {9}{8}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{9}{Approche na\IeC {\"\i }ve}}
-\headcommand {\slideentry {6}{1}{1}{9/9}{Approche na\IeC {\"\i }ve}{0}}
+\headcommand {\slideentry {5}{0}{2}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{6}{2}{10}{False Sharing}}
-\headcommand {\slideentry {6}{2}{1}{10/10}{False Sharing}{0}}
+\headcommand {\slideentry {5}{0}{3}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{6}{3}{11}{Thread Affinity}}
-\headcommand {\slideentry {6}{3}{1}{11/11}{Thread Affinity}{0}}
+\headcommand {\slideentry {5}{0}{4}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{6}{4}{12}{Utilisation outils Intel}}
-\headcommand {\slideentry {6}{4}{1}{12/12}{Utilisation outils Intel}{0}}
+\headcommand {\beamer@sectionpages {8}{11}}
+\headcommand {\beamer@subsectionpages {8}{11}}
+\headcommand {\sectionentry {6}{Difficult\IeC {\'e}s de l'optimisation du code}{12}{Difficult\IeC {\'e}s de l'optimisation du code}{0}}
+\headcommand {\slideentry {6}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@sectionpages {9}{12}}
+\headcommand {\beamer@sectionpages {12}{12}}
 \headcommand {\beamer@subsectionpages {12}{12}}
 \headcommand {\sectionentry {7}{Modification Algorithmique}{13}{Modification Algorithmique}{0}}
 \headcommand {\slideentry {7}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{7}{1}{14}{Trie coups}}
-\headcommand {\slideentry {7}{1}{1}{14/14}{Trie coups}{0}}
+\headcommand {\slideentry {7}{0}{2}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\beamer@subsectionentry {0}{7}{2}{15}{Table de transposition}}
-\headcommand {\slideentry {7}{2}{1}{15/15}{Table de transposition}{0}}
+\headcommand {\slideentry {7}{0}{3}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\beamer@sectionpages {13}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\beamer@subsectionpages {13}{15}}
 \headcommand {\sectionentry {8}{Conclusion et perspectives}{16}{Conclusion et perspectives}{0}}
 \headcommand {\slideentry {8}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}

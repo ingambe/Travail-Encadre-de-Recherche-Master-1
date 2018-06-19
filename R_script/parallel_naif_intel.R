@@ -35,4 +35,4 @@ legend("bottomright", generalDetails, bty = "n", cex=0.8)
 
 mtext(generalHardware, side=3, cex=1.5)
 
-title(ylab = "Temps (ms)", xlab="Nombre de Threads", line = NA)
+title(ylab = "Temps (s)", xlab="Nombre de Threads", line = NA)

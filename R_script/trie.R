@@ -3,7 +3,7 @@ library(wesanderson)
 
 setwd("/home/ingambe/Bureau/ter/output/trie")
 
-xLabels<-c("normal", "trie","normal", "trie","normal", "trie")
+xLabels<-c("original", "trié","original", "trié","original", "trié")
 palette <- wes_palette(n=3,name="Zissou1")
 
 
@@ -45,4 +45,4 @@ legend("topleft", generalDetails, bty = "n", cex=.6)
 
 mtext(generalHardware, side=3, cex=1.5)
 
-title(ylab = "Temps (ms)", xlab="Compilateur utilisé", line = NA)
+title(ylab = "Temps (s)", xlab="Compilateur utilisé", line = NA)

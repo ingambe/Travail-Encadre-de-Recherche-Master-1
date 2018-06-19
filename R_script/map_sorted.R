@@ -3,7 +3,7 @@ library(wesanderson)
 
 setwd("/home/ingambe/Bureau/ter/output/map/sorted")
 
-xLabels<-c("normal", "map","normal", "map","normal", "map")
+xLabels<-c("original", "map","original", "map","original", "map")
 palette <- wes_palette(n=3,name="Zissou1")
 
 gcc<-read.table(file = "../../gcc/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
@@ -44,4 +44,4 @@ legend("topleft", generalDetails, bty = "n", cex=.5)
 
 mtext(generalHardware, side=3, cex=1.5)
 
-title(ylab = "Temps (ms)", xlab="Compilateur utilisé", line = NA)
+title(ylab = "Temps (s)", xlab="Compilateur utilisé", line = NA)

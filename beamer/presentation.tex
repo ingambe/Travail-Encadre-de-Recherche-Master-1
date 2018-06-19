@@ -3,10 +3,27 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[francais]{babel}
+\usepackage{hyperref}
 \usetheme{Madrid}
 
-
-\title{Comparatif des performances d’une application en fonction des paramètres de compilation utilisés et analyse des performances }
+\makeatletter
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.55\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}Soutenance TER
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+\title{Analyse et amélioration des performances d'un programme par compilation optimisante: Étude de cas}
 
 \subtitle{TER M1 Informatique}
 
@@ -24,7 +41,7 @@ Master Informatique}
 
 % Let's get started
 \begin{document}
-
+\author{Pierre \textsc{Tassel}}
 \begin{frame}
   \titlepage
 \end{frame}
@@ -41,11 +58,11 @@ Master Informatique}
 \begin{frame}{Présentation du programme}{MinMax et le jeux de l'Awale}
 \begin{itemize}
   \item
-    MinMax avec coupes Alpha Beta
+    MinMax avec coupes Alpha Bêta.
   \item
-    Variante du jeux de l'Awale avec 6 cases et 4 graines par case
+    Variante du jeux de l'Awale avec 6 cases et 4 graines par case.
   \item
-    Ecrit en C++ par M \textsc{Régin}
+    Ecrit en C++ par Pr \textsc{Régin}.
   \end{itemize}
   \begin{figure}
    \includegraphics[width= 0.7\linewidth, keepaspectratio]{Awale.jpg}
@@ -57,15 +74,15 @@ Master Informatique}
 \begin{frame}{Démarche expérimentale}{Environnement matériel et logiciel}
 \begin{itemize}
   \item
-  	Processeur Scaling désactivé, processeur 8 coeurs 2,5GHz, 8Go DDR3, 250Go de SSD
+  	Processeur Scaling désactivé, processeur 8 coeurs 2,5GHz, 8Go DDR3, 256Go de SSD.
   \item
-    Environnement minimaliste en CLI, Arch Linux basé sur noyau 4.14.13-1
+    Environnement minimaliste en CLI, Arch Linux basé sur le noyau Linux 4.14.13-1.
     \item
-    3 compilateurs analysés, GCC, ICC et CLang dernières versions disponible
+    3 compilateurs analysés, GCC, ICC et CLang dernières versions disponible.
     \item
-    Fichier d'entrée généré en faisant jouer le programme contre lui même
+    Fichier d'entrée généré en faisant jouer le programme contre lui même, programme déterministe.
     \item
-    On répète les exécutions 20 fois pour chaque configurations testé
+    On répète les exécutions 20 fois pour chaque configuration testée.
 \end{itemize}
 \end{frame}
 
@@ -74,19 +91,13 @@ Master Informatique}
 \begin{frame}{Analyse des performances séquentielles}
 
 \begin{figure}
-	\begin{columns}
-      \column{.3\linewidth}
+      \includegraphics[width=0.7\textwidth]{GCCvsICCvsCLANG_j2.png}
       \caption{Temps d’exécution séquentiel quand le programme commence.}
-      \label{fig:exec_seq}
-      \column{.6\linewidth}
-      \includegraphics[width=\textwidth]{GCCvsICCvsCLANG_j2.png}
-    \end{columns}
 \end{figure}
 \end{frame}
 
 \section{Profilage du code}
 
-\subsection{GProf}
 \begin{frame}{Profilage du code}{GProf}
 \begin{figure}
         \includegraphics[width=\textwidth]{gprof.png}
@@ -94,7 +105,6 @@ Master Informatique}
 \end{figure}
 \end{frame}
 
-\subsection{vTune}
 \begin{frame}{Profilage du code}{vTune}
 \begin{columns}
     \column{6.5cm}
@@ -113,60 +123,37 @@ Master Informatique}
   \end{columns}
 \end{frame}
 
-\section{Difficultés de l'optimisation du code}
+\section{Parallélisme de boucles}
 
-\begin{frame}{Difficultés de l'optimisation du code}
-\begin{itemize}
-\item
-Algorithme très séquentiel
-\item
-Nombre d'itérations faibles
-\item
-Usage de pointeurs qui pourraient aveugler les compilateurs
-\end{itemize}
-\end{frame}
-
-\section{Parallélisme de donnée}
-
-\subsection{Approche naïve}
-\begin{frame}{Approche naïve}
+\begin{frame}{Approche naïve d'ajout de parallélisme}
 	\begin{figure}
-
-	\begin{columns}
-      \column{.25\linewidth}
+      \includegraphics[width=0.7\textwidth]{intel_parallel_naif.png}
       \caption{Résultat ajout parallélisme avec compilateur Intel.\label{Fig:naif_intel}}
-      \column{.72\linewidth}
-      \includegraphics[width=\textwidth]{intel_parallel_naif.png}
-    \end{columns}	
-   		
+  
 	\end{figure}
 \end{frame}
 
-\subsection{False Sharing}
 \begin{frame}{False Sharing}
 	\begin{figure}
 	\begin{columns}
       \column{.72\linewidth}
       \includegraphics[width=\textwidth]{false_sharing.jpg}
       \column{.25\linewidth}
-      \caption{Le phénomène de False Sharing.\label{Fig:false_sharing}}
+      \caption{Le phénomène de False Sharing.\label{Fig:false_sharing}}{\href{https://software.intel.com/en-us/articles/avoiding-and-identifying-false-sharing-among-threads}{Source : Documentation Intel.}}
     \end{columns}	
     \end{figure}
 \end{frame}
 
-\subsection{Thread Affinity}
 \begin{frame}{Thread Affinity}
 	\begin{figure}
 	\begin{columns}
       \column{.25\linewidth}
-      \caption{Analyse de l'impact du placement des threads.\label{Fig:thread_affinity}}
+      \caption{Analyse de l'impact du placement des threads avec le compilateur d'Intel, \textbf{-O3} avec 8 processeurs.\label{Fig:thread_affinity}}
       \column{.72\linewidth}
       \includegraphics[width=\textwidth]{defaultVSscatterVScompact.png}
     \end{columns}	
 	\end{figure}
 \end{frame}
-
-\subsection{Utilisation outils Intel}
 
 \begin{frame}{Intel Advisor}
 	\begin{figure}
@@ -174,41 +161,46 @@ Usage de pointeurs qui pourraient aveugler les compilateurs
       \column{.60\linewidth}
       \includegraphics[width=\textwidth]{Intel.jpg}
       \column{.25\linewidth}
-      \caption{Processus itératif d'Intel pour ajout parallélisme.\label{Fig:intel_iter}}
+      \caption{Processus itératif d'Intel pour l'ajout de parallélisme.\label{Fig:intel_iter}}{\href{https://software.intel.com/en-us/articles/avoiding-and-identifying-false-sharing-among-threads}{Source : Documentation Intel.}}
     \end{columns}	
     \end{figure}
+\end{frame}
+
+
+\section{Difficultés de l'optimisation du code}
+
+\begin{frame}{Difficultés de l'optimisation du code}
+\begin{itemize}
+\item
+Algorithme très séquentiel.
+\item
+Nombre d'itérations faibles (n = 6).
+\item
+Usage de pointeurs qui pourraient aveugler les compilateurs.
+\end{itemize}
 \end{frame}
 
 \section{Modification Algorithmique}
 
 
-\begin{frame}{Modification Algorithmique}
+\begin{frame}{Modification algorithmique}
 
 \begin{itemize}
   \item
-    Dictionnaires ouvertures.
+    Dictionnaire d'ouvertures.
   \item
-    Trie des coups.
+    Trier les coups à évaluer.
   \item
     Table de transposition.
  \end{itemize}	
 \end{frame}
 
-
-\subsection{Trie coups}
-
-\begin{frame}{Trie coups}
+\begin{frame}{Trie des coups}
 	\begin{figure}
-	\begin{columns}
-      \column{.25\linewidth}
+      \includegraphics[width=0.7\textwidth]{trie.png}
       \caption{Analyse de l'impact du trie des coups.\label{Fig:trie}}
-      \column{.72\linewidth}
-      \includegraphics[width=\textwidth]{trie.png}
-    \end{columns}	
 	\end{figure}
 \end{frame}
-
-\subsection{Table de transposition}
 
 \begin{frame}{Table de transposition}
 	\begin{figure}
@@ -227,12 +219,16 @@ Usage de pointeurs qui pourraient aveugler les compilateurs
 
 \begin{frame}{Conclusion et perspectives}
 \begin{itemize}
+\item
+	GCC bat Intel en séquentiel sur architecture Intel.
+	\item
+	Parallélisation avec OpenMP peut sévèrement dégrader les performances.
   \item
-  	Stage à l'\textsc{INRIA}.
+    Phénomène de False Sharing.
   \item
-    Réduire le False Sharing.
+  	Modifications algorithmique nécessaire pour améliorer les performances.
   \item
-  	Maintenir coups trié aux sous noeuds.
+  	Perspective: Stage à l'\textsc{INRIA}.
  \end{itemize}	
 \end{frame}
 

@@ -2,15 +2,7 @@
 \BOOKMARK [2][]{Outline0.2}{D\351marche exp\351rimentale}{}% 2
 \BOOKMARK [2][]{Outline0.3}{Analyse des performances s\351quentielles}{}% 3
 \BOOKMARK [2][]{Outline0.4}{Profilage du code}{}% 4
-\BOOKMARK [3][]{Outline0.4.1.6}{GProf}{Outline0.4}% 5
-\BOOKMARK [3][]{Outline0.4.2.7}{vTune}{Outline0.4}% 6
-\BOOKMARK [2][]{Outline0.5}{Difficult\351s de l'optimisation du code}{}% 7
-\BOOKMARK [2][]{Outline0.6}{Parall\351lisme de donn\351e}{}% 8
-\BOOKMARK [3][]{Outline0.6.1.9}{Approche na\357ve}{Outline0.6}% 9
-\BOOKMARK [3][]{Outline0.6.2.10}{False Sharing}{Outline0.6}% 10
-\BOOKMARK [3][]{Outline0.6.3.11}{Thread Affinity}{Outline0.6}% 11
-\BOOKMARK [3][]{Outline0.6.4.12}{Utilisation outils Intel}{Outline0.6}% 12
-\BOOKMARK [2][]{Outline0.7}{Modification Algorithmique}{}% 13
-\BOOKMARK [3][]{Outline0.7.1.14}{Trie coups}{Outline0.7}% 14
-\BOOKMARK [3][]{Outline0.7.2.15}{Table de transposition}{Outline0.7}% 15
-\BOOKMARK [2][]{Outline0.8}{Conclusion et perspectives}{}% 16
+\BOOKMARK [2][]{Outline0.5}{Parall\351lisme de boucles}{}% 5
+\BOOKMARK [2][]{Outline0.6}{Difficult\351s de l'optimisation du code}{}% 6
+\BOOKMARK [2][]{Outline0.7}{Modification Algorithmique}{}% 7
+\BOOKMARK [2][]{Outline0.8}{Conclusion et perspectives}{}% 8

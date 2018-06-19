@@ -34,4 +34,4 @@ legend("topright", generalDetails, bty = "n", cex=1)
 
 mtext(generalHardware, side=3, cex=1.5)
 
-title(ylab = "Temps (ms)", xlab="Thread affinity", line = NA)
+title(ylab = "Temps (s)", xlab="Thread affinity", line = NA)
