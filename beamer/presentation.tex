@@ -27,7 +27,7 @@
 
 \subtitle{TER M1 Informatique}
 
-\author{Pierre \textsc{Tassel} sous la direction de Sid \textsc{Touati}}
+\author[Pierre \textsc{Tassel}]{Pierre \textsc{Tassel} sous la direction du Pr \textsc{Touati}}
 
 \institute[Universitée Nice Sophia Antipolis] 
 {Département Informatique\\
@@ -41,7 +41,7 @@ Master Informatique}
 
 % Let's get started
 \begin{document}
-\author{Pierre \textsc{Tassel}}
+%\author{Pierre \textsc{Tassel}}
 \begin{frame}
   \titlepage
 \end{frame}
@@ -74,19 +74,19 @@ Master Informatique}
 \begin{frame}{Démarche expérimentale}{Environnement matériel et logiciel}
 \begin{itemize}
   \item
-  	Processeur Scaling désactivé, processeur 8 coeurs 2,5GHz, 8Go DDR3, 256Go de SSD.
+  	\textit{Processeur Scaling} désactivé, processeur Intel core i7 8 coeurs 2,5GHz, 8Go DDR3, 256Go de SSD.
   \item
     Environnement minimaliste en CLI, Arch Linux basé sur le noyau Linux 4.14.13-1.
     \item
-    3 compilateurs analysés, GCC, ICC et CLang dernières versions disponible.
+    Trois compilateurs analysés\,: GCC, ICC et CLang (dernières versions disponible).
     \item
     Fichier d'entrée généré en faisant jouer le programme contre lui même, programme déterministe.
     \item
-    On répète les exécutions 20 fois pour chaque configuration testée.
+    Les exécutions sont répétés 20 fois pour chaque configuration testée.
 \end{itemize}
 \end{frame}
 
-\section{Analyse des performances séquentielles}
+\section{Analyse et optimisation des performances séquentielles}
 
 \begin{frame}{Analyse des performances séquentielles}
 
@@ -96,12 +96,10 @@ Master Informatique}
 \end{figure}
 \end{frame}
 
-\section{Profilage du code}
-
 \begin{frame}{Profilage du code}{GProf}
 \begin{figure}
         \includegraphics[width=\textwidth]{gprof.png}
-        \caption{Analyse du code avec GProf.\label{Fig:GProf}}
+        \caption{Profilage du code avec GProf.\label{Fig:GProf}}
 \end{figure}
 \end{frame}
 
@@ -123,7 +121,7 @@ Master Informatique}
   \end{columns}
 \end{frame}
 
-\section{Parallélisme de boucles}
+\section{Ajout de parallélisme}
 
 \begin{frame}{Approche naïve d'ajout de parallélisme}
 	\begin{figure}
@@ -148,7 +146,7 @@ Master Informatique}
 	\begin{figure}
 	\begin{columns}
       \column{.25\linewidth}
-      \caption{Analyse de l'impact du placement des threads avec le compilateur d'Intel, \textbf{-O3} avec 8 processeurs.\label{Fig:thread_affinity}}
+      \caption{Analyse de l'impact du placement des threads avec le compilateur d'Intel, \textbf{-O3} avec 8 CPU.\label{Fig:thread_affinity}}
       \column{.72\linewidth}
       \includegraphics[width=\textwidth]{defaultVSscatterVScompact.png}
     \end{columns}	
@@ -161,13 +159,11 @@ Master Informatique}
       \column{.60\linewidth}
       \includegraphics[width=\textwidth]{Intel.jpg}
       \column{.25\linewidth}
-      \caption{Processus itératif d'Intel pour l'ajout de parallélisme.\label{Fig:intel_iter}}{\href{https://software.intel.com/en-us/articles/avoiding-and-identifying-false-sharing-among-threads}{Source : Documentation Intel.}}
+      \caption{Méthode itérative pour l'ajout de parallélisme (proposée par Intel).\label{Fig:intel_iter}}{\href{https://software.intel.com/en-us/articles/avoiding-and-identifying-false-sharing-among-threads}{Source : Documentation Intel.}}
     \end{columns}	
     \end{figure}
 \end{frame}
 
-
-\section{Difficultés de l'optimisation du code}
 
 \begin{frame}{Difficultés de l'optimisation du code}
 \begin{itemize}
@@ -180,14 +176,12 @@ Usage de pointeurs qui pourraient aveugler les compilateurs.
 \end{itemize}
 \end{frame}
 
-\section{Modification Algorithmique}
+\section{Modification algorithmique}
 
 
 \begin{frame}{Modification algorithmique}
 
 \begin{itemize}
-  \item
-    Dictionnaire d'ouvertures.
   \item
     Trier les coups à évaluer.
   \item

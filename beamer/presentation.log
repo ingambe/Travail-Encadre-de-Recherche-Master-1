@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  19 JUN 2018 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  19 JUN 2018 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,22 +1224,13 @@ LaTeX Info: Redefining \up on input line 43.
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' undefined
 (Font)              using `T1/cmss/m/n' instead on input line 43.
 
-
-Overfull \hbox (56.735pt too wide) in paragraph at lines 43--43
- [][]  
- []
-
-
-Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 44.
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./presentation.toc)
 [2
 
 ]
-<Awale.jpg, id=126, 1552.80125pt x 858.20625pt>
+<Awale.jpg, id=114, 1552.80125pt x 858.20625pt>
 File: Awale.jpg Graphic file (type jpg)
 <use Awale.jpg>
 Package pdftex.def Info: Awale.jpg  used on input line 71.
@@ -1253,7 +1244,7 @@ Overfull \vbox (5.17929pt too high) detected at line 71
  <./Awale.jpg>] [4
 
 ]
-<GCCvsICCvsCLANG_j2.png, id=179, 542.025pt x 498.36188pt>
+<GCCvsICCvsCLANG_j2.png, id=168, 542.025pt x 498.36188pt>
 File: GCCvsICCvsCLANG_j2.png Graphic file (type png)
 <use GCCvsICCvsCLANG_j2.png>
 Package pdftex.def Info: GCCvsICCvsCLANG_j2.png  used on input line 97.
@@ -1265,94 +1256,94 @@ Overfull \vbox (33.17018pt too high) detected at line 97
 [5
 
  <./GCCvsICCvsCLANG_j2.png (PNG copy)>]
-<gprof.png, id=204, 1653.17625pt x 379.4175pt>
+<gprof.png, id=195, 1653.17625pt x 379.4175pt>
 File: gprof.png Graphic file (type png)
 <use gprof.png>
-Package pdftex.def Info: gprof.png  used on input line 106.
+Package pdftex.def Info: gprof.png  used on input line 104.
 (pdftex.def)             Requested size: 342.43532pt x 78.5916pt.
  [6
 
  <./gprof.png>]
-<vtune.png, id=233, 246.1697pt x 323.70938pt>
+<vtune.png, id=223, 246.1697pt x 323.70938pt>
 File: vtune.png Graphic file (type png)
 <use vtune.png>
-Package pdftex.def Info: vtune.png  used on input line 124.
+Package pdftex.def Info: vtune.png  used on input line 122.
 (pdftex.def)             Requested size: 138.70717pt x 182.40714pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 124.
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 124.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 124.
+line 122.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<memory_vtune.png, id=234, 280.04625pt x 223.58531pt>
+<memory_vtune.png, id=224, 280.04625pt x 223.58531pt>
 File: memory_vtune.png Graphic file (type png)
 <use memory_vtune.png>
-Package pdftex.def Info: memory_vtune.png  used on input line 124.
+Package pdftex.def Info: memory_vtune.png  used on input line 122.
 (pdftex.def)             Requested size: 166.44748pt x 132.89331pt.
 
-Overfull \hbox (5.69044pt too wide) detected at line 124
+Overfull \hbox (5.69044pt too wide) detected at line 122
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 
-Overfull \vbox (8.18718pt too high) detected at line 124
+Overfull \vbox (8.18718pt too high) detected at line 122
  []
 
 [7
 
  <./vtune.png> <./memory_vtune.png>]
-<intel_parallel_naif.png, id=265, 542.025pt x 498.36188pt>
+<intel_parallel_naif.png, id=255, 542.025pt x 498.36188pt>
 File: intel_parallel_naif.png Graphic file (type png)
 <use intel_parallel_naif.png>
-Package pdftex.def Info: intel_parallel_naif.png  used on input line 134.
+Package pdftex.def Info: intel_parallel_naif.png  used on input line 132.
 (pdftex.def)             Requested size: 239.70367pt x 220.39014pt.
 
-Overfull \vbox (33.17018pt too high) detected at line 134
+Overfull \vbox (33.17018pt too high) detected at line 132
  []
 
 [8
 
  <./intel_parallel_naif.png (PNG copy)>]
-<false_sharing.jpg, id=293, 521.95pt x 470.75874pt>
+<false_sharing.jpg, id=283, 521.95pt x 470.75874pt>
 File: false_sharing.jpg Graphic file (type jpg)
 <use false_sharing.jpg>
-Package pdftex.def Info: false_sharing.jpg  used on input line 145.
+Package pdftex.def Info: false_sharing.jpg  used on input line 143.
 (pdftex.def)             Requested size: 246.55383pt x 222.37721pt.
 
-Overfull \vbox (6.61328pt too high) detected at line 145
+Overfull \vbox (6.61328pt too high) detected at line 143
  []
 
 [9
 
  <./false_sharing.jpg>]
-<defaultVSscatterVScompact.png, id=323, 542.025pt x 498.36188pt>
+<defaultVSscatterVScompact.png, id=313, 542.025pt x 498.36188pt>
 File: defaultVSscatterVScompact.png Graphic file (type png)
 <use defaultVSscatterVScompact.png>
-Package pdftex.def Info: defaultVSscatterVScompact.png  used on input line 156.
+Package pdftex.def Info: defaultVSscatterVScompact.png  used on input line 154.
 
 (pdftex.def)             Requested size: 246.55383pt x 226.69417pt.
 
-Overfull \vbox (10.93024pt too high) detected at line 156
+Overfull \vbox (10.93024pt too high) detected at line 154
  []
 
 [10
 
  <./defaultVSscatterVScompact.png (PNG copy)>]
-<Intel.jpg, id=350, 325.96782pt x 337.26pt>
+<Intel.jpg, id=341, 325.96782pt x 337.26pt>
 File: Intel.jpg Graphic file (type jpg)
 <use Intel.jpg>
-Package pdftex.def Info: Intel.jpg  used on input line 167.
+Package pdftex.def Info: Intel.jpg  used on input line 165.
 (pdftex.def)             Requested size: 205.46327pt x 212.58813pt.
  [11
 
@@ -1362,27 +1353,27 @@ Package pdftex.def Info: Intel.jpg  used on input line 167.
 [13
 
 ]
-<trie.png, id=431, 542.025pt x 498.36188pt>
+<trie.png, id=422, 542.025pt x 498.36188pt>
 File: trie.png Graphic file (type png)
 <use trie.png>
-Package pdftex.def Info: trie.png  used on input line 203.
+Package pdftex.def Info: trie.png  used on input line 197.
 (pdftex.def)             Requested size: 239.70367pt x 220.39014pt.
 
-Overfull \vbox (33.17018pt too high) detected at line 203
+Overfull \vbox (33.17018pt too high) detected at line 197
  []
 
 [14
 
  <./trie.png (PNG copy)>]
-<sorted_map.png, id=457, 542.025pt x 498.36188pt>
+<sorted_map.png, id=448, 542.025pt x 498.36188pt>
 File: sorted_map.png Graphic file (type png)
 <use sorted_map.png>
-Package pdftex.def Info: sorted_map.png  used on input line 216.
+Package pdftex.def Info: sorted_map.png  used on input line 210.
 (pdftex.def)             Requested size: 171.21765pt x 157.42587pt.
-<unsorted_map.png, id=458, 542.025pt x 498.36188pt>
+<unsorted_map.png, id=449, 542.025pt x 498.36188pt>
 File: unsorted_map.png Graphic file (type png)
 <use unsorted_map.png>
-Package pdftex.def Info: unsorted_map.png  used on input line 216.
+Package pdftex.def Info: unsorted_map.png  used on input line 210.
 (pdftex.def)             Requested size: 171.21765pt x 157.42587pt.
  [15
 
@@ -1391,7 +1382,7 @@ aire}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.216 \end{frame}
+l.210 \end{frame}
                   <./sorted_map.png (PNG copy)> <./unsorted_map.png (PNG copy)>
 ] [16
 
@@ -1405,13 +1396,13 @@ l.216 \end{frame}
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: E3DFE112541B4FE84E5321F3C78B970B;512.
+(rerunfilecheck)             Checksum: 21B9C3CFC2866F0B7290D02855795E2A;399.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1421,24 +1412,24 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18882 strings out of 492982
- 349346 string characters out of 6134896
- 433850 words of memory out of 5000000
- 21948 multiletter control sequences out of 15000+600000
- 15920 words of font info for 44 fonts, out of 8000000 for 9000
+ 18874 strings out of 492982
+ 349280 string characters out of 6134896
+ 432917 words of memory out of 5000000
+ 21941 multiletter control sequences out of 15000+600000
+ 16747 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,61p,779b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
-fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-
-Output written on presentation.pdf (16 pages, 864333 bytes).
+fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
+Output written on presentation.pdf (16 pages, 872744 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 492 compressed objects within 5 object streams
- 51 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 542 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
