@@ -14,21 +14,25 @@ mkdir -p ../output/gcc/ia_commence/no_option
 mkdir -p ../output/gcc/ia_commence/O1
 mkdir -p ../output/gcc/ia_commence/O2
 mkdir -p ../output/gcc/ia_commence/O3
+mkdir -p ../output/gcc/ia_commence/Os
 
 cat /dev/null > ../output/gcc/ia_commence/no_option/resultat.txt
 cat /dev/null > ../output/gcc/ia_commence/O1/resultat.txt
 cat /dev/null > ../output/gcc/ia_commence/O2/resultat.txt
 cat /dev/null > ../output/gcc/ia_commence/O3/resultat.txt
+cat /dev/null > ../output/gcc/ia_commence/Os/resultat.txt
 
 #JOUEUR COMMENCE
 mkdir -p ../output/gcc/joueur_commence/no_option
 mkdir -p ../output/gcc/joueur_commence/O1
 mkdir -p ../output/gcc/joueur_commence/O2
 mkdir -p ../output/gcc/joueur_commence/O3
+mkdir -p ../output/gcc/joueur_commence/Os
 cat /dev/null > ../output/gcc/joueur_commence/no_option/resultat.txt
 cat /dev/null > ../output/gcc/joueur_commence/O1/resultat.txt
 cat /dev/null > ../output/gcc/joueur_commence/O2/resultat.txt
 cat /dev/null > ../output/gcc/joueur_commence/O3/resultat.txt
+cat /dev/null > ../output/gcc/joueur_commence/Os/resultat.txt
 
 #INTEL
 mkdir -p ../output/intel
@@ -38,20 +42,24 @@ mkdir -p ../output/intel/ia_commence/no_option
 mkdir -p ../output/intel/ia_commence/O1
 mkdir -p ../output/intel/ia_commence/O2
 mkdir -p ../output/intel/ia_commence/O3
+mkdir -p ../output/intel/ia_commence/Os
 cat /dev/null > ../output/intel/ia_commence/no_option/resultat.txt
 cat /dev/null > ../output/intel/ia_commence/O1/resultat.txt
 cat /dev/null > ../output/intel/ia_commence/O2/resultat.txt
 cat /dev/null > ../output/intel/ia_commence/O3/resultat.txt
+cat /dev/null > ../output/intel/ia_commence/Os/resultat.txt
 
 #JOUEUR COMMENCE
 mkdir -p ../output/intel/joueur_commence/no_option
 mkdir -p ../output/intel/joueur_commence/O1
 mkdir -p ../output/intel/joueur_commence/O2
 mkdir -p ../output/intel/joueur_commence/O3
+mkdir -p ../output/intel/joueur_commence/Os
 cat /dev/null > ../output/intel/joueur_commence/no_option/resultat.txt
 cat /dev/null > ../output/intel/joueur_commence/O1/resultat.txt
 cat /dev/null > ../output/intel/joueur_commence/O2/resultat.txt
 cat /dev/null > ../output/intel/joueur_commence/O3/resultat.txt
+cat /dev/null > ../output/intel/joueur_commence/Os/resultat.txt
 
 #CLANG
 mkdir -p ../output/clang
@@ -61,20 +69,24 @@ mkdir -p ../output/clang/ia_commence/no_option
 mkdir -p ../output/clang/ia_commence/O1
 mkdir -p ../output/clang/ia_commence/O2
 mkdir -p ../output/clang/ia_commence/O3
+mkdir -p ../output/clang/ia_commence/Os
 cat /dev/null > ../output/clang/ia_commence/no_option/resultat.txt
 cat /dev/null > ../output/clang/ia_commence/O1/resultat.txt
 cat /dev/null > ../output/clang/ia_commence/O2/resultat.txt
 cat /dev/null > ../output/clang/ia_commence/O3/resultat.txt
+cat /dev/null > ../output/clang/ia_commence/Os/resultat.txt
 
 #JOUEUR COMMENCE
 mkdir -p ../output/clang/joueur_commence/no_option
 mkdir -p ../output/clang/joueur_commence/O1
 mkdir -p ../output/clang/joueur_commence/O2
 mkdir -p ../output/clang/joueur_commence/O3
+mkdir -p ../output/clang/joueur_commence/Os
 cat /dev/null > ../output/clang/joueur_commence/no_option/resultat.txt
 cat /dev/null > ../output/clang/joueur_commence/O1/resultat.txt
 cat /dev/null > ../output/clang/joueur_commence/O2/resultat.txt
 cat /dev/null > ../output/clang/joueur_commence/O3/resultat.txt
+cat /dev/null > ../output/clang/joueur_commence/Os/resultat.txt
 
 echo "fin de creation fichier de sortie \n"
 
@@ -92,6 +104,7 @@ do
   cat ../input/j1.txt | ./../bin/gcc_O1.out >> ../output/gcc/ia_commence/O1/resultat.txt
   cat ../input/j1.txt | ./../bin/gcc_O2.out >> ../output/gcc/ia_commence/O2/resultat.txt
   cat ../input/j1.txt | ./../bin/gcc_O3.out >> ../output/gcc/ia_commence/O3/resultat.txt
+  cat ../input/j1.txt | ./../bin/gcc_Osize.out >> ../output/gcc/ia_commence/Os/resultat.txt
 
   echo "INTEL \n"
   #INTEL
@@ -99,6 +112,7 @@ do
   cat ../input/j1.txt | ./../bin/intel_O1.out >> ../output/intel/ia_commence/O1/resultat.txt
   cat ../input/j1.txt | ./../bin/intel_O2.out >> ../output/intel/ia_commence/O2/resultat.txt
   cat ../input/j1.txt | ./../bin/intel_O3.out >> ../output/intel/ia_commence/O3/resultat.txt
+  cat ../input/j1.txt | ./../bin/intel_Osize.out >> ../output/intel/ia_commence/Os/resultat.txt
 
   echo "CLANG \n"
   #CLANG
@@ -106,6 +120,7 @@ do
   cat ../input/j1.txt | ./../bin/clang_O1.out >> ../output/clang/ia_commence/O1/resultat.txt
   cat ../input/j1.txt | ./../bin/clang_O2.out >> ../output/clang/ia_commence/O2/resultat.txt
   cat ../input/j1.txt | ./../bin/clang_O3.out >> ../output/clang/ia_commence/O3/resultat.txt
+  cat ../input/j1.txt | ./../bin/clang_Osize.out >> ../output/clang/ia_commence/Os/resultat.txt
 done
 
 echo "joueur commence\n"
@@ -120,6 +135,7 @@ do
   cat ../input/j2.txt | ./../bin/gcc_O1.out >> ../output/gcc/joueur_commence/O1/resultat.txt
   cat ../input/j2.txt | ./../bin/gcc_O2.out >> ../output/gcc/joueur_commence/O2/resultat.txt
   cat ../input/j2.txt | ./../bin/gcc_O3.out >> ../output/gcc/joueur_commence/O3/resultat.txt
+  cat ../input/j2.txt | ./../bin/gcc_Osize.out >> ../output/gcc/joueur_commence/Os/resultat.txt
 
   echo "INTEL \n"
   #INTEL
@@ -127,6 +143,7 @@ do
   cat ../input/j2.txt | ./../bin/intel_O1.out >> ../output/intel/joueur_commence/O1/resultat.txt
   cat ../input/j2.txt | ./../bin/intel_O2.out >> ../output/intel/joueur_commence/O2/resultat.txt
   cat ../input/j2.txt | ./../bin/intel_O3.out >> ../output/intel/joueur_commence/O3/resultat.txt
+  cat ../input/j2.txt | ./../bin/intel_Osize.out >> ../output/intel/joueur_commence/Os/resultat.txt
 
   echo "CLANG \n"
   #CLANG
@@ -134,4 +151,5 @@ do
   cat ../input/j2.txt | ./../bin/clang_O1.out >> ../output/clang/joueur_commence/O1/resultat.txt
   cat ../input/j2.txt | ./../bin/clang_O2.out >> ../output/clang/joueur_commence/O2/resultat.txt
   cat ../../input/j2.txt | ./../bin/clang_O3.out >> ../output/clang/joueur_commence/O3/resultat.txt
+  cat ../../input/j2.txt | ./../bin/clang_Osize.out >> ../output/clang/joueur_commence/Os/resultat.txt
 done

@@ -15,16 +15,19 @@ g++ ../sources/minimax_graph.cpp -std=c++11 -o ../bin/gcc_no_option.out
 g++ ../sources/minimax_graph.cpp -std=c++11 -O1 -o ../bin/gcc_O1.out
 g++ ../sources/minimax_graph.cpp -std=c++11 -O2 -o ../bin/gcc_O2.out
 g++ ../sources/minimax_graph.cpp -std=c++11 -O3 -o ../bin/gcc_O3.out
+g++ ../sources/minimax_graph.cpp -std=c++11 -Os -o ../bin/gcc_Osize.out
 
 icpc ../sources/minimax_graph.cpp -std=c++11 -O0 -o ../bin/intel_no_option.out
 icpc ../sources/minimax_graph.cpp -std=c++11 -O1 -o ../bin/intel_O1.out
 icpc ../sources/minimax_graph.cpp -std=c++11 -O2 -o ../bin/intel_O2.out
 icpc ../sources/minimax_graph.cpp -std=c++11 -O3 -o ../bin/intel_O3.out
+icpc ../sources/minimax_graph.cpp -std=c++11 -Os -o ../bin/intel_Osize.out
 
 clang++ ../sources/minimax_graph.cpp -std=c++11 -O0 -o ../bin/clang_no_option.out
 clang++ ../sources/minimax_graph.cpp -std=c++11 -O1 -o ../bin/clang_O1.out
 clang++ ../sources/minimax_graph.cpp -std=c++11 -O2 -o ../bin/clang_O2.out
 clang++ ../sources/minimax_graph.cpp -std=c++11 -O3 -o ../bin/clang_O3.out
+clang++ ../sources/minimax_graph.cpp -std=c++11 -Os -o ../bin/clang_Osize.out
 
 # PARALLELISEE
 echo "compilation partie parallelisee"
