@@ -593,3 +593,345 @@ i : 17 \n
 i : 18 \n
 i : 19 \n
 i : 20 \n
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+ia commence 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 6 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 7 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 8 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 9 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 10 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 11 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 12 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 13 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 14 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 15 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 16 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 17 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 18 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 19 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 20 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+joueur commence
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 6 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 7 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 8 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 9 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 10 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 11 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 12 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 13 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 14 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 15 
+
+GCC 
+
