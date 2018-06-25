@@ -935,3 +935,251 @@ i : 15
 
 GCC 
 
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 16 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 17 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 18 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 19 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+i : 20 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+cat: ../../input/j2.txt: No such file or directory
+Segmentation fault
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+1 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+2 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+3 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+4 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+5 thread 
+
+i : 1 
+
+GCC 
+
