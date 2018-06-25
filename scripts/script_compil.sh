@@ -73,7 +73,6 @@ clang++ ../sources/minimax_jouecoup_parallel.cpp -std=c++11 -O3 -o ../bin/clang_
 
 echo "taille int"
 
-
 g++ ../sources/int_size.cpp -std=c++11 -O3 -o ../bin/gcc_taille_int.out
 
 icpc ../sources/int_size.cpp -std=c++11 -O3 -o ../bin/intel_taille_int.out

@@ -106,3 +106,21 @@ do
   #CLANG
   cat ../input/j1.txt | ./../bin/clang_O3_parallel.out >> ../output/parallel/joue_coup/clang/resultat_3.txt
 done
+
+echo "4 thread \n"
+export OMP_NUM_THREADS=4
+for i in  `seq 1 5`
+do
+  echo "i : $i \n"
+  echo "GCC \n"
+  #GCC
+  cat ../input/j1.txt | ./../bin/gcc_O3_parallel.out >> ../output/parallel/joue_coup/gcc/resultat_4.txt
+
+  echo "INTEL \n"
+  #INTEL
+  cat ../input/j1.txt | ./../bin/intel_O3_parallel.out >> ../output/parallel/joue_coup/intel/resultat_4.txt
+
+  echo "CLANG \n"
+  #CLANG
+  cat ../input/j1.txt | ./../bin/clang_O3_parallel.out >> ../output/parallel/joue_coup/clang/resultat_4.txt
+done
