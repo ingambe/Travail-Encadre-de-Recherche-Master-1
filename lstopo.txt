@@ -1,0 +1,24 @@
+Machine (12GB)
+  Package L#0 + L3 L#0 (8192KB)
+    L2 L#0 (256KB) + L1d L#0 (32KB) + L1i L#0 (32KB) + Core L#0 + PU L#0 (P#0)
+    L2 L#1 (256KB) + L1d L#1 (32KB) + L1i L#1 (32KB) + Core L#1 + PU L#1 (P#1)
+    L2 L#2 (256KB) + L1d L#2 (32KB) + L1i L#2 (32KB) + Core L#2 + PU L#2 (P#2)
+    L2 L#3 (256KB) + L1d L#3 (32KB) + L1i L#3 (32KB) + Core L#3 + PU L#3 (P#3)
+  Misc(MemoryModule)
+  Misc(MemoryModule)
+  Misc(MemoryModule)
+  Misc(MemoryModule)
+  Misc(MemoryModule)
+  Misc(MemoryModule)
+  HostBridge L#0
+    PCIBridge
+      PCI 10de:0659
+        GPU L#0 "renderD128"
+        GPU L#1 "card0"
+        GPU L#2 "controlD64"
+    PCIBridge
+      PCI 14e4:1684
+        Net L#3 "enp1s0"
+    PCI 8086:2822
+      Block(Disk) L#4 "sda"
+      Block(Removable Media Device) L#5 "sr0"
