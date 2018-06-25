@@ -150,6 +150,6 @@ do
   cat ../input/j2.txt | ./../bin/clang_no_option.out >> ../output/clang/joueur_commence/no_option/resultat.txt
   cat ../input/j2.txt | ./../bin/clang_O1.out >> ../output/clang/joueur_commence/O1/resultat.txt
   cat ../input/j2.txt | ./../bin/clang_O2.out >> ../output/clang/joueur_commence/O2/resultat.txt
-  cat ../../input/j2.txt | ./../bin/clang_O3.out >> ../output/clang/joueur_commence/O3/resultat.txt
-  cat ../../input/j2.txt | ./../bin/clang_Osize.out >> ../output/clang/joueur_commence/Os/resultat.txt
+  cat ../input/j2.txt | ./../bin/clang_O3.out >> ../output/clang/joueur_commence/O3/resultat.txt
+  cat ../input/j2.txt | ./../bin/clang_Osize.out >> ../output/clang/joueur_commence/Os/resultat.txt
 done
