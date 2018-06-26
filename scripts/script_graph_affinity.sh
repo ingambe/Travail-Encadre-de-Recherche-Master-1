@@ -22,16 +22,17 @@ echo "fin de creation fichier de sortie \n"
 
 echo "debug generation resultat \n"
 
-echo "Scatter\n"
+echo "Scatter"
 export KMP_AFFINITY=scatter
-for i in  `seq 1 20`
-do
-  echo "i : $i \n"
-  cat ../input/j1.txt | ./../bin/intel_O3_naif.out >> ../output/parallel/affinity/intel/scatter.txt
-done
+#for i in  `seq 1 20`
+#do
+#  echo "i : $i"
+#  cat ../input/j1.txt | ./../bin/intel_O3_naif.out >> ../output/parallel/affinity/intel/scatter.txt
+#done
 
 
-export KMP_AFFINITY=scatter
+echo "Compact"
+export KMP_AFFINITY=compact
 for i in  `seq 1 20`
 do
   echo "i : $i \n"
