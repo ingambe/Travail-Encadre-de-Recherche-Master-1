@@ -403,40 +403,40 @@ int main(int argc, char* argv[]){
 	std::chrono::time_point<std::chrono::system_clock> start, end;
 	start = std::chrono::system_clock::now();
 	CaseSuivante cs;
-	cs._Cnext[0][0 * 16]=0;
-	cs._Jnext[0][0 * 16]=1;
-	cs._Cnext[0][1 * 16]=0;
-	cs._Jnext[0][1 * 16]=0;
-	cs._Cnext[0][2 * 16]=1;
-	cs._Jnext[0][2 * 16]=0;
-	cs._Cnext[0][3 * 16]=2;
-	cs._Jnext[0][3 * 16]=0;
-	cs._Cnext[0][4 * 16]=3;
-	cs._Jnext[0][4 * 16]=0;
-	cs._Cnext[0][5 * 16]=4;
-	cs._Jnext[0][5 * 16]=0;
+	cs._Cnext[0][0]=0;
+	cs._Jnext[0][0]=1;
+	cs._Cnext[0][1]=0;
+	cs._Jnext[0][1]=0;
+	cs._Cnext[0][2]=1;
+	cs._Jnext[0][2]=0;
+	cs._Cnext[0][3]=2;
+	cs._Jnext[0][3]=0;
+	cs._Cnext[0][4]=3;
+	cs._Jnext[0][4]=0;
+	cs._Cnext[0][5]=4;
+	cs._Jnext[0][5]=0;
 
-	cs._Cnext[1][0 * 16]=1;
-	cs._Jnext[1][0 * 16]=1;
-	cs._Cnext[1][1 * 16]=2;
-	cs._Jnext[1][1 * 16]=1;
-	cs._Cnext[1][2 * 16]=3;
-	cs._Jnext[1][2 * 16]=1;
-	cs._Cnext[1][3 * 16]=4;
-	cs._Jnext[1][3 * 16]=1;
-	cs._Cnext[1][4 * 16]=5;
-	cs._Jnext[1][4 * 16]=1;
-	cs._Cnext[1][5 * 16]=5;
-	cs._Jnext[1][5 * 16]=0;
+	cs._Cnext[1][0]=1;
+	cs._Jnext[1][0]=1;
+	cs._Cnext[1][1]=2;
+	cs._Jnext[1][1]=1;
+	cs._Cnext[1][2]=3;
+	cs._Jnext[1][2]=1;
+	cs._Cnext[1][3]=4;
+	cs._Jnext[1][3]=1;
+	cs._Cnext[1][4]=5;
+	cs._Jnext[1][4]=1;
+	cs._Cnext[1][5]=5;
+	cs._Jnext[1][5]=0;
 
 	Position pos;
 	Position newPos;
 	position_debut(&pos);
-/**
+	/**
 	printf("DEBUT DU JEU AWALE\n");
 	printf("(0) l'ordinateur commence\n");
 	printf("(1) le joueur commence\n");
-**/
+	**/
 	int joueur;
 	if(scanf("%d",&joueur)){}
 
@@ -464,13 +464,11 @@ int main(int argc, char* argv[]){
 			NUM_MINIMAX=0;
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 			copier(&pos,&newPos);
-/**
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-**/
 		} else { // le JOUEUR JOUE
 			if (ordiCommence){
 				//printf("selectionner une case 12 11 10 9 8 7\n");
@@ -487,13 +485,13 @@ int main(int argc, char* argv[]){
 			jouer_coup(&cs,&newPos,&pos,joueur,coup);
 
 			copier(&pos,&newPos);
-/**
+
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-**/
+
 		}
 		fin=test_fin(&pos);
 		joueur = !joueur;
