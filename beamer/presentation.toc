@@ -1,7 +1,8 @@
 \babel@toc {english}{}
-\beamer@sectionintoc {1}{Pr\IeC {\'e}sentation du programme}{3}{0}{1}
-\beamer@sectionintoc {2}{D\IeC {\'e}marche exp\IeC {\'e}rimentale}{4}{0}{2}
-\beamer@sectionintoc {3}{Analyse et optimisation des performances s\IeC {\'e}quentielles}{5}{0}{3}
-\beamer@sectionintoc {4}{Ajout de parall\IeC {\'e}lisme}{8}{0}{4}
-\beamer@sectionintoc {5}{Modification algorithmique}{13}{0}{5}
-\beamer@sectionintoc {6}{Conclusion et perspectives}{16}{0}{6}
+\beamer@sectionintoc {1}{The program}{3}{0}{1}
+\beamer@sectionintoc {2}{Experimental approach}{5}{0}{2}
+\beamer@sectionintoc {3}{Analysis and optimization of sequential performances}{6}{0}{3}
+\beamer@sectionintoc {4}{Adding parallelism}{9}{0}{4}
+\beamer@sectionintoc {5}{Simple algorithmic modification}{14}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{17}{0}{6}
+\beamer@sectionintoc {7}{Perspectives}{18}{0}{7}
