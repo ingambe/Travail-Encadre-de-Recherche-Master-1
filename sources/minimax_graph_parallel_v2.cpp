@@ -323,59 +323,6 @@ int calculer_coup(Position* pos,const int joueur, int alpha, int beta, const int
 	return beta;
 }
 
-int calculer_coupP(Position* pos,const int joueur, int alpha, int beta, const int pmax,const bool gagne){
-	Position newPos;
-	if (joueur==0){// MAX
-		//cout << "MAX";
-		for(int i=0;i<6;i++){
-			if (jouer_coup(&newPos,pos,joueur,i)){
-				const int val=valeur_minimaxAB(&newPos,!joueur,alpha,beta,pmax-1,gagne);
-			//	cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
-				if (val > alpha) {
-					alpha=val;
-				}
-				if (alpha >= beta){
-					//cout << "a";
-					return alpha;
-				}
-			}
-		}
-		return alpha;
-	}
-	//	cout << "MIN";
-  int i;
-  int valeurs[81];
-	for(i=0;i<6;i++){
-		if (jouer_coup(&newPos,pos,joueur,i)){
-			valeurs[16 * i]=valeur_minimaxAB(&newPos,!joueur,alpha,beta,pmax-1,gagne);
-		//		cout << " coup: " << i << " val: " << val << " alpha: " << alpha << " beta:" << beta << endl;
-			if (valeurs[16 * i] < beta){
-				beta=valeurs[16 * i];
-			}
-			if (beta <= alpha){
-				//cout << "b";
-				return beta;
-			}
-      if(i < 5){
-        break;
-      }
-		}
-	}
-  #pragma omp parallel for
-  for(i = i +1; i < 6; i++){
-    if (jouer_coup(&newPos,pos,joueur,i)){
-			valeurs[16 * i] = valeur_minimaxAB(&newPos,!joueur,alpha,beta,pmax-1,gagne);
-    }
-  }
-  int coup = 0;
-  for(int i = 1; i < 6; i++){
-    if(valeurs[16 * i] < valeurs[16 * coup]){
-      coup = i;
-    }
-  }
-	return valeurs[16 * coup];
-}
-
 /// <summary> Fonction qui calcule la valeur minimax avec coupes Alpha-Beta </summary>
 int valeur_minimaxAB(Position* pos,const int joueur, int alpha,int beta, const int pmax, const bool gagne){
 	// Calcule la valeur de e pour le joueur J selon que e EstUnEtatMax ou pas et pmax la
@@ -401,32 +348,6 @@ int valeur_minimaxAB(Position* pos,const int joueur, int alpha,int beta, const i
 	}
 	if (pmax == 0) return evaluer(pos);
 	return calculer_coup(pos,joueur,alpha,beta,pmax,gagne);
-}
-
-int valeur_minimaxABP(Position* pos,const int joueur, int alpha,int beta, const int pmax, const bool gagne){
-	// Calcule la valeur de e pour le joueur J selon que e EstUnEtatMax ou pas et pmax la
-	NUM_MINIMAX++;
-	int ajoutProf=(gagne) ? pmax : 0;
-	// TODO rajouter un parametre gagne qui est vrai ou faux
-	// puis on definit un parametre ajoutProf en fn de cette variable
-	if (pos->_PionsPris[0] + pos->_PionsPris[1] > 24){
-		if (48-pos->_PionsPris[0]-pos->_PionsPris[1] <= 6){
-			if (pos->_PionsPris[0] > pos->_PionsPris[1]){
-				//cout << "position finale gagnante joueur: " << joueur << " pmax: " << pmax << endl;
-				//print_position(pos);
-				return VALMAX + ajoutProf;
-			}
-			if (pos->_PionsPris[0] < pos->_PionsPris[1]) return -VALMAX-ajoutProf;
-			return 0;
-		}
-		if (pos->_PionsPris[0] >= 25){
-			//cout << "position finale gagnante joueur: " << joueur << " pmax: " << pmax << endl;
-			return VALMAX+ajoutProf;
-		}
-		if (pos->_PionsPris[1] >= 25) return -VALMAX-ajoutProf;
-	}
-	if (pmax == 0) return evaluer(pos);
-	return calculer_coupP(pos,joueur,alpha,beta,pmax,gagne);
 }
 
 /// Fonction qui d�termine la premi�re d�cision avec utilisation d'un algo minimax et de coupes
@@ -462,7 +383,7 @@ int decisionAB(Position* pos,int pmax, bool gagne){
   for(coup=0;coup<6;coup++){
     Position newPos;
 		if (jouer_coup(&newPos,pos,0,coup)){
-			alpha=valeur_minimaxABP(&newPos,1,alpha,beta,pmax-1,gagne);
+			alpha=valeur_minimaxAB(&newPos,1,alpha,beta,pmax-1,gagne);
       valeurs[16 * coup] = alpha;
       // inutile de lancer un thread pour une branche
       if(coup < 4){
@@ -531,16 +452,16 @@ int main(int argc, char* argv[]){
 	Position pos;
 	Position newPos;
 	position_debut(&pos);
-  /**
+
 	printf("DEBUT DU JEU AWALE\n");
 	printf("(0) l'ordinateur commence\n");
 	printf("(1) le joueur commence\n");
-  **/
+
 	int joueur;
 	if(scanf("%d",&joueur)){}
 
 	int ordiCommence= (joueur==0)? 1 : 0;
-	//printf("C'est parti!\n");
+	printf("C'est parti!\n");
 	int fin=0;
 	bool gagne=false;
 	int numeroCoup = 1;
@@ -558,7 +479,7 @@ int main(int argc, char* argv[]){
 			} else {
 				cj=12-coup;
 			}
-			//printf("COUP JOUE: %d\n",cj);
+			printf("COUP JOUE: %d\n",cj);
 			NUM_MINIMAX=0;
 			jouer_coup(&newPos,&pos,joueur,coup);
 			copier(&pos,&newPos);
@@ -571,11 +492,11 @@ int main(int argc, char* argv[]){
       **/
 		} else { // le JOUEUR JOUE
 			if (ordiCommence){
-				//printf("selectionner une case 12 11 10 9 8 7\n");
+				printf("selectionner une case 12 11 10 9 8 7\n");
 				if(scanf("%d",&coup)){}
 				coup -=7;
 			} else {
-				//printf("selectionner une case 1 2 3 4 5 6\n");
+				printf("selectionner une case 1 2 3 4 5 6\n");
 				if(scanf("%d",&coup)){}
 				//coup=6-coup;
 				coup--;
@@ -585,13 +506,13 @@ int main(int argc, char* argv[]){
 			jouer_coup(&newPos,&pos,joueur,coup);
 
 			copier(&pos,&newPos);
-      /**
+
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-      **/
+
 		}
 		fin=test_fin(&pos);
 		joueur = !joueur;
