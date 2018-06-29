@@ -2069,3 +2069,441 @@ GCC
 INTEL 
 
 env: « ./script_taille_int.sh »: Permission non accordée
+compilation avec profile
+96.1154
+92.6279
+73.5878
+compilation avec utilisation profile
+icpc: error #10236: File not found:  '–prof-use'
+error: Could not read profile default.profdata: No such file or directory
+1 error generated.
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+ia commence 
+
+i : 1 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 2 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 3 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 4 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 5 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 6 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 7 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 8 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 9 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 10 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 11 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 12 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 13 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 14 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 15 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 16 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 17 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 18 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 19 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 20 
+
+GCC 
+
+./compil_with_profile.sh: 76: ./compil_with_profile.sh: cannot create ../output/gcc/ia_commence/profile/resultat.txt: Is a directory
+INTEL 
+
+./compil_with_profile.sh: 80: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 84: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+joueur commence
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 2 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 3 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 4 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 5 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 6 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 7 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 8 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 9 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 10 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 11 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 12 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 13 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 14 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 15 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 16 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 17 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 18 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 19 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+i : 20 
+
+GCC 
+
+INTEL 
+
+./compil_with_profile.sh: 99: ./compil_with_profile.sh: ./../bin/intel_profil_use_O3.out: not found
+CLANG 
+
+./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
