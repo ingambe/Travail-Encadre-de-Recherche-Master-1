@@ -2,9 +2,9 @@ echo "compilation avec profile"
 
 g++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-generate -O3 -o ../bin/gcc_profil_O3.out
 
-icpc ../sources/minimax_graph.cpp -std=c++11 -prof-gen -O3 -o ../bin/intel_profil_O3.out
+icpc ../sources/minimax_graph.cpp -std=c++11 -prof-gen -prof-dir=../bin -O3 -o ../bin/intel_profil_O3.out
 
-clang++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-generate -O3 -o ../bin/clang_profil_O3.out
+clang++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-instr-generate -O3 -o ../bin/clang_profil_O3.out
 
 cat ../input/j2.txt | ./../bin/gcc_profil_O3.out
 cat ../input/j2.txt | ./../bin/intel_profil_O3.out
@@ -14,9 +14,9 @@ echo "compilation avec utilisation profile"
 
 g++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-use -O3 -o ../bin/gcc_profil_use_O3.out
 
-icpc ../sources/minimax_graph.cpp -std=c++11 –prof-use -O3 -o ../bin/intel_profil_use_O3.out
+icpc ../sources/minimax_graph.cpp -std=c++11 –prof-use -prof-dir=../bin -O3 -o ../bin/intel_profil_use_O3.out
 
-clang++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-use -O3 -o ../bin/clang_profil_use_O3.out
+clang++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-instr-use -O3 -o ../bin/clang_profil_use_O3.out
 
 echo "debut creation fichiers de sortie\n"
 
