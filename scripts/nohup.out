@@ -1247,3 +1247,825 @@ i : 1
 
 i : 2 
 
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+ia commence 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 6 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 7 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 8 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 9 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 10 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 11 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 12 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 13 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 14 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 15 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 16 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 17 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 18 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 19 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 20 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+joueur commence
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 6 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 7 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 8 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 9 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 10 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 11 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 12 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 13 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 14 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 15 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 16 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 17 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 18 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 19 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 20 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+Scatter
+Compact
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+debut creation fichiers de sortie
+
+sorted
+gcc
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+intel
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+clang
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+unsorted
+gcc
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+intel
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+clang
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+debut creation fichiers de sortie
+
+gcc
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+intel
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+clang
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
+debut creation fichiers de sortie
+fin de creation fichier de sortie
+debug generation resultat
+1 thread
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+2 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+env: « ./script_taille_int.sh »: Permission non accordée
