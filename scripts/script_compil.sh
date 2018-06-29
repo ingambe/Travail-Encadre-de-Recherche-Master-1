@@ -80,4 +80,11 @@ icpc ../sources/int_size.cpp -std=c++11 -O3 -o ../bin/intel_taille_int.out
 clang++ ../sources/int_size.cpp -std=c++11 -O3 -o ../bin/clang_taille_int.out
 
 
+echo "compilation partie parallelisee v2"
+g++ ../sources/minimax_graph_parallel_v2.cpp -std=c++11 -O3 -o ../bin/gcc_O3_v2.out -fopenmp
+
+icpc ../sources/minimax_graph_parallel_v2.cpp -std=c++11 -O3 -o ../bin/intel_O3_v2.out -fopenmp
+
+clang++ ../sources/minimax_graph_parallel_v2.cpp -std=c++11 -O3 -o ../bin/clang_O3_v2.out -fopenmp
+
 echo "fin de compilation"
