@@ -2507,3 +2507,341 @@ INTEL
 CLANG 
 
 ./compil_with_profile.sh: 103: ./compil_with_profile.sh: ./../bin/clang_profil_use_O3.out: not found
+debut creation fichiers de sortie
+fin de creation fichier de sortie
+debug generation resultat
+1 thread
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+2 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+3 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+4 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+1 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+2 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+3 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 5 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+4 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 2 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 3 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+i : 4 
+
+GCC 
+
+INTEL 
+

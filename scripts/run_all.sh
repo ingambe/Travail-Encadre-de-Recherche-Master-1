@@ -19,3 +19,5 @@ echo "int size"
 nohup env -i ./script_taille_int.sh
 echo "nouvelle version parallele"
 nohup env -i ./script_parallel_v2.sh
+echo "compile xwith profile"
+./compil_with_profile.sh
