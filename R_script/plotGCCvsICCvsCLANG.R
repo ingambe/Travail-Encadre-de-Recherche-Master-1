@@ -25,7 +25,7 @@ generalDetails<-c(expression(
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
   italic("Compiler = CLANG 6.0.0-1"),
-  italic("Fichier = j1.txt"),
+  italic("File = j1.txt"),
   italic("Executions = 20")))
 
 #cicada
@@ -48,4 +48,4 @@ legend("topright", generalDetails, bty = "n", cex=0.6)
 legend("bottomleft", inset=.03, c("GCC", "INTEL","CLANG"), fill=wes_palette(n=3,name="Zissou1"), horiz=TRUE, cex=0.8)
 mtext(generalHardware, side=3, cex=1.0)
 
-title(ylab = "Temps (s)", xlab="Options de compilation", line = NA)
+title(ylab = "Time (seconds)", xlab="Compiler's options", line = NA)

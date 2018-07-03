@@ -18,7 +18,7 @@ generalDetails<-c(expression(
   italic("Linux kernel = 4.13.0-38"), 
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
-  italic("Fichier = p5_j2.txt"),
+  italic("File = p5_j2.txt"),
   italic("Executions = 20")))
 
 #cicada
@@ -39,4 +39,4 @@ legend("topright", inset=.03, c("GCC","INTEL"), fill=c("dark grey","#E0EEEE"), h
 legend("bottomleft", generalDetails, bty = "n", cex=0.5)
 mtext(generalHardware, side=3, cex=1.0)
 
-title(ylab = "Temps (s)", xlab="Options de compilation", line = NA)
+title(ylab = "Time (seconds)", xlab="Compiler's options", line = NA)

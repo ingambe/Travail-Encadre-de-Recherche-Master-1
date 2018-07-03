@@ -34,7 +34,6 @@ abline(v = 2.5, col = "black")
 
 abline(v = 4.5, col = "black")
 
-
 axis(1,cex.axis=0.8,at=1:6, labels=xLabels)
 
 mtext(side=1,text="GCC",line=2,at=1.5)

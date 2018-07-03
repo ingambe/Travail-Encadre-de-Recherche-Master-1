@@ -20,8 +20,8 @@ generalDetails<-c(expression(
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
   italic("Compiler = CLANG 18.0.2"),
-  italic("Nombre processeurs = 1"),
-  italic("Fichier = j1.txt"),
+  italic("Number of processors = 1"),
+  italic("File = j1.txt"),
   italic("Executions = 20")))
 
 #cicada

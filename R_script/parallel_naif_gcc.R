@@ -4,7 +4,7 @@ library(wesanderson)
 setwd("/home/ingambe/Bureau/ter/output/parallel/naif")
 palette <- wes_palette(n=3,name="Zissou1")
 
-xLabels<-c("sequentiel", "1 Thread", "2 Thread", "3 Thread", "4 Thread", "5 Thread", "6 Thread", "7 Thread", "8 Thread")
+xLabels<-c("sequential", "1 Thread", "2 Thread", "3 Thread", "4 Thread", "5 Thread", "6 Thread", "7 Thread", "8 Thread")
 
 gccSeq<-read.table(file = "../../gcc/ia_commence/O3/resultat.txt",sep="\n", header=FALSE)
 gcc1TH<-read.table(file = "gcc/resultat_1.txt",sep="\n", header=FALSE)
@@ -20,7 +20,7 @@ generalDetails<-c(expression(
   
   italic("Linux kernel = 4.13.0-38"), 
   italic("Compiler = GCC 5.4.0"),
-  italic("Fichier = j1.txt"),
+  italic("File = j1.txt"),
   italic("Executions = 5")))
 
 #cicada
@@ -35,4 +35,4 @@ legend("bottomright", generalDetails, bty = "n", cex=0.8)
 
 mtext(generalHardware, side=3, cex=1.5)
 
-title(ylab = "Temps (ms)", xlab="Nombre de Threads", line = NA)
+title(ylab = "Time (seconds)", xlab="Number of Threads", line = NA)

@@ -1,4 +1,6 @@
-setwd("../output/")
+library(wesanderson)
+
+setwd("/home/ingambe/Bureau/ter/output/")
 sizes<-read.table(file = "size.txt",sep=" ", header=FALSE)
 
 x <- c(0,1,2,3)
@@ -12,7 +14,7 @@ plot(x, intel, type="l", xaxt='n', ylim = c(19700,35000), ylab='', xlab='', col=
 lines(x, gcc, col=palette[2], lwd=2)
 lines(x, clang, col=palette[3], lwd=2)
 
-palette <- wes_palette(n=3,name="BottleRocket2")
+palette <- wes_palette(n=3,name="Zissou1")
 
 generalDetails<-c(expression(
   
@@ -25,7 +27,6 @@ mtext(generalHardware, side=3, cex=1.0)
 
 axis(1,at=x,labels=xLabele)
 
-legend("topleft", inset=.03, c("INTEL", "GCC","CLANG"), fill=palette, horiz=TRUE, cex=0.8)
+legend("topleft", inset=.03, c("INTEL", "GCC","CLANG"), fill=wes_palette(n=3,name="Zissou1"), horiz=TRUE, cex=0.8)
 
-
-title(ylab = "Taille (octets)", xlab="Options de compilation", line = NA)
+title(ylab = "Size (octets)", xlab="Compiler's Options", line = NA)

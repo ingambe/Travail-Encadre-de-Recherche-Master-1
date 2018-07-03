@@ -17,37 +17,37 @@ mkdir -p ../output/parallel/v2/gcc
 
 cat /dev/null >../output/parallel/v2/gcc/resultat_1.txt
 cat /dev/null >../output/parallel/v2/gcc/resultat_2.txt
-cat /dev/null >../output/parallel/naif/gcc/resultat_3.txt
-cat /dev/null >../output/parallel/naif/gcc/resultat_4.txt
-cat /dev/null >../output/parallel/naif/gcc/resultat_5.txt
-cat /dev/null >../output/parallel/naif/gcc/resultat_6.txt
-cat /dev/null >../output/parallel/naif/gcc/resultat_7.txt
-cat /dev/null >../output/parallel/naif/gcc/resultat_8.txt
+cat /dev/null >../output/parallel/v2/gcc/resultat_3.txt
+cat /dev/null >../output/parallel/v2/gcc/resultat_4.txt
+cat /dev/null >../output/parallel/v2/gcc/resultat_5.txt
+cat /dev/null >../output/parallel/v2/gcc/resultat_6.txt
+cat /dev/null >../output/parallel/v2/gcc/resultat_7.txt
+cat /dev/null >../output/parallel/v2/gcc/resultat_8.txt
 
 #INTEL
-mkdir -p ../output/parallel/naif/intel
+mkdir -p ../output/parallel/v2/intel
 
-cat /dev/null > ../output/parallel/naif/intel/resultat_1.txt
-cat /dev/null > ../output/parallel/naif/intel/resultat_2.txt
-cat /dev/null > ../output/parallel/naif/intel/resultat_3.txt
-cat /dev/null > ../output/parallel/naif/intel/resultat_4.txt
-cat /dev/null > ../output/parallel/naif/intel/resultat_5.txt
-cat /dev/null > ../output/parallel/naif/intel/resultat_6.txt
-cat /dev/null > ../output/parallel/naif/intel/resultat_7.txt
-cat /dev/null > ../output/parallel/naif/intel/resultat_8.txt
+cat /dev/null > ../output/parallel/v2/intel/resultat_1.txt
+cat /dev/null > ../output/parallel/v2/intel/resultat_2.txt
+cat /dev/null > ../output/parallel/v2/intel/resultat_3.txt
+cat /dev/null > ../output/parallel/v2/intel/resultat_4.txt
+cat /dev/null > ../output/parallel/v2/intel/resultat_5.txt
+cat /dev/null > ../output/parallel/v2/intel/resultat_6.txt
+cat /dev/null > ../output/parallel/v2/intel/resultat_7.txt
+cat /dev/null > ../output/parallel/v2/intel/resultat_8.txt
 
 #CLANG
-mkdir -p ../output/parallel/naif/clang
+mkdir -p ../output/parallel/v2/clang
 
 #IA COMMENCE
-cat /dev/null > ../output/parallel/naif/clang/resultat_1.txt
-cat /dev/null > ../output/parallel/naif/clang/resultat_2.txt
-cat /dev/null > ../output/parallel/naif/clang/resultat_3.txt
-cat /dev/null > ../output/parallel/naif/clang/resultat_4.txt
-cat /dev/null > ../output/parallel/naif/clang/resultat_5.txt
-cat /dev/null > ../output/parallel/naif/clang/resultat_6.txt
-cat /dev/null > ../output/parallel/naif/clang/resultat_7.txt
-cat /dev/null > ../output/parallel/naif/clang/resultat_8.txt
+cat /dev/null > ../output/parallel/v2/clang/resultat_1.txt
+cat /dev/null > ../output/parallel/v2/clang/resultat_2.txt
+cat /dev/null > ../output/parallel/v2/clang/resultat_3.txt
+cat /dev/null > ../output/parallel/v2/clang/resultat_4.txt
+cat /dev/null > ../output/parallel/v2/clang/resultat_5.txt
+cat /dev/null > ../output/parallel/v2/clang/resultat_6.txt
+cat /dev/null > ../output/parallel/v2/clang/resultat_7.txt
+cat /dev/null > ../output/parallel/v2/clang/resultat_8.txt
 
 echo "fin de creation fichier de sortie \n"
 
@@ -60,15 +60,15 @@ do
   echo "i : $i \n"
   echo "GCC \n"
   #GCC
-  cat ../input/j1.txt | ./../bin/gcc_O3_naif.out >> ../output/parallel/naif/gcc/resultat_1.txt
+  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_1.txt
 
   echo "INTEL \n"
   #INTEL
-  cat ../input/j1.txt | ./../bin/intel_O3_naif.out >> ../output/parallel/naif/intel/resultat_1.txt
+  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_1.txt
 
   echo "CLANG \n"
   #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_naif.out >> ../output/parallel/naif/clang/resultat_1.txt
+  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_1.txt
 done
 
 echo "2 thread \n"
@@ -78,15 +78,15 @@ do
   echo "i : $i \n"
   echo "GCC \n"
   #GCC
-  cat ../input/j1.txt | ./../bin/gcc_O3_naif.out >> ../output/parallel/naif/gcc/resultat_2.txt
+  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_2.txt
 
   echo "INTEL \n"
   #INTEL
-  cat ../input/j1.txt | ./../bin/intel_O3_naif.out >> ../output/parallel/naif/intel/resultat_2.txt
+  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_2.txt
 
   echo "CLANG \n"
   #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_naif.out >> ../output/parallel/naif/clang/resultat_2.txt
+  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_2.txt
 done
 
 echo "3 thread \n"
@@ -96,15 +96,15 @@ do
   echo "i : $i \n"
   echo "GCC \n"
   #GCC
-  cat ../input/j1.txt | ./../bin/gcc_O3_naif.out >> ../output/parallel/naif/gcc/resultat_3.txt
+  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_3.txt
 
   echo "INTEL \n"
   #INTEL
-  cat ../input/j1.txt | ./../bin/intel_O3_naif.out >> ../output/parallel/naif/intel/resultat_3.txt
+  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_3.txt
 
   echo "CLANG \n"
   #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_naif.out >> ../output/parallel/naif/clang/resultat_3.txt
+  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_3.txt
 done
 
 echo "4 thread \n"
@@ -114,13 +114,13 @@ do
   echo "i : $i \n"
   echo "GCC \n"
   #GCC
-  cat ../input/j1.txt | ./../bin/gcc_O3_naif.out >> ../output/parallel/naif/gcc/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_4.txt
 
   echo "INTEL \n"
   #INTEL
-  cat ../input/j1.txt | ./../bin/intel_O3_naif.out >> ../output/parallel/naif/intel/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_4.txt
 
   echo "CLANG \n"
   #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_naif.out >> ../output/parallel/naif/clang/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_4.txt
 done
