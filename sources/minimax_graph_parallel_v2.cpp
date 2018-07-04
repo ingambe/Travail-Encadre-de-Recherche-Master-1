@@ -453,16 +453,16 @@ int main(int argc, char* argv[]){
 	Position pos;
 	Position newPos;
 	position_debut(&pos);
-
+/**
 	printf("DEBUT DU JEU AWALE\n");
 	printf("(0) l'ordinateur commence\n");
 	printf("(1) le joueur commence\n");
-
+**/
 	int joueur;
 	if(scanf("%d",&joueur)){}
 
 	int ordiCommence= (joueur==0)? 1 : 0;
-	printf("C'est parti!\n");
+	//printf("C'est parti!\n");
 	int fin=0;
 	bool gagne=false;
 	int numeroCoup = 1;
@@ -480,7 +480,7 @@ int main(int argc, char* argv[]){
 			} else {
 				cj=12-coup;
 			}
-			printf("COUP JOUE: %d\n",cj);
+			//printf("COUP JOUE: %d\n",cj);
 			NUM_MINIMAX=0;
 			jouer_coup(&newPos,&pos,joueur,coup);
 			copier(&pos,&newPos);
@@ -493,11 +493,11 @@ int main(int argc, char* argv[]){
       **/
 		} else { // le JOUEUR JOUE
 			if (ordiCommence){
-				printf("selectionner une case 12 11 10 9 8 7\n");
+				//printf("selectionner une case 12 11 10 9 8 7\n");
 				if(scanf("%d",&coup)){}
 				coup -=7;
 			} else {
-				printf("selectionner une case 1 2 3 4 5 6\n");
+				//printf("selectionner une case 1 2 3 4 5 6\n");
 				if(scanf("%d",&coup)){}
 				//coup=6-coup;
 				coup--;
@@ -507,13 +507,13 @@ int main(int argc, char* argv[]){
 			jouer_coup(&newPos,&pos,joueur,coup);
 
 			copier(&pos,&newPos);
-
+/**
 			if (ordiCommence){
 				print_position_ordi_haut_inv(&pos);
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-
+**/
 		}
 		fin=test_fin(&pos);
 		joueur = !joueur;

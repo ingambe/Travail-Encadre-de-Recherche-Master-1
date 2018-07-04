@@ -193,6 +193,8 @@ Lot of usage of pointers that could blind the compiler's optimisation passes.
   Sort the "moves" to evaluate.
   \item
   Transposition table.
+  \item
+  Modify algorithm to add parallelism.
  \end{itemize}	
 \end{frame}
 
@@ -213,6 +215,13 @@ Lot of usage of pointers that could blind the compiler's optimisation passes.
       \includegraphics[width=\textwidth]{unsorted_map.png}
       \caption{Hash table.\label{Fig:arbre_binaire}}
     \end{columns}	
+	\end{figure}
+\end{frame}
+
+\begin{frame}{New parallel version}
+	\begin{figure}
+      \includegraphics[width=0.7\textwidth]{parallel_v2.png}
+      \caption{New parallel version.\label{Fig:trie}}
 	\end{figure}
 \end{frame}
 
@@ -237,9 +246,7 @@ Lot of usage of pointers that could blind the compiler's optimisation passes.
 \begin{frame}{Perspectives}
 \begin{itemize}
 	\item
-	Array padding to reduce the false sharing problem.
-	\item
-	Speculative execution.
+	Thread affinity on the new version.
  \end{itemize}	
 \end{frame}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  4 JUL 2018 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  4 JUL 2018 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1002,6 +1002,9 @@ LaTeX Info: Redefining \textlatin on input line 1839.
 
 LaTeX Warning: Label `Fig:arbre_binaire' multiply defined.
 
+
+LaTeX Warning: Label `Fig:trie' multiply defined.
+
 )
 \openout1 = `presentation.aux'.
 
@@ -1214,13 +1217,13 @@ Package pdftex.def Info: AB_pruning.png  used on input line 78.
  <./AB_pruning.png>] [5
 
 ]
-<GCCvsICCvsCLANG_j2.png, id=202, 542.025pt x 498.36188pt>
+<GCCvsICCvsCLANG_j2.png, id=202, 542.025pt x 496.10344pt>
 File: GCCvsICCvsCLANG_j2.png Graphic file (type png)
 <use GCCvsICCvsCLANG_j2.png>
 Package pdftex.def Info: GCCvsICCvsCLANG_j2.png  used on input line 104.
-(pdftex.def)             Requested size: 239.70367pt x 220.39014pt.
+(pdftex.def)             Requested size: 239.70367pt x 219.39139pt.
 
-Overfull \vbox (33.17018pt too high) detected at line 104
+Overfull \vbox (32.17143pt too high) detected at line 104
  []
 
 [6
@@ -1273,13 +1276,13 @@ Overfull \vbox (8.18718pt too high) detected at line 129
 [8
 
  <./vtune.png> <./memory_vtune.png>]
-<intel_parallel_naif.png, id=288, 542.025pt x 498.36188pt>
+<intel_parallel_naif.png, id=288, 542.025pt x 496.10344pt>
 File: intel_parallel_naif.png Graphic file (type png)
 <use intel_parallel_naif.png>
 Package pdftex.def Info: intel_parallel_naif.png  used on input line 139.
-(pdftex.def)             Requested size: 239.70367pt x 220.39014pt.
+(pdftex.def)             Requested size: 239.70367pt x 219.39139pt.
 
-Overfull \vbox (33.17018pt too high) detected at line 139
+Overfull \vbox (32.17143pt too high) detected at line 139
  []
 
 [9
@@ -1297,14 +1300,14 @@ Overfull \vbox (6.61328pt too high) detected at line 150
 [10
 
  <./false_sharing.jpg>]
-<defaultVSscatterVScompact.png, id=345, 542.025pt x 498.36188pt>
+<defaultVSscatterVScompact.png, id=345, 542.025pt x 496.10344pt>
 File: defaultVSscatterVScompact.png Graphic file (type png)
 <use defaultVSscatterVScompact.png>
 Package pdftex.def Info: defaultVSscatterVScompact.png  used on input line 161.
 
-(pdftex.def)             Requested size: 246.55383pt x 226.69417pt.
+(pdftex.def)             Requested size: 246.55383pt x 225.66685pt.
 
-Overfull \vbox (10.93024pt too high) detected at line 161
+Overfull \vbox (9.90292pt too high) detected at line 161
  []
 
 [11
@@ -1323,28 +1326,28 @@ Package pdftex.def Info: Intel.jpg  used on input line 172.
 [14
 
 ]
-<trie.png, id=455, 542.025pt x 498.36188pt>
+<trie.png, id=455, 542.025pt x 496.10344pt>
 File: trie.png Graphic file (type png)
 <use trie.png>
-Package pdftex.def Info: trie.png  used on input line 204.
-(pdftex.def)             Requested size: 239.70367pt x 220.39014pt.
+Package pdftex.def Info: trie.png  used on input line 206.
+(pdftex.def)             Requested size: 239.70367pt x 219.39139pt.
 
-Overfull \vbox (33.17018pt too high) detected at line 204
+Overfull \vbox (32.17143pt too high) detected at line 206
  []
 
 [15
 
  <./trie.png (PNG copy)>]
-<sorted_map.png, id=482, 542.025pt x 498.36188pt>
+<sorted_map.png, id=483, 542.025pt x 496.10344pt>
 File: sorted_map.png Graphic file (type png)
 <use sorted_map.png>
-Package pdftex.def Info: sorted_map.png  used on input line 217.
-(pdftex.def)             Requested size: 171.21765pt x 157.42587pt.
-<unsorted_map.png, id=483, 542.025pt x 498.36188pt>
+Package pdftex.def Info: sorted_map.png  used on input line 219.
+(pdftex.def)             Requested size: 171.21765pt x 156.71246pt.
+<unsorted_map.png, id=484, 542.025pt x 496.10344pt>
 File: unsorted_map.png Graphic file (type png)
 <use unsorted_map.png>
-Package pdftex.def Info: unsorted_map.png  used on input line 217.
-(pdftex.def)             Requested size: 171.21765pt x 157.42587pt.
+Package pdftex.def Info: unsorted_map.png  used on input line 219.
+(pdftex.def)             Requested size: 171.21765pt x 156.71246pt.
  [16
 
 pdfTeX warning (ext4): destination with the same identifier (name{Fig:arbre_bin
@@ -1352,11 +1355,28 @@ aire}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.217 \end{frame}
+l.219 \end{frame}
                   <./sorted_map.png (PNG copy)> <./unsorted_map.png (PNG copy)>
-] [17
+]
+<parallel_v2.png, id=510, 542.025pt x 496.10344pt>
+File: parallel_v2.png Graphic file (type png)
+<use parallel_v2.png>
+Package pdftex.def Info: parallel_v2.png  used on input line 226.
+(pdftex.def)             Requested size: 239.70367pt x 219.39139pt.
+pdfTeX warning (ext4): destination with the same identifier (name{Fig:trie}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.226 \end{frame}
+                 
+Overfull \vbox (32.17143pt too high) detected at line 226
+ []
 
-] [18
+[17
+
+ <./parallel_v2.png (PNG copy)>] [18
+
+] [19
 
 ]
 \tf@nav=\write6
@@ -1368,11 +1388,11 @@ l.217 \end{frame}
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: E55D923FBC1310C36F287A253D40004E;400.
 
@@ -1384,10 +1404,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18178 strings out of 492982
- 338531 string characters out of 6134896
+ 18187 strings out of 492982
+ 338660 string characters out of 6134896
  421011 words of memory out of 5000000
- 21246 multiletter control sequences out of 15000+600000
+ 21252 multiletter control sequences out of 15000+600000
  16747 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,61p,779b,642s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1400,10 +1420,10 @@ e/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss
 1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on presentation.pdf (18 pages, 956743 bytes).
+Output written on presentation.pdf (19 pages, 1010679 bytes).
 PDF statistics:
- 606 PDF objects out of 1000 (max. 8388607)
- 542 compressed objects within 6 object streams
- 54 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 634 PDF objects out of 1000 (max. 8388607)
+ 568 compressed objects within 6 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
