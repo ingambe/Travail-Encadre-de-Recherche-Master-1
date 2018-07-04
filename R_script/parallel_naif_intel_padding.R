@@ -27,7 +27,7 @@ generalDetails<-c(expression(
   italic("Executions = 5")))
 
 #cicada
-generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
+generalHardware<-("Intel Xeon W3520, 2.66GHz GHz, 4 cores, 4 GB RAM")
 
 
 wvioplot(gccSeq$V1,gcc1TH$V1,gcc1THP$V1,gcc2TH$V1,gcc2THP$V1, gcc3TH$V1, gcc3THP$V1, gcc4TH$V1, gcc4THP$V1,clip=TRUE, adjust = 1, col=palette[1],names=FALSE)

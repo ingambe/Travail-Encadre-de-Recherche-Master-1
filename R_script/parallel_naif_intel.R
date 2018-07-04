@@ -20,7 +20,7 @@ generalDetails<-c(expression(
   italic("Executions = 5")))
 
 #cicada
-generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
+generalHardware<-("Intel Xeon W3520, 2.66GHz GHz, 4 cores, 4 GB RAM")
 
 
 wvioplot(gccSeq$V1,gcc1TH$V1,gcc2TH$V1, gcc3TH$V1,gcc4TH$V1,clip=TRUE, adjust = 1, col=palette[1],names=FALSE)
@@ -31,4 +31,4 @@ legend("bottomright", generalDetails, bty = "n", cex=0.8)
 
 mtext(generalHardware, side=3, cex=1.5)
 
-title(ylab = "Temps (s)", xlab="Nombre de Threads", line = NA)
+title(ylab = "Time (seconds)", xlab="Number of Threads", line = NA)

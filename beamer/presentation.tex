@@ -81,7 +81,7 @@ Student in Master of Computer Science}
 \begin{frame}{Experimental approach}{Hardware and software environment}
 \begin{itemize}
   \item
-  	\textit{Processeur Scaling} desactivated, Intel core i7 8 core 2,5GHz processor, 8Go DDR3, 256Go of SSD.
+  	\textit{Processeur Scaling} desactivated, Intel Xeon 4 core 2,66GHz processor, 4Go DDR3, 512GB of HDD.
   \item
     Minimalist CLI environement, Arch Linux based on Linux 4.14.13-1.
     \item
@@ -194,6 +194,8 @@ Lot of usage of pointers that could blind the compiler's optimisation passes.
   \item
   Transposition table.
   \item
+  Padding to remove False Sharing.
+  \item
   Modify algorithm to add parallelism.
  \end{itemize}	
 \end{frame}
@@ -215,6 +217,13 @@ Lot of usage of pointers that could blind the compiler's optimisation passes.
       \includegraphics[width=\textwidth]{unsorted_map.png}
       \caption{Hash table.\label{Fig:arbre_binaire}}
     \end{columns}	
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Padding}
+	\begin{figure}
+      \includegraphics[width=0.7\textwidth]{padding.png}
+      \caption{Padding to remove False Sharing.\label{Fig:trie}}
 	\end{figure}
 \end{frame}
 

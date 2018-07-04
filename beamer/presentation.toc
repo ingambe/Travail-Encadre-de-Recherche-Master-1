@@ -4,5 +4,5 @@
 \beamer@sectionintoc {3}{Analysis and optimization of sequential performances}{6}{0}{3}
 \beamer@sectionintoc {4}{Adding parallelism}{9}{0}{4}
 \beamer@sectionintoc {5}{Simple algorithmic modification}{14}{0}{5}
-\beamer@sectionintoc {6}{Conclusion}{18}{0}{6}
-\beamer@sectionintoc {7}{Perspectives}{19}{0}{7}
+\beamer@sectionintoc {6}{Conclusion}{19}{0}{6}
+\beamer@sectionintoc {7}{Perspectives}{20}{0}{7}
