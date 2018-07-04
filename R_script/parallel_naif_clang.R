@@ -11,10 +11,6 @@ gcc1TH<-read.table(file = "clang/resultat_1.txt",sep="\n", header=FALSE)
 gcc2TH<-read.table(file = "clang/resultat_2.txt",sep="\n", header=FALSE)
 gcc3TH<-read.table(file = "clang/resultat_3.txt",sep="\n", header=FALSE)
 gcc4TH<-read.table(file = "clang/resultat_4.txt",sep="\n", header=FALSE)
-gcc5TH<-read.table(file = "clang/resultat_5.txt",sep="\n", header=FALSE)
-gcc6TH<-read.table(file = "clang/resultat_6.txt",sep="\n", header=FALSE)
-gcc7TH<-read.table(file = "clang/resultat_7.txt",sep="\n", header=FALSE)
-gcc8TH<-read.table(file = "clang/resultat_8.txt",sep="\n", header=FALSE)
 
 generalDetails<-c(expression(
   

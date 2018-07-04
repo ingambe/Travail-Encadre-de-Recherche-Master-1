@@ -3,7 +3,7 @@ library(wesanderson)
 
 setwd("/home/ingambe/Bureau/ter/output/trie")
 
-xLabels<-c("original", "trié","original", "trié","original", "trié")
+xLabels<-c("original", "sorted","original", "sorted","original", "sorted")
 palette <- wes_palette(n=3,name="Zissou1")
 
 
@@ -21,8 +21,8 @@ generalDetails<-c(expression(
   italic("Compiler = GCC 5.4.0"),
   italic("Compiler = ICC 18.0.2"),
   italic("Compiler = CLANG 18.0.2"),
-  italic("Nombre processeurs = 1"),
-  italic("Fichier = j1.txt"),
+  italic("Number of processors = 1"),
+  italic("File = j1.txt"),
   italic("Executions = 20")))
 
 #cicada
@@ -44,4 +44,4 @@ legend("topleft", generalDetails, bty = "n", cex=.6)
 
 mtext(generalHardware, side=3, cex=1.5)
 
-title(ylab = "Temps (s)", xlab="Compilateur utilisé", line = NA)
+title(ylab = "Time (seconds)", xlab="Compilater used", line = NA)

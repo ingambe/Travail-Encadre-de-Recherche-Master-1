@@ -3,7 +3,7 @@
 ///Structure d�terminant une position de jeu
 ///</summary>
 struct Pos {
-	int _Cases[2][96]; // 6 cases et 2 joueurs
+	int _Cases[2][81]; // 6 cases et 2 joueurs
 	int _PionsPris[2]; // 2 joueurs
 };
 
