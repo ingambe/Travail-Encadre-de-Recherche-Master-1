@@ -392,9 +392,8 @@ int decisionAB(Position* pos,int pmax, bool gagne){
 		}
 	}
   // parallel
-	int tmp = coup + 1;
   #pragma omp parallel for
-  for (coup = tmp; coup < 6; coup++) {
+  for (coup = coup + 1; coup < 6; coup++) {
     Position newPos;
 		if (jouer_coup(&newPos,pos,0,coup)){
       valeurs[16 * coup]=valeur_minimaxAB(&newPos,1,alpha,beta,pmax-1,gagne);
