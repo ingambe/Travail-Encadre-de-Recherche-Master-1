@@ -14,7 +14,7 @@ echo "map"
 echo "trie"
 #nohup env -i ./script_graph_trie.sh
 echo "joue coup false sharing"
-nohup env -i ./script_graph_parallel.sh
+nohup env -i ./script_generation_graph_parallel_padding.sh
 echo "int size"
 nohup env -i ./script_taille_int.sh
 echo "nouvelle version parallele"

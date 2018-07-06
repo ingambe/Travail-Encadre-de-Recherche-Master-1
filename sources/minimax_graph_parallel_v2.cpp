@@ -392,12 +392,11 @@ int decisionAB(Position* pos,int pmax, bool gagne){
 		}
 	}
   // parallel
-	coup++;
   #pragma omp parallel for
-  for (int i = coup; i < 6; i++) {
+  for (coup = coup + 1; coup < 6; coup++) {
     Position newPos;
-		if (jouer_coup(&newPos,pos,0,i)){
-      valeurs[16 * i]=valeur_minimaxAB(&newPos,1,alpha,beta,pmax-1,gagne);
+		if (jouer_coup(&newPos,pos,0,coup)){
+      valeurs[16 * coup]=valeur_minimaxAB(&newPos,1,alpha,beta,pmax-1,gagne);
     }
   }
 coup = 0;
@@ -453,11 +452,12 @@ int main(int argc, char* argv[]){
 	Position pos;
 	Position newPos;
 	position_debut(&pos);
-/**
+	/**
 	printf("DEBUT DU JEU AWALE\n");
 	printf("(0) l'ordinateur commence\n");
 	printf("(1) le joueur commence\n");
-**/
+	**/
+
 	int joueur;
 	if(scanf("%d",&joueur)){}
 
@@ -513,7 +513,8 @@ int main(int argc, char* argv[]){
 			} else {
 				print_position_ordi_bas_inv(&pos);
 			}
-**/
+			**/
+
 		}
 		fin=test_fin(&pos);
 		joueur = !joueur;
