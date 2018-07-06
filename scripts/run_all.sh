@@ -21,3 +21,7 @@ echo "nouvelle version parallele"
 nohup env -i ./script_parallel_v2.sh
 echo "compile xwith profile"
 ./compil_with_profile.sh
+echo "compile xwith profile"
+./compil_with_profile.sh
+echo "affinity"
+nohup env -i ./script_graph_affinity_2.sh

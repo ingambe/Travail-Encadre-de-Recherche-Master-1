@@ -60,15 +60,15 @@ do
   echo "i : $i \n"
   echo "GCC \n"
   #GCC
-  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_1.txt
 
   echo "INTEL \n"
   #INTEL
-  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_1.txt
 
   echo "CLANG \n"
   #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_1.txt
 done
 
 echo "2 thread \n"
@@ -78,15 +78,15 @@ do
   echo "i : $i \n"
   echo "GCC \n"
   #GCC
-  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_2.txt
 
   echo "INTEL \n"
   #INTEL
-  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_2.txt
 
   echo "CLANG \n"
   #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_2.txt
 done
 
 echo "3 thread \n"
@@ -96,15 +96,15 @@ do
   echo "i : $i \n"
   echo "GCC \n"
   #GCC
-  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/gcc_O3_v2.out >> ../output/parallel/v2/gcc/resultat_3.txt
 
   echo "INTEL \n"
   #INTEL
-  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_3.txt
 
   echo "CLANG \n"
   #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_4.txt
+  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_3.txt
 done
 
 echo "4 thread \n"
