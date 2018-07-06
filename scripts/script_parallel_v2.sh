@@ -65,10 +65,6 @@ do
   echo "INTEL \n"
   #INTEL
   cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_1.txt
-
-  echo "CLANG \n"
-  #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_1.txt
 done
 
 echo "2 thread \n"
@@ -83,10 +79,6 @@ do
   echo "INTEL \n"
   #INTEL
   cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_2.txt
-
-  echo "CLANG \n"
-  #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_2.txt
 done
 
 echo "3 thread \n"
@@ -101,10 +93,6 @@ do
   echo "INTEL \n"
   #INTEL
   cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_3.txt
-
-  echo "CLANG \n"
-  #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_3.txt
 done
 
 echo "4 thread \n"
@@ -119,8 +107,4 @@ do
   echo "INTEL \n"
   #INTEL
   cat ../input/j1.txt | ./../bin/intel_O3_v2.out >> ../output/parallel/v2/intel/resultat_4.txt
-
-  echo "CLANG \n"
-  #CLANG
-  cat ../input/j1.txt | ./../bin/clang_O3_v2.out >> ../output/parallel/v2/clang/resultat_4.txt
 done
