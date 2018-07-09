@@ -2855,3 +2855,275 @@ INTEL
 
 CLANG 
 
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+1 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+2 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+3 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+4 thread 
+
+i : 1 
+
+GCC 
+
+INTEL 
+
+CLANG 
+
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+1 thread 
+
+i : 1 
+
+GCC 
+
+./script_parallel_v2.sh: 63: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 2 
+
+GCC 
+
+./script_parallel_v2.sh: 63: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 3 
+
+GCC 
+
+./script_parallel_v2.sh: 63: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 4 
+
+GCC 
+
+./script_parallel_v2.sh: 63: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 5 
+
+GCC 
+
+./script_parallel_v2.sh: 63: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+2 thread 
+
+i : 1 
+
+GCC 
+
+./script_parallel_v2.sh: 77: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 2 
+
+GCC 
+
+./script_parallel_v2.sh: 77: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 3 
+
+GCC 
+
+./script_parallel_v2.sh: 77: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 4 
+
+GCC 
+
+./script_parallel_v2.sh: 77: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 5 
+
+GCC 
+
+./script_parallel_v2.sh: 77: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+3 thread 
+
+i : 1 
+
+GCC 
+
+./script_parallel_v2.sh: 91: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 2 
+
+GCC 
+
+./script_parallel_v2.sh: 91: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 3 
+
+GCC 
+
+./script_parallel_v2.sh: 91: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 4 
+
+GCC 
+
+./script_parallel_v2.sh: 91: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 5 
+
+GCC 
+
+./script_parallel_v2.sh: 91: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+4 thread 
+
+i : 1 
+
+GCC 
+
+./script_parallel_v2.sh: 105: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 2 
+
+GCC 
+
+./script_parallel_v2.sh: 105: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 3 
+
+GCC 
+
+./script_parallel_v2.sh: 105: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 4 
+
+GCC 
+
+./script_parallel_v2.sh: 105: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+i : 5 
+
+GCC 
+
+./script_parallel_v2.sh: 105: ./script_parallel_v2.sh: ./../bin/gcc_O3_v2.out: not found
+INTEL 
+
+debut creation fichiers de sortie
+
+fin de creation fichier de sortie 
+
+debug generation resultat 
+
+Scatter
+i : 1
+i : 2
+i : 3
+i : 4
+i : 5
+i : 6
+i : 7
+i : 8
+i : 9
+i : 10
+i : 11
+i : 12
+i : 13
+i : 14
+i : 15
+i : 16
+i : 17
+i : 18
+i : 19
+i : 20
+Compact
+i : 1 
+
+i : 2 
+
+i : 3 
+
+i : 4 
+
+i : 5 
+
+i : 6 
+
+i : 7 
+
+i : 8 
+
+i : 9 
+
+i : 10 
+
+i : 11 
+
+i : 12 
+
+i : 13 
+
+i : 14 
+
+i : 15 
+
+i : 16 
+
+i : 17 
+
+i : 18 
+
+i : 19 
+
+i : 20 
+
