@@ -14,7 +14,7 @@ echo "compilation avec utilisation profile"
 
 g++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-use -O3 -o ../bin/gcc_profil_use_O3.out
 
-icpc ../sources/minimax_graph.cpp -std=c++11 –prof-use -prof-dir=../bin -O3 -o ../bin/intel_profil_use_O3.out
+icpc ../sources/minimax_graph.cpp -std=c++11 -prof-dir=../bin –prof-use -O3 -o ../bin/intel_profil_use_O3.out
 
 clang++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-instr-use -O3 -o ../bin/clang_profil_use_O3.out
 
