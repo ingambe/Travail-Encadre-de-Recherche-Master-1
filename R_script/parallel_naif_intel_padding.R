@@ -24,7 +24,7 @@ generalDetails<-c(expression(
   italic("Linux kernel = 4.13.0-38"), 
   italic("Compiler = ICC 18.0.2"),
   italic("File = j1.txt"),
-  italic("Executions = 5")))
+  italic("Executions = 1")))
 
 #cicada
 generalHardware<-("Intel Xeon W3520, 2.66GHz GHz, 4 cores, 4 GB RAM")

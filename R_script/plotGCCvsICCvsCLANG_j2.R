@@ -39,11 +39,8 @@ generalHardware<-("Intel Xeon W3520, 2.66GHz GHz, 4 cores, 4 GB RAM")
 palette <- wes_palette(n=3,name="Zissou1")
 
 y <- c(median(gcc_0_p5_j1$V1), median(gcc_1_p5_j1$V1), median(gcc_2_p5_j1$V1), median(gcc_3_p5_j1$V1),median(gcc_s_p5_j1$V1), median(gcc_p_p5_j1$V1),median(intel_0_p5_j1$V1), median(intel_1_p5_j1$V1), median(intel_2_p5_j1$V1), median(intel_3_p5_j1$V1),median(intel_s_p5_j1$V1), median(intel_p_p5_j1$V1),median(clang_0_p5_j1$V1), median(clang_1_p5_j1$V1), median(clang_2_p5_j1$V1), median(clang_3_p5_j1$V1), median(clang_s_p5_j1$V1), median(clang_p_p5_j1$V1))
-barplot(y, col=c(palette[1], palette[1], palette[1], palette[1], palette[2], palette[2], palette[2], palette[2], palette[3], palette[3], palette[3], palette[3]), names.arg=xLabels)
+barplot(y, col=c(palette[1], palette[1], palette[1], palette[1], palette[1], palette[1], palette[2], palette[2], palette[2], palette[2], palette[2], palette[2], palette[3], palette[3], palette[3], palette[3], palette[3], palette[3]), names.arg=xLabels)
 
-abline(v = 4.9, col = "black")
-
-abline(v = 9.7, col = "black")
 
 mtext(side=1,text="GCC",line=2,at=3)
 mtext(side=1,text="INTEL",line=2,at=7)
