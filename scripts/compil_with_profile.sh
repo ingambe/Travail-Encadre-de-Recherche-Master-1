@@ -2,7 +2,7 @@ echo "compilation avec profile"
 
 g++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-generate -O3 -o ../bin/gcc_profil_O3.out
 
-icpc ../sources/minimax_graph.cpp -std=c++11 -prof-gen -prof-dir=../bin -O3 -o ../bin/intel_profil_O3.out
+icpc ../sources/minimax_graph.cpp -std=c++11 -prof-dir=../bin -prof-gen -O3 -o ../bin/intel_profil_O3.out
 
 clang++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-instr-generate -O3 -o ../bin/clang_profil_O3.out
 
