@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  4 JUL 2018 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  11 JUL 2018 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1220,13 +1220,13 @@ Package pdftex.def Info: AB_pruning.png  used on input line 78.
  <./AB_pruning.png>] [5
 
 ]
-<GCCvsICCvsCLANG_j2.png, id=202, 542.025pt x 496.10344pt>
+<GCCvsICCvsCLANG_j2.png, id=202, 748.29562pt x 592.46344pt>
 File: GCCvsICCvsCLANG_j2.png Graphic file (type png)
 <use GCCvsICCvsCLANG_j2.png>
 Package pdftex.def Info: GCCvsICCvsCLANG_j2.png  used on input line 104.
-(pdftex.def)             Requested size: 239.70367pt x 219.39139pt.
+(pdftex.def)             Requested size: 239.70367pt x 189.78201pt.
 
-Overfull \vbox (32.17143pt too high) detected at line 104
+Overfull \vbox (2.56206pt too high) detected at line 104
  []
 
 [6
@@ -1361,18 +1361,18 @@ aire}) has been already used, duplicate ignored
 l.221 \end{frame}
                   <./sorted_map.png (PNG copy)> <./unsorted_map.png (PNG copy)>
 ]
-<padding.png, id=511, 542.025pt x 496.10344pt>
+<padding.png, id=511, 542.025pt x 503.63156pt>
 File: padding.png Graphic file (type png)
 <use padding.png>
 Package pdftex.def Info: padding.png  used on input line 228.
-(pdftex.def)             Requested size: 239.70367pt x 219.39139pt.
+(pdftex.def)             Requested size: 239.70367pt x 222.72055pt.
 pdfTeX warning (ext4): destination with the same identifier (name{Fig:trie}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.228 \end{frame}
                  
-Overfull \vbox (32.17143pt too high) detected at line 228
+Overfull \vbox (35.5006pt too high) detected at line 228
  []
 
 [17
@@ -1426,7 +1426,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  18196 strings out of 492982
  338769 string characters out of 6134896
- 421011 words of memory out of 5000000
+ 421007 words of memory out of 5000000
  21258 multiletter control sequences out of 15000+600000
  16747 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1440,7 +1440,7 @@ e/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss
 1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on presentation.pdf (20 pages, 1040926 bytes).
+Output written on presentation.pdf (20 pages, 1043754 bytes).
 PDF statistics:
  660 PDF objects out of 1000 (max. 8388607)
  592 compressed objects within 6 object streams

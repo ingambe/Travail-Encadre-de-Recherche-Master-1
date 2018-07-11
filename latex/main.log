@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  10 JUL 2018 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.18)  11 JUL 2018 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,23 +897,23 @@ File: Awale.jpg Graphic file (type jpg)
 Package pdftex.def Info: Awale.jpg  used on input line 55.
 (pdftex.def)             Requested size: 246.0pt x 135.9539pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./alpha_beta.png>]
-<caches.png, id=203, 642.4pt x 612.2875pt>
+<caches.png, id=203, 384.43625pt x 381.425pt>
 File: caches.png Graphic file (type png)
 <use caches.png>
 Package pdftex.def Info: caches.png  used on input line 69.
-(pdftex.def)             Requested size: 246.0pt x 234.46547pt.
+(pdftex.def)             Requested size: 246.0pt x 244.07623pt.
  [2 <./Awale.jpg> <./caches.png>]
-<GCCvsICCvsCLANG_j2.png, id=212, 748.29562pt x 592.46344pt>
+<GCCvsICCvsCLANG_j2.png, id=210, 748.29562pt x 592.46344pt>
 File: GCCvsICCvsCLANG_j2.png Graphic file (type png)
 <use GCCvsICCvsCLANG_j2.png>
 Package pdftex.def Info: GCCvsICCvsCLANG_j2.png  used on input line 87.
 (pdftex.def)             Requested size: 246.0pt x 194.77223pt.
-<GCCvsICCvsCLANG_j1.png, id=213, 748.29562pt x 592.46344pt>
+<GCCvsICCvsCLANG_j1.png, id=211, 748.29562pt x 592.46344pt>
 File: GCCvsICCvsCLANG_j1.png Graphic file (type png)
 <use GCCvsICCvsCLANG_j1.png>
 Package pdftex.def Info: GCCvsICCvsCLANG_j1.png  used on input line 91.
 (pdftex.def)             Requested size: 246.0pt x 194.77223pt.
-<tailles.png, id=216, 542.025pt x 429.10312pt>
+<tailles.png, id=214, 542.025pt x 429.10312pt>
 File: tailles.png Graphic file (type png)
 <use tailles.png>
 Package pdftex.def Info: tailles.png  used on input line 103.
@@ -924,35 +924,35 @@ Underfull \hbox (badness 1448) in paragraph at lines 107--108
 re, là aussi, la
  []
 
-<gprof1.png, id=217, 1032.85875pt x 330.23375pt>
+<gprof1.png, id=215, 1032.85875pt x 330.23375pt>
 File: gprof1.png Graphic file (type png)
 <use gprof1.png>
 Package pdftex.def Info: gprof1.png  used on input line 116.
 (pdftex.def)             Requested size: 246.0pt x 78.65303pt.
 [3 <./GCCvsICCvsCLANG_j2.png (PNG copy)> <./GCCvsICCvsCLANG_j1.png (PNG copy)> 
 <./tailles.png (PNG copy)>]
-<vtune.png, id=225, 246.1697pt x 323.70938pt>
+<vtune.png, id=224, 246.1697pt x 323.70938pt>
 File: vtune.png Graphic file (type png)
 <use vtune.png>
 Package pdftex.def Info: vtune.png  used on input line 126.
 (pdftex.def)             Requested size: 246.0pt x 323.50113pt.
-<memory_vtune.png, id=226, 280.04625pt x 223.58531pt>
+<memory_vtune.png, id=225, 280.04625pt x 223.58531pt>
 File: memory_vtune.png Graphic file (type png)
 <use memory_vtune.png>
 Package pdftex.def Info: memory_vtune.png  used on input line 135.
 (pdftex.def)             Requested size: 246.0pt x 196.41109pt.
  [4 <./gprof1.png> <./vtune.png> <./memory_vtune.png>]
-<gcc_parallel_naif.png, id=239, 542.025pt x 429.10312pt>
+<gcc_parallel_naif.png, id=238, 542.025pt x 429.10312pt>
 File: gcc_parallel_naif.png Graphic file (type png)
 <use gcc_parallel_naif.png>
 Package pdftex.def Info: gcc_parallel_naif.png  used on input line 159.
 (pdftex.def)             Requested size: 246.0pt x 194.75114pt.
-<intel_parallel_naif.png, id=240, 542.025pt x 496.10344pt>
+<intel_parallel_naif.png, id=239, 542.025pt x 496.10344pt>
 File: intel_parallel_naif.png Graphic file (type png)
 <use intel_parallel_naif.png>
 Package pdftex.def Info: intel_parallel_naif.png  used on input line 164.
 (pdftex.def)             Requested size: 246.0pt x 225.15967pt.
-<clang_parallel_naif.png, id=241, 542.025pt x 429.10312pt>
+<clang_parallel_naif.png, id=240, 542.025pt x 429.10312pt>
 File: clang_parallel_naif.png Graphic file (type png)
 <use clang_parallel_naif.png>
 Package pdftex.def Info: clang_parallel_naif.png  used on input line 169.
@@ -962,41 +962,41 @@ Underfull \hbox (badness 1742) in paragraph at lines 173--173
 []\T1/cmr/m/n/10 Nous de-vons mal-heu-reu-se-ment ré-duire le nombre
  []
 
-<false_sharing.jpg, id=246, 521.95pt x 470.75874pt>
+<false_sharing.jpg, id=245, 521.95pt x 470.75874pt>
 File: false_sharing.jpg Graphic file (type jpg)
 <use false_sharing.jpg>
 Package pdftex.def Info: false_sharing.jpg  used on input line 182.
 (pdftex.def)             Requested size: 246.0pt x 221.87439pt.
 [5 <./gcc_parallel_naif.png (PNG copy)> <./intel_parallel_naif.png (PNG copy)> 
 <./clang_parallel_naif.png (PNG copy)>]
-<vtune_parallel.png, id=259, 877.02657pt x 747.54282pt>
+<vtune_parallel.png, id=258, 877.02657pt x 747.54282pt>
 File: vtune_parallel.png Graphic file (type png)
 <use vtune_parallel.png>
 Package pdftex.def Info: vtune_parallel.png  used on input line 191.
 (pdftex.def)             Requested size: 246.0pt x 209.67557pt.
-<vtune_parallel_memory.png, id=260, 1098.35344pt x 661.72218pt>
+<vtune_parallel_memory.png, id=259, 1098.35344pt x 661.72218pt>
 File: vtune_parallel_memory.png Graphic file (type png)
 <use vtune_parallel_memory.png>
 Package pdftex.def Info: vtune_parallel_memory.png  used on input line 199.
 (pdftex.def)             Requested size: 246.0pt x 148.20456pt.
-<parallel_padding.png, id=262, 542.025pt x 503.63156pt>
+<parallel_padding.png, id=261, 542.025pt x 503.63156pt>
 File: parallel_padding.png Graphic file (type png)
 <use parallel_padding.png>
 Package pdftex.def Info: parallel_padding.png  used on input line 212.
 (pdftex.def)             Requested size: 246.0pt x 228.57635pt.
  [6 <./false_sharing.jpg> <./vtune_parallel.png> <./vtune_parallel_memory.png>]
-<affinity.png, id=271, 315.42844pt x 176.91093pt>
+<affinity.png, id=270, 315.42844pt x 176.91093pt>
 File: affinity.png Graphic file (type png)
 <use affinity.png>
 Package pdftex.def Info: affinity.png  used on input line 225.
 (pdftex.def)             Requested size: 246.0pt x 137.97377pt.
-<defaultVSscatterVScompact.png, id=275, 542.025pt x 496.10344pt>
+<defaultVSscatterVScompact.png, id=274, 542.025pt x 496.10344pt>
 File: defaultVSscatterVScompact.png Graphic file (type png)
 <use defaultVSscatterVScompact.png>
 Package pdftex.def Info: defaultVSscatterVScompact.png  used on input line 233.
 
 (pdftex.def)             Requested size: 246.0pt x 225.15967pt.
-<Intel.jpg, id=277, 325.96782pt x 337.26pt>
+<Intel.jpg, id=276, 325.96782pt x 337.26pt>
 File: Intel.jpg Graphic file (type jpg)
 <use Intel.jpg>
 Package pdftex.def Info: Intel.jpg  used on input line 245.
@@ -1008,34 +1008,34 @@ Underfull \hbox (badness 4156) in paragraph at lines 251--252
 D'abord,
  []
 
-<survey.png, id=287, 1162.3425pt x 704.6325pt>
+<survey.png, id=286, 1162.3425pt x 704.6325pt>
 File: survey.png Graphic file (type png)
 <use survey.png>
 Package pdftex.def Info: survey.png  used on input line 254.
 (pdftex.def)             Requested size: 246.0pt x 149.12764pt.
-<suitability.png, id=289, 1164.60094pt x 505.13719pt>
+<suitability.png, id=288, 1164.60094pt x 505.13719pt>
 File: suitability.png Graphic file (type png)
 <use suitability.png>
 Package pdftex.def Info: suitability.png  used on input line 267.
 (pdftex.def)             Requested size: 246.0pt x 106.69856pt.
-<dependecies.png, id=290, 1166.85938pt x 703.12688pt>
+<dependecies.png, id=289, 1166.85938pt x 703.12688pt>
 File: dependecies.png Graphic file (type png)
 <use dependecies.png>
 Package pdftex.def Info: dependecies.png  used on input line 279.
 (pdftex.def)             Requested size: 246.0pt x 148.22963pt.
 [8 <./Intel.jpg> <./survey.png> <./suitability.png>]
-<trie.png, id=306, 542.025pt x 496.10344pt>
+<trie.png, id=305, 542.025pt x 496.10344pt>
 File: trie.png Graphic file (type png)
 <use trie.png>
 Package pdftex.def Info: trie.png  used on input line 299.
 (pdftex.def)             Requested size: 246.0pt x 225.15967pt.
-<sorted_map.png, id=307, 542.025pt x 496.10344pt>
+<sorted_map.png, id=306, 542.025pt x 496.10344pt>
 File: sorted_map.png Graphic file (type png)
 <use sorted_map.png>
 Package pdftex.def Info: sorted_map.png  used on input line 312.
 (pdftex.def)             Requested size: 246.0pt x 225.15967pt.
  [9 <./dependecies.png> <./trie.png (PNG copy)>]
-<unsorted_map.png, id=319, 542.025pt x 496.10344pt>
+<unsorted_map.png, id=318, 542.025pt x 496.10344pt>
 File: unsorted_map.png Graphic file (type png)
 <use unsorted_map.png>
 Package pdftex.def Info: unsorted_map.png  used on input line 320.
@@ -1045,14 +1045,14 @@ Underfull \hbox (badness 1028) in paragraph at lines 325--325
 \T1/cmr/m/n/10 bleau de liste conte-nant un couple <Hash,Valeur>,
  []
 
-<parallel_v2.png, id=321, 542.025pt x 496.10344pt>
+<parallel_v2.png, id=320, 542.025pt x 496.10344pt>
 File: parallel_v2.png Graphic file (type png)
 <use parallel_v2.png>
 Package pdftex.def Info: parallel_v2.png  used on input line 333.
 (pdftex.def)             Requested size: 246.0pt x 225.15967pt.
 [10 <./sorted_map.png (PNG copy)> <./unsorted_map.png (PNG copy)> <./parallel_v
 2.png (PNG copy)>]
-<defaultVSscatterVScompact_v2.png, id=330, 542.025pt x 429.10312pt>
+<defaultVSscatterVScompact_v2.png, id=329, 542.025pt x 429.10312pt>
 File: defaultVSscatterVScompact_v2.png Graphic file (type png)
 <use defaultVSscatterVScompact_v2.png>
 Package pdftex.def Info: defaultVSscatterVScompact_v2.png  used on input line 3
@@ -1099,9 +1099,9 @@ ype1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super
 share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfsx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (12 pages, 1947229 bytes).
+Output written on main.pdf (12 pages, 1923854 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
+ 406 PDF objects out of 1000 (max. 8388607)
  341 compressed objects within 4 object streams
  80 named destinations out of 1000 (max. 500000)
  416 words of extra memory for PDF output out of 10000 (max. 10000000)
