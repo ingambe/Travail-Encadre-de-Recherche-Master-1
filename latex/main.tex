@@ -63,7 +63,7 @@ Afin d'analyser le programme efficacement, il faut aussi mettre en place un envi
 Nous utiliserons trois compilateurs, GCC, ICC (Intel C++ Compiler) et CLang. La version de GCC installée est la version 5.4.0, la version de CLang est la version 6.0.0-1 et celle de ICC est la version 18.0.2.
 
 \subsubsection{Matériel}
-Notre environnement expérimental est composé d'un ordinateur portable utilisant un processeur Intel i7-4710HQ, 8Go de RAM en DDR3, un SSD de 120go où le processeurs scaling a été désactivé dans le BIOS, cela permet de faire tourner le processeur à vitesse constante et ainsi de ne pas fausser les résultats.
+Notre environnement expérimental est composé d'un ordinateur portable utilisant un processeur Intel Xeon W3520 à 2.66GHz, 4Go de RAM en DDR3, un disque dur de 512go où le processeurs scaling a été désactivé dans le BIOS, cela permet de faire tourner le processeur à vitesse constante et ainsi de ne pas fausser les résultats.
 
 \begin{figure}[H]
   \includegraphics[width=\linewidth, keepaspectratio=true]{caches.png}
@@ -95,7 +95,8 @@ En regardant les temps d'exécutions configuration par configuration nous observ
 On remarque que le fait que le joueur commence\pageref{Fig:temps_exec_j1} ou non\pageref{Fig:temps_exec_j2} n'a pas d'influence sur le choix du compilateur, on pourra donc se concentrer sur l'analyse des temps d'exécutions quand le programme commence.\par
 On remarque aussi que GCC avec l'option \textbf{O3} activée est le meilleur compilateur pour ce programme.\par
 Pour GCC et Intel, chaque niveau d'optimisation réduit grandement le temps d'exécution, il y a un rapport de quatre entre la compilation sans optimisation (\textbf{O0}) et la compilation avec le plus d'optimisations (\textbf{O3}). Cette différence est légèrement inférieure avec CLang, car la version sans optimisation (\textbf{O0}) est plus rapide que celle des autres compilateurs, mais elle reste d'un facteur trois.\par
-Une chose étonnante est que la version \textbf{O2} d'Intel est légèrement plus rapide que la version \textbf{O3}.
+Une chose étonnante est que la version \textbf{O2} d'Intel est légèrement plus rapide que la version \textbf{O3}.\par
+On remarque que l'utilisation de profils n'améliore pas le temps d'éxecution du programme, au contraire les performances ce dégradent et ce quelque soit le compilateur.
 
 \subsubsection{Taille des exécutables}
 \begin{figure}[H]
@@ -201,6 +202,20 @@ On remarque que le CPU passe beaucoup de temps à attendre la fin de chaque thre
 \end{figure}
 
 L'analyse de mémoire confirme le False Sharing\pageref{Fig:false_sharing}, en effet il y a 16.5\% de "L1 Bound" (défaut de cache L1) qui ont sûrement été causé par le mécanisme de False Sharing expliqué précédemment.
+
+\subsection{Tentative suppression du False Sharing}
+
+Afin de supprimer ce phénomène de False Sharing, nous ajoutons du padding autour des données du tableau afin d'éviter qu'une même donnée soit dans le cache L1 de plusieurs processeur à la fois.\par
+Pour ce faire nous analysons donc d'abord la taille des int sur chaque compilateur testé, à chaque fois nous avons un int de 4 octets, sachant que le cache L1 fait 64 octets, nous devons ajouter 15 int entre chaque variable pour éviter le False Sharing.\par
+
+\begin{figure}[H]
+  \includegraphics[width=\linewidth, keepaspectratio=true]{parallel_padding.png}
+  \centering
+  \caption{Comparaison avant/après ajout de padding.\label{Fig:padding}}
+\end{figure}
+
+On remarque que le temps d'éxecutions ne c'est pas amélioré, au contraire il c'est légèrement dégradé.\par
+On en déduit que l'impact du False Sharing n'est la cause principale du ralentissement de ce programme lors de l'ajout de parallélisme.
 
 \subsection{Tentative d'amélioration des performances du code parallèle en modifiant le placement des threads}
 
@@ -310,6 +325,28 @@ Dans les deux cas les performances ne sont pas améliorés, cependant la table d
 Il est aussi possible que la fonction de hashage ainsi que la structure de donné ne soit pas optimale pour ce jeu, une possibilité serait d'implémenter la \href{https://chessprogramming.wikispaces.com/Zobrist+Hashing}{fonction de hashage de Zobrist} et d'utiliser un grand tableau de liste contenant un couple <Hash,Valeur>, pour retrouver la valeur de notre position, il faudrait faire \textbf{Hash\%TAILLE\_TABLEAU} pour obtenir l'indice du tableau et parcourir jusqu'à trouver notre couple \textbf{<Hash,Valeur>}, si le tableau est très grand cela pourrait peut-être accélérer le calcul, cela n'a pas été fait par manque de temps. Néanmoins, il est fort probable que l'ajout d'une table de hashage soit beaucoup moins pertinent que pour des jeux tel que les échecs, car il y a beaucoup moins de positions répétitives que les échecs.\par
 Aux échecs excepté les pions, les pièces peuvent revenir au coup d'après sur leur case d'origine si elles n'ont pas été capturées, si la voix n'est pas bloquée ou si elle ne met pas en échec le roi.
 
+\subsection{Rendre l'algorithme plus parallélisable}
+Supprimer la remonté de alpha à la racine afin de lancer tous les coups en parallèle n'est pas une bonne idée car cela réduit trop fortement les coupes pour être rentable.\par
+Cependant une autre idée possible qui peut être intéressante, et de jouer un coup en séquentiel, récupérer un alpha (la valeur du coup) et exécuter en parallèle les autres coups avec le alpha que l'on à approximé.
+
+\begin{figure}[H]
+  \includegraphics[width=\linewidth, keepaspectratio=true]{parallel_v2.png}
+  \caption{Nouvelle version parallèle.\label{Fig:parallele_v2}}
+\end{figure}
+
+Le gain de performance est flagrant, on est sur un rapport x2.\par
+Une bonne idée serait de trier les coups comme fait plus haut et de jouer en séquentiel le premier coup. Cependant cela n'a pas énormément d'intérêt pour un jeux comme l'awalé ou il y a rarement de très mauvais coup qui nous donnerons un très mauvais alpha. Qui plus est comme nous l'avons dit précédemment, le trie des coups est spécifique à un jeu d'entrée donnée.\par
+Si nous avions voulu appliquer cette modification à un alpha bêta pour le jeux d'échec, le choix du premier coup à évaluer aurait eux une plus grande importance, si par malheur l'ordinateur choisis en premier coup un très mauvais coup (exemple: sacrifice d'une dame sans avantage derrière) l'approximation de l'alpha sera très mauvaise et les coupes ne se feront pas bien à l'intérieur des sous branches en parallèle. Il faudrait donc dans ce cas choisir un coup relativement neutre (ne mettant en danger aucune pièce) comme coup à jouer en séquentiel.\par
+
+Nous avons vu précédemment que le choix du placement des threads (thread affinity) pouvait améliorer les performances du programme. Nous allons donc tester différentes méthodes de placement de threads pour tenter d'améliorer encore un peu les performances.
+
+\begin{figure}[H]
+  \includegraphics[width=\linewidth, keepaspectratio=true]{defaultVSscatterVScompact_v2.png}
+  \caption{Thread Affinity nouvelle version.\label{Fig:affinity_v2}}
+\end{figure}
+
+Contrairement au code précédent, ici définire le placement des threads n'améliore pas les performances du programme mais aurait au contraire tendance à légèrement les dégrader.
+
 \section{Gestion du projet}
 Je me suis servi de \href{https://github.com/ingambe/ter/}{Github} pour héberger mon projet. Je me suis servi de mon ordinateur portable car malheureusement il fallait désactiver le processeur scaling pour éviter de fausser les résultats et cela nécessitait un accès au BIOS, ce qui n'était pas possible avec les serveurs de l'INRIA.\par
 Cela était parfois contraignant, car certains programmes ont tourné quasiment quatre jours, mais aussi parce que la distribution installée étant en CLI, je ne pouvais pas l'installer sur mon disque dur principal (car inutilisable pour des tâches quotidiennes), j'ai donc du l'installer sur un autre SSD et changer les disques quand je devais lancer l'expérience.\par
@@ -325,10 +362,11 @@ Suite à quoi nous avons essayé de déterminer ce qui ralentissait le programme
 Nous avons donc tenté d'ajouter du parallélisme d'abord de façon naïve en en ajoutant partout où cela était possible, puis ensuite en utilisant la suite de logiciel d'aide à l'optimisation d'Intel.\par
 Les performances parallèles n'étant pas satisfaisantes, nous avons essayé de modifier le placement des threads, cela a amélioré les performances, mais les performances restaient inférieures aux performances du programme séquentiel à cause du mécanisme de False Sharing\pageref{Fig:false_sharing} que nous avons mit en évidence.\par
 Nous avons ensuite modifié l'algorithme, tout d'abord en triant les coups à évaluer à la profondeur 0 en évaluant les coups statistiquement les plus probables d'être des bon coups (les puits avec le plus de cailloux) et cela à permit d'améliorer les performances de 30\%.\par
-Comme autre modification algorithmique, nous avons essayé d'ajouter une table de hashage, mais cela a dégradé les performances à cause du coût d'insertion et du grand nombre de positions qui contrairement à beaucoup de jeux à deux joueurs peuvent rarement se répéter au cours d'une même partie.
+Comme autre modification algorithmique, nous avons essayé d'ajouter une table de hashage, mais cela a dégradé les performances à cause du coût d'insertion et du grand nombre de positions qui contrairement à beaucoup de jeux à deux joueurs peuvent rarement se répéter au cours d'une même partie.\par
+Nous avons aussi modifier l'algorithme pour ajouter du parallélisme, ce fût un succès.
 
 \subsection{Tâches restantes}
-Il y a encore beaucoup de voie d'optimisations possibles et d'expérimentations à mener. Je n'ai pas eu le temps de mener à terme mon expérience qui constituait à pré-calculer toutes les positions que l'on peut jouer en parallèle à chaque niveau du MinMax\pageref{Fig:alpha_beta}, l'expérience a été mené avec une seule répétition par configuration, le résultat n'était pas concluant, là aussi le mécanisme de False Sharing\pageref{Fig:false_sharing} intervient, mais cela n'est pas assez significatif pour être utilisé, mais si cette tendance viendrait à se confirmer, on pourrait essayer de supprimer le False Sharing\pageref{Fig:false_sharing} en ajoutant un tableau de la taille d'une ligne cache dans la structure position afin d'éviter ce phénomène.\par
+Il y a encore beaucoup de voie d'optimisations possibles et d'expérimentations à mener. Je n'ai pas eu le temps de mener à terme mon expérience qui constituait à pré-calculer toutes les positions que l'on peut jouer en parallèle à chaque niveau du MinMax\pageref{Fig:alpha_beta}, l'expérience a été mené avec une seule répétition par configuration, le résultat n'était pas concluant.\par
 On pourrait aussi essayer d'améliorer le trie des coups en propageant un tableau des puits avec le plus de cailloux dans la fonction \textbf{jouer\_coup} afin de maintenir l'ordre lorsqu'on joue un coup sans avoir à re-trier à chaque fois.\par
 Et enfin on pourrait aussi implémenter la fonction de hashage de Zobrist vu plus haut, même si je suis plutôt dubitatif par rapport au potentiel de cette modification dans le cas du jeu de l'Awalé\pageref{Fig:awale}.
 

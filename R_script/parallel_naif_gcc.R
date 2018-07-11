@@ -11,10 +11,6 @@ gcc1TH<-read.table(file = "gcc/resultat_1.txt",sep="\n", header=FALSE)
 gcc2TH<-read.table(file = "gcc/resultat_2.txt",sep="\n", header=FALSE)
 gcc3TH<-read.table(file = "gcc/resultat_3.txt",sep="\n", header=FALSE)
 gcc4TH<-read.table(file = "gcc/resultat_4.txt",sep="\n", header=FALSE)
-gcc5TH<-read.table(file = "gcc/resultat_5.txt",sep="\n", header=FALSE)
-gcc6TH<-read.table(file = "gcc/resultat_6.txt",sep="\n", header=FALSE)
-gcc7TH<-read.table(file = "gcc/resultat_7.txt",sep="\n", header=FALSE)
-gcc8TH<-read.table(file = "gcc/resultat_8.txt",sep="\n", header=FALSE)
 
 generalDetails<-c(expression(
   
@@ -24,10 +20,9 @@ generalDetails<-c(expression(
   italic("Executions = 5")))
 
 #cicada
-generalHardware<-("Intel i7-4710HQ, 2.50GHz GHz, 8 cores, 8 GB RAM")
+generalHardware<-("Intel Xeon W3520, 2.66GHz GHz, 4 cores, 4 GB RAM")
 
-
-wvioplot(gccSeq$V1,gcc1TH$V1,gcc2TH$V1, gcc3TH$V1,gcc4TH$V1,gcc5TH$V1,gcc6TH$V1,gcc7TH$V1,gcc8TH$V1,clip=TRUE, adjust = 1, col=palette[1],names=FALSE)
+wvioplot(gccSeq$V1,gcc1TH$V1,gcc2TH$V1, gcc3TH$V1,gcc4TH$V1,clip=TRUE, adjust = 1, col=palette[1],names=FALSE)
 
 axis(1,cex.axis=0.6,at=1:9, labels=xLabels)
 

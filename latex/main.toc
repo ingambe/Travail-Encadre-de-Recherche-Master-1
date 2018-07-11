@@ -1,0 +1,38 @@
+\contentsline {title}{Comparatif des performances d'une application en fonction des param\IeC {\`e}tres de compilation utilis\IeC {\'e}s et analyse des performances}{1}{section*.2}
+\contentsline {abstract}{R\'esum\'e}{1}{section*.1}
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{section*.3}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Introduction}{1}{section*.4}
+\contentsline {subsection}{\numberline {A}Programme \IeC {\`a} analyser}{1}{section*.5}
+\contentsline {subsection}{\numberline {B}Environnement d'analyse}{2}{section*.8}
+\contentsline {subsubsection}{\numberline {1}Logiciel}{2}{section*.9}
+\contentsline {subsubsection}{\numberline {2}Mat\IeC {\'e}riel}{2}{section*.10}
+\contentsline {section}{\numberline {II}Analyse des options de compilations optimaux}{2}{section*.12}
+\contentsline {subsection}{\numberline {A}D\IeC {\'e}marche exp\IeC {\'e}rimentale}{2}{section*.13}
+\contentsline {subsection}{\numberline {B}R\IeC {\'e}sultats}{3}{section*.14}
+\contentsline {subsubsection}{\numberline {1}Taille des ex\IeC {\'e}cutables}{3}{section*.17}
+\contentsline {section}{\numberline {III}Profilage du code}{3}{section*.19}
+\contentsline {subsection}{\numberline {A}Gprof}{4}{section*.20}
+\contentsline {subsection}{\numberline {B}Intel vTune}{4}{section*.22}
+\contentsline {section}{\numberline {IV}Ajout de parall\IeC {\'e}lisme}{4}{section*.25}
+\contentsline {subsection}{\numberline {A}Approche na\IeC {\"\i }ve}{4}{section*.26}
+\contentsline {subsubsection}{\numberline {1}D\IeC {\'e}marche exp\IeC {\'e}rimentale}{4}{section*.27}
+\contentsline {subsubsection}{\numberline {2}R\IeC {\'e}sultats}{5}{section*.28}
+\contentsline {subsection}{\numberline {B}Tentative suppression du False Sharing}{6}{section*.35}
+\contentsline {subsection}{\numberline {C}Tentative d'am\IeC {\'e}lioration des performances du code parall\IeC {\`e}le en modifiant le placement des threads}{7}{section*.37}
+\contentsline {subsection}{\numberline {D}Intel Advisor}{7}{section*.40}
+\contentsline {paragraph}{\numberline {a}Fonctions chaudes et optimisations}{8}{section*.42}
+\contentsline {subsubsection}{\numberline {1}Test opportunit\IeC {\'e} ajout de parall\IeC {\'e}lisme}{8}{section*.44}
+\contentsline {subsubsection}{\numberline {2}Test de la viabilit\IeC {\'e}e ajout parall\IeC {\'e}lisme}{8}{section*.46}
+\contentsline {section}{\numberline {V}Modification algorithmique du code}{9}{section*.48}
+\contentsline {subsection}{\numberline {A}Trie des coups \IeC {\`a} visiter}{9}{section*.49}
+\contentsline {subsection}{\numberline {B}Table de transposition}{9}{section*.51}
+\contentsline {subsubsection}{\numberline {1}Ordered Map}{9}{section*.52}
+\contentsline {subsubsection}{\numberline {2}Unordered Map}{10}{section*.54}
+\contentsline {subsection}{\numberline {C}Rendre l'algorithme plus parall\IeC {\'e}lisable}{10}{section*.56}
+\contentsline {section}{\numberline {VI}Gestion du projet}{11}{section*.59}
+\contentsline {section}{\numberline {VII}Conclusion}{11}{section*.60}
+\contentsline {subsection}{\numberline {A}Taches effectu\IeC {\'e}es}{11}{section*.61}
+\contentsline {subsection}{\numberline {B}T\IeC {\^a}ches restantes}{12}{section*.62}
+\contentsline {subsection}{\numberline {C}Probl\IeC {\`e}mes rencontr\IeC {\'e}s}{12}{section*.63}

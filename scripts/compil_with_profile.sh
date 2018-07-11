@@ -14,7 +14,7 @@ echo "compilation avec utilisation profile"
 
 g++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-use -O3 -o ../bin/gcc_profil_use_O3.out
 
-icpc ../sources/minimax_graph.cpp -std=c++11 -prof-dir=../bin –prof-use -O3 -o ../bin/intel_profil_use_O3.out
+icpc ../sources/minimax_graph.cpp -std=c++11 -prof-dir=../bin -prof-use -O3 -o ../bin/intel_profil_use_O3.out
 
 clang++ ../sources/minimax_graph.cpp -std=c++11 -fprofile-instr-use -O3 -o ../bin/clang_profil_use_O3.out
 
@@ -68,7 +68,7 @@ echo "debug generation resultat \n"
 echo "ia commence \n"
 
 #IA COMMENCE
-for i in  `seq 1 20`
+for i in  `seq 1 1`
 do
   echo "i : $i \n"
   echo "GCC \n"
@@ -87,7 +87,7 @@ done
 echo "joueur commence\n"
 
 #JOUEUR COMMENCE
-for i in  `seq 1 20`
+for i in  `seq 1 1`
 do
   echo "i : $i \n"
   echo "GCC \n"

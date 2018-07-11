@@ -1,0 +1,35 @@
+\BOOKMARK [0][-]{section*.2}{Comparatif des performances d'une application en fonction des param\350tres de compilation utilis\351s et analyse des performances}{}% 2
+\BOOKMARK [1][-]{section*.1}{R\351sum\351}{section*.2}% 1
+\BOOKMARK [1][-]{section*.3}{Contents}{section*.2}% 3
+\BOOKMARK [1][-]{section*.4}{Introduction}{section*.2}% 4
+\BOOKMARK [2][-]{section*.5}{Programme \340 analyser}{section*.4}% 5
+\BOOKMARK [2][-]{section*.8}{Environnement d'analyse}{section*.4}% 6
+\BOOKMARK [3][-]{section*.9}{Logiciel}{section*.8}% 7
+\BOOKMARK [3][-]{section*.10}{Mat\351riel}{section*.8}% 8
+\BOOKMARK [1][-]{section*.12}{Analyse des options de compilations optimaux}{section*.2}% 9
+\BOOKMARK [2][-]{section*.13}{D\351marche exp\351rimentale}{section*.12}% 10
+\BOOKMARK [2][-]{section*.14}{R\351sultats}{section*.12}% 11
+\BOOKMARK [3][-]{section*.17}{Taille des ex\351cutables}{section*.14}% 12
+\BOOKMARK [1][-]{section*.19}{Profilage du code}{section*.2}% 13
+\BOOKMARK [2][-]{section*.20}{Gprof}{section*.19}% 14
+\BOOKMARK [2][-]{section*.22}{Intel vTune}{section*.19}% 15
+\BOOKMARK [1][-]{section*.25}{Ajout de parall\351lisme}{section*.2}% 16
+\BOOKMARK [2][-]{section*.26}{Approche na\357ve}{section*.25}% 17
+\BOOKMARK [3][-]{section*.27}{D\351marche exp\351rimentale}{section*.26}% 18
+\BOOKMARK [3][-]{section*.28}{R\351sultats}{section*.26}% 19
+\BOOKMARK [2][-]{section*.35}{Tentative suppression du False Sharing}{section*.25}% 20
+\BOOKMARK [2][-]{section*.37}{Tentative d'am\351lioration des performances du code parall\350le en modifiant le placement des threads}{section*.25}% 21
+\BOOKMARK [2][-]{section*.40}{Intel Advisor}{section*.25}% 22
+\BOOKMARK [3][-]{section*.44}{Test opportunit\351 ajout de parall\351lisme}{section*.40}% 23
+\BOOKMARK [3][-]{section*.46}{Test de la viabilit\351e ajout parall\351lisme}{section*.40}% 24
+\BOOKMARK [1][-]{section*.48}{Modification algorithmique du code}{section*.2}% 25
+\BOOKMARK [2][-]{section*.49}{Trie des coups \340 visiter}{section*.48}% 26
+\BOOKMARK [2][-]{section*.51}{Table de transposition}{section*.48}% 27
+\BOOKMARK [3][-]{section*.52}{Ordered Map}{section*.51}% 28
+\BOOKMARK [3][-]{section*.54}{Unordered Map}{section*.51}% 29
+\BOOKMARK [2][-]{section*.56}{Rendre l'algorithme plus parall\351lisable}{section*.48}% 30
+\BOOKMARK [1][-]{section*.59}{Gestion du projet}{section*.2}% 31
+\BOOKMARK [1][-]{section*.60}{Conclusion}{section*.2}% 32
+\BOOKMARK [2][-]{section*.61}{Taches effectu\351es}{section*.60}% 33
+\BOOKMARK [2][-]{section*.62}{T\342ches restantes}{section*.60}% 34
+\BOOKMARK [2][-]{section*.63}{Probl\350mes rencontr\351s}{section*.60}% 35
