@@ -19,10 +19,6 @@ cat /dev/null >../output/parallel/v2/gcc/resultat_1.txt
 cat /dev/null >../output/parallel/v2/gcc/resultat_2.txt
 cat /dev/null >../output/parallel/v2/gcc/resultat_3.txt
 cat /dev/null >../output/parallel/v2/gcc/resultat_4.txt
-cat /dev/null >../output/parallel/v2/gcc/resultat_5.txt
-cat /dev/null >../output/parallel/v2/gcc/resultat_6.txt
-cat /dev/null >../output/parallel/v2/gcc/resultat_7.txt
-cat /dev/null >../output/parallel/v2/gcc/resultat_8.txt
 
 #INTEL
 mkdir -p ../output/parallel/v2/intel
@@ -31,10 +27,6 @@ cat /dev/null > ../output/parallel/v2/intel/resultat_1.txt
 cat /dev/null > ../output/parallel/v2/intel/resultat_2.txt
 cat /dev/null > ../output/parallel/v2/intel/resultat_3.txt
 cat /dev/null > ../output/parallel/v2/intel/resultat_4.txt
-cat /dev/null > ../output/parallel/v2/intel/resultat_5.txt
-cat /dev/null > ../output/parallel/v2/intel/resultat_6.txt
-cat /dev/null > ../output/parallel/v2/intel/resultat_7.txt
-cat /dev/null > ../output/parallel/v2/intel/resultat_8.txt
 
 #CLANG
 mkdir -p ../output/parallel/v2/clang
@@ -44,10 +36,6 @@ cat /dev/null > ../output/parallel/v2/clang/resultat_1.txt
 cat /dev/null > ../output/parallel/v2/clang/resultat_2.txt
 cat /dev/null > ../output/parallel/v2/clang/resultat_3.txt
 cat /dev/null > ../output/parallel/v2/clang/resultat_4.txt
-cat /dev/null > ../output/parallel/v2/clang/resultat_5.txt
-cat /dev/null > ../output/parallel/v2/clang/resultat_6.txt
-cat /dev/null > ../output/parallel/v2/clang/resultat_7.txt
-cat /dev/null > ../output/parallel/v2/clang/resultat_8.txt
 
 echo "fin de creation fichier de sortie \n"
 

@@ -94,4 +94,8 @@ g++ ../sources/minimax_graph_parallel_v2.cpp -std=c++11 -O3 -o ../bin/gcc_O3_v2.
 
 icpc ../sources/minimax_graph_parallel_v2.cpp -std=c++11 -O3 -o ../bin/intel_O3_v2.out -fopenmp
 
+echo "natif"
+
+icpc ../sources/minimax_graph_parallel_v2.cpp -std=c++11 -O3 -o ../bin/intel_O3_v2_natif.out -fopenmp -xHost -no-prec-div -Zp4 -align -ansi-alias -ipo
+
 echo "fin de compilation"
